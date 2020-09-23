@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import SkillBar from './skill-bar'
 
-export default styled(({ className, title = 'Skills', skills = [] }) => (
+export default styled(({ className, title = 'Training Offered', skills = [] }) => (
   <div className={className}>
     <h1>{title}</h1>
     {skills.map(skill => (

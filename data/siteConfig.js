@@ -1,82 +1,100 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Francisco!',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-  keyWords: ['gatsbyjs', 'react', 'curriculum'],
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
-  authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-    In 2012 I started working as a support technician and I approached the developers.
-    In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-    I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  siteTitle: 'Hi! I\'m Khanh Nguyen!',
+  siteDescription: `Cross Cultural Consulting `,
+  keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
+  authorName: 'David T. Nguyen',
+  twitterUsername: 'vietroadie',
+  githubUsername: 'DavidTNguyen',
+  authorAvatar: '/images/headshot.jpg',
+  authorDescription: `My family came as refugees from Vietnam in 1975 and we were introduced to the gospel of Jesus Christ
+  through the church that sponsored us. We have followed the Lord ever since. I am married to David
+  with two delightful children (Mỹ Linh and Khoa) who attend a Chinese immersion school. My
+  experiences as a YWAM missionary, Short-Term Mission director serving around the world, and
+  university professor teaching courses in race, culture, and ministry have shaped my passion for training
+  others to grow in cultural competency. I’ve been in leadership with multi-ethnic churches since 1998, and
+  my current role walking alongside African refugees has also enriched my understanding and teaching.`,
   skills: [
     {
-      name: 'HTML',
-      level: 70
+      name: 'Measuring Cultural Intelligence',
+      level: 100
     },
     {
-      name: 'CSS',
-      level: 60
+      name: 'Growing in Cultural competency',
+      level: 100
     },
     {
-      name: 'Javascript',
-      level: 50
+      name: 'Racial justice & inequality awareness',
+      level: 100
     },
     {
-      name: 'NodeJs',
-      level: 40
+      name: 'Envisioning and building Multi-ethnic churches',
+      level: 100
     },
     {
-      name: 'React',
-      level: 60
+      name: 'Learning from ethnic diversity',
+      level: 100
     },
     {
-      name: 'Git',
-      level: 70
+      name: 'Implicit Bias',
+      level: 100
+    },
+    {
+      name:'Theology of Culture',
+      level: 100
+    },
+    {
+      name:'Asian-American issues – Myth of the Model Minority',
+      level: 100
+    },
+    {
+      name:'Short-term missions training',
+      level: 100
+    },
+    {
+      name: 'Speaking or presenting on Immigration & Refugee advocacy incorporating my testimony and work with African refugees',
+      level: 100
     },
     /* more skills here */
   ],
   jobs: [
     /* more jobs here */
     {
-      company: "Gympass",
+      company: "University of Northwestern St. Paul",
       begin: {
         month: 'sep',
         year: '2019'
       },
       duration: null,
-      occupation: "Frontend developer",
-      description: "I am part of the Corporate team, responsible for the development and maintenance of the employee management platform, giving more and more autonomy to partner companies."
-  
+      occupation: "Adjunct Professor",
+      description: "I am teaching the following classes: Ministry, Missions & Discipleship, Understanding Cultural Contexts, Christianity & Culture, Race & Ethnicity in America, Exegesis/Interpreting the Bible.  I directed the Mission and Outreach Program for 10 years.  "
     },  {
-      company: "Lendico",
+      company: "CEEDS & ICF",
       begin: {
         month: 'apr',
         year: '2018'
       },
       duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
+      occupation: "Vice President",
+      description: "I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Cameroon, and other African countries"
   
     }, {
-      company: "Anapro",
+      company: "Upworks",
       begin: {
         month: 'dec',
         year: '2016'
       },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
+      duration: null,
+      occupation: "Instructor",
+      description: "Provide Cultural Awareness training for job coaches mentoring diverse clients"
     }, {
-      company: "Anapro",
+      company: "Youth with A Mission",
       begin: {
         month: 'set',
         year: '2012'
       },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
+      duration: '5 yrs e 3 mos',
+      occupation: "Missionary",
+      description: "Led and participated in global service teams in Hawaii, Vietnam, Thailand, Japan."
   
     },
   ],
@@ -101,7 +119,7 @@ module.exports = {
   },
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/cover.jpeg',
+  siteCover: '/images/road-to-dalat.jpg',
   googleAnalyticsId: 'UA-000000000-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
