@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export const isBrowser = () => typeof window !== "undefined"
+export const isBrowser = () => typeof window !== 'undefined'
 
 export const useDarkMode = () => {
   let websiteTheme

@@ -1,30 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaEnvelope, FaLinkedin, FaFacebook } from "react-icons/fa"
-import { config } from 'react-awesome-styled-grid';
+import { FaEnvelope, FaLinkedin, FaFacebook } from 'react-icons/fa'
+import { config } from 'react-awesome-styled-grid'
 import siteConfig from '../../../data/siteConfig'
 
 const Link = styled(({ className, icon: Icon, color, ...props }) => (
-  <a 
-    className={className}
-    target='_blank'
-    rel="noopener noreferrer"
-    {...props}
-  >
+  <a className={className} target="_blank" rel="noopener noreferrer" {...props}>
     <Icon color={color} size={32} />
   </a>
 )).attrs(props => ({ color: props.theme.colors.primary }))`
   & + & {
     margin-left: 24px;
   }
-`;
+`
 
 const Footer = ({ className }) => {
-  const {
-    email,
-    linkedin,
-    facebook,
-  } = siteConfig.social
+  const { email, linkedin, facebook } = siteConfig.social
   return (
     <footer className={className}>
       {`© ${new Date().getFullYear()} ${siteConfig.authorName}`}
@@ -38,7 +29,7 @@ const Footer = ({ className }) => {
 }
 
 export default styled(Footer)`
-  min-height: 93px; 
+  min-height: 93px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -51,4 +42,4 @@ export default styled(Footer)`
   ${props => config(props).media.sm`
     flex-direction: row;
   `}
-`;
+`

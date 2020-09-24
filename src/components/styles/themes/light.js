@@ -5,5 +5,5 @@ export default {
     background: siteConfig.background_color,
     primary: siteConfig.theme_color,
     fontColor: siteConfig.fontColor,
-  }
+  },
 }

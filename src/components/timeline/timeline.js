@@ -6,36 +6,36 @@ import siteConfig from '../../../data/siteConfig'
 const Timeline = ({ className }) => (
   <div className={className}>
     <h1>Experience</h1>
-    {siteConfig.jobs && siteConfig.jobs.map(job => (
-      <article 
-        key={job.begin.month + job.begin.year} 
-        className='timeline__item animate-on-scroll'
-      >
-        <div className="inner">
-          <span className="timeline__date">
-            <span className="timeline__month">{job.begin.month}</span>
-            <span className="timeline__year">{job.begin.year}</span>
-          </span>
-          <div className="timeline__card">
-            <h2 className='timeline__card-title'>
-              {job.company
-                ? `${job.occupation} at ${job.company}`
-                : `${job.occupation}`} 
-              <br />
-              <small className='timeline__card-title--small'>
-                ({job.duration || 'present'})
-              </small>
-            </h2>
-            <p>{job.description}</p>
+    {siteConfig.jobs &&
+      siteConfig.jobs.map(job => (
+        <article
+          key={job.begin.month + job.begin.year}
+          className="timeline__item animate-on-scroll"
+        >
+          <div className="inner">
+            <span className="timeline__date">
+              <span className="timeline__month">{job.begin.month}</span>
+              <span className="timeline__year">{job.begin.year}</span>
+            </span>
+            <div className="timeline__card">
+              <h2 className="timeline__card-title">
+                {job.company
+                  ? `${job.occupation} at ${job.company}`
+                  : `${job.occupation}`}
+                <br />
+                <small className="timeline__card-title--small">
+                  ({job.duration || 'present'})
+                </small>
+              </h2>
+              <p>{job.description}</p>
+            </div>
           </div>
-        </div>
-      </article>
-    ))}
+        </article>
+      ))}
   </div>
 )
 
 export default styled(Timeline)`
-
   position: relative;
   :before {
     content: '';
@@ -110,7 +110,7 @@ export default styled(Timeline)`
     position: absolute;
     top: -5px;
     left: 30%;
-    width: 10px; 
+    width: 10px;
     height: 10px;
     transform: rotate(-45deg);
   }
@@ -122,7 +122,7 @@ export default styled(Timeline)`
     color: ${({ theme }) => theme.colors.fontColor};
     border-radius: 0 0 6px 6px;
   }
-  .timeline__item:nth-child(2n+2) div.inner {
+  .timeline__item:nth-child(2n + 2) div.inner {
     float: right;
     .timeline__card {
       transform: translate(50%);
@@ -141,7 +141,7 @@ export default styled(Timeline)`
 
   .timeline__item.is-visible div.inner {
     .timeline__card {
-      transition: transform .8s ease-in;
+      transition: transform 0.8s ease-in;
       transform: translate(0);
     }
   }

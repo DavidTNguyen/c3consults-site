@@ -1,75 +1,76 @@
-import React from "react";
-import jsonFetch from "simple-json-fetch";
+import React from 'react'
+import jsonFetch from 'simple-json-fetch'
 import styled from 'styled-components'
 import { GoStar, GoRepoForked, GoLinkExternal } from 'react-icons/go'
 import siteConfig from '../../../data/siteConfig'
 
 import Loader from '../loader'
 
-const endpoint =
-  `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`
-
+const endpoint = `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`
 
 class Repositories extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       repos: [],
-      status: 'loading'
+      status: 'loading',
     }
   }
-  async componentDidMount () {
-    const repos = await jsonFetch(endpoint);
+  async componentDidMount() {
+    const repos = await jsonFetch(endpoint)
     if (repos.json && repos.json.length) {
       this.setState({ repos: repos.json, status: 'ready' })
     }
   }
-  render () {
+  render() {
     const { status } = this.state
     return (
       <div className={this.props.className}>
         <h2>Latest repositories on Github</h2>
-        {status === "loading" && <div className='repositories__loader'><Loader /></div>}
-        {status === "ready" &&
-          this.state.repos && (
-            <React.Fragment>
-              <div className="repositories__content">
-                {this.state.repos.map(repo => (
-                  <React.Fragment key={repo.name}>
-                    <div className="repositories__repo">
-                      <a 
-                        className='repositories__repo-link' 
-                        href={repo.html_url}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <strong>{repo.name}</strong>
-                      </a>
-                      <div>{repo.description}</div>
-                      <div className="repositories__repo-date">
-                        Updated: {new Date(repo.updated_at).toUTCString()}
-                      </div>
-                      <div className="repositories__repo-star">
-                        {repo.fork && <GoRepoForked />}
-                        <GoStar /> {repo.stargazers_count}
-                      </div>
+        {status === 'loading' && (
+          <div className="repositories__loader">
+            <Loader />
+          </div>
+        )}
+        {status === 'ready' && this.state.repos && (
+          <React.Fragment>
+            <div className="repositories__content">
+              {this.state.repos.map(repo => (
+                <React.Fragment key={repo.name}>
+                  <div className="repositories__repo">
+                    <a
+                      className="repositories__repo-link"
+                      href={repo.html_url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <strong>{repo.name}</strong>
+                    </a>
+                    <div>{repo.description}</div>
+                    <div className="repositories__repo-date">
+                      Updated: {new Date(repo.updated_at).toUTCString()}
                     </div>
-                    <hr />
-                  </React.Fragment>
-                ))}
-              </div>
-              <div className="repositories_user-link">
-                <a 
-                  href={`https://github.com/${siteConfig.githubUsername}`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  See all my repositories
-                  <GoLinkExternal style={{ marginLeft: 8 }} />
-                </a>
-              </div>
-            </React.Fragment>
-          )}
+                    <div className="repositories__repo-star">
+                      {repo.fork && <GoRepoForked />}
+                      <GoStar /> {repo.stargazers_count}
+                    </div>
+                  </div>
+                  <hr />
+                </React.Fragment>
+              ))}
+            </div>
+            <div className="repositories_user-link">
+              <a
+                href={`https://github.com/${siteConfig.githubUsername}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                See all my repositories
+                <GoLinkExternal style={{ marginLeft: 8 }} />
+              </a>
+            </div>
+          </React.Fragment>
+        )}
       </div>
     )
   }
@@ -120,8 +121,6 @@ export default styled(Repositories)`
   hr {
     margin-top: 16px;
     background-color: ${({ theme }) => theme.colors.fontColor};
-    opacity: .2;
+    opacity: 0.2;
   }
-
 `
-

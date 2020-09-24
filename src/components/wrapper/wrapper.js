@@ -15,8 +15,8 @@ const Wrapper = styled.main.attrs({
   top: -100px;
   box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
   min-height: 150px;
-  
-  ${(props) => config(props).media.sm`
+
+  ${props => config(props).media.sm`
     width: 80%;
     padding: 50px;
   `}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Loader = ({className}) => {
+const Loader = ({ className }) => {
   return (
     <div className={className}>
       <div></div>
@@ -28,7 +28,8 @@ export default styled(Loader)`
     border: 6px solid ${({ theme }) => theme.colors.primary};
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: ${({ theme }) => theme.colors.primary} transparent transparent transparent;
+    border-color: ${({ theme }) => theme.colors.primary} transparent transparent
+      transparent;
   }
   div:nth-child(1) {
     animation-delay: -0.45s;
@@ -47,5 +48,4 @@ export default styled(Loader)`
       transform: rotate(360deg);
     }
   }
-
 `

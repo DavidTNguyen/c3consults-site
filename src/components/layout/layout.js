@@ -24,28 +24,28 @@ const Layout = ({ children, location }) => {
     animateOnScroll()
   }, [])
   return (
-  <ThemeProvider theme={themes[theme || 'light']}>
-    <ResetCSS />
-    <GlobalStyle />
-    <StyledContainer>
-      <Header location={location} onChangeTheme={setTheme} theme={theme} />
-      <motion.main
-        key={location}
-        variants={variants}
-        initial="initial"
-        animate="enter"
-      >
-        {children}
-      </motion.main>
-      <Footer />
-    </StyledContainer>
-  </ThemeProvider>
-)}
+    <ThemeProvider theme={themes[theme || 'light']}>
+      <ResetCSS />
+      <GlobalStyle />
+      <StyledContainer>
+        <Header location={location} onChangeTheme={setTheme} theme={theme} />
+        <motion.main
+          key={location}
+          variants={variants}
+          initial="initial"
+          animate="enter"
+        >
+          {children}
+        </motion.main>
+        <Footer />
+      </StyledContainer>
+    </ThemeProvider>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   location: PropTypes.string.isRequired,
 }
-
 
 export default Layout
