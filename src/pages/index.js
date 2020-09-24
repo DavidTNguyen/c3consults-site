@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa"
+import { FaLinkedin, FaEnvelope, FaFacebook } from "react-icons/fa"
 import siteConfig from '../../data/siteConfig'
 import { withPrefix } from "gatsby"
 import loadable from '@loadable/component'
@@ -12,7 +12,6 @@ import Wrapper from '../components/wrapper'
 import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
-import Repositories from '../components/repositories'
 
 const Layout = loadable(() => import('../components/layout'))
 
@@ -53,14 +52,11 @@ const Home = ({ className, location }) => {
                 alt='user avatar'
               />
               <div className="social">
-                {siteConfig.social.github && <a className="social-link github" href={siteConfig.social.github}>
-                  <FaGithub className="social-icon" size="32" />
-                </a>}
                 {siteConfig.social.linkedin && <a className="social-link linkedin" href={siteConfig.social.linkedin}>
                   <FaLinkedin className="social-icon" size="32" />
                 </a>}
-                {siteConfig.social.twitter && <a className="social-link twitter" href={siteConfig.social.twitter}>
-                  <FaTwitter className="social-icon" size="32" />
+                {siteConfig.social.facebook && <a className="social-link facebook" href={siteConfig.social.facebook}>
+                  <FaFacebook className="social-icon" size="32" />
                 </a>}
                 {siteConfig.social.email && <a className="social-link email" href={`mailto:${siteConfig.social.email}`}>
                   <FaEnvelope className="social-icon" size="32" />
@@ -78,8 +74,6 @@ const Home = ({ className, location }) => {
           </Row>
           <Separator />
           <Timeline />
-          <Separator />
-          {siteConfig.githubUsername && <Repositories />}
         </Container>
       </Wrapper>
     </Layout>
@@ -115,11 +109,7 @@ export default styled(Home)`
     color: #555;
   }
 
-  a.social-link.twitter:hover {
-    color: #1da1f2;
-  }
-
-  a.social-link.github:hover {
+  a.social-link.facebook:hover {
     color: #24292e;
   }
 

@@ -19,7 +19,7 @@ module.exports = {
       level: 100
     },
     {
-      name: 'Growing in Cultural competency',
+      name: 'Growing in Cultural Competency',
       level: 100
     },
     {
@@ -43,7 +43,7 @@ module.exports = {
       level: 100
     },
     {
-      name:'Asian-American issues – Myth of the Model Minority',
+      name:'Asian-American issues',
       level: 100
     },
     {
@@ -51,7 +51,7 @@ module.exports = {
       level: 100
     },
     {
-      name: 'Speaking or presenting on Immigration & Refugee advocacy incorporating my testimony and work with African refugees',
+      name: 'Immigration & Refugee Advocacy',
       level: 100
     },
     /* more skills here */
@@ -112,10 +112,9 @@ module.exports = {
     /* more portifolio items here */
   ],
   social: {
-    twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
+    linkedin: "https://www.linkedin.com/in/khanh-nguyen-18838830/",
+    email: "c3consults@gmail.com",
+    facebook: "https://www.facebook.com/khanh.nguyen.3192"
   },
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
