@@ -1,10 +1,8 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Khanh Nguyen!',
+  siteTitle: 'Hi! I\'m Khanh Nguyễn!',
   siteDescription: `Cross Cultural Consulting `,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
-  authorName: 'David T. Nguyen',
-  twitterUsername: 'vietroadie',
-  githubUsername: 'DavidTNguyen',
+  authorName: 'Nguyễn Thị Châu Khanh',
   authorAvatar: '/images/headshot.jpg',
   authorDescription: `My family came as refugees from Vietnam in 1975 and we were introduced to the gospel of Jesus Christ
   through the church that sponsored us. We have followed the Lord ever since. I am married to David
@@ -98,19 +96,6 @@ module.exports = {
   
     },
   ],
-  portifolio: [
-    {
-      image: "/images/gatsby-starter-cv.png",
-      description: "Gatsby starter CV template",
-      url: "https://www.gatsbyjs.org/starters/santosfrancisco/gatsby-starter-cv/"
-    },
-    {
-      image: "/images/awesome-grid.png",
-      description: "Responsive grid for ReactJS",
-      url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
-    },
-    /* more portifolio items here */
-  ],
   social: {
     linkedin: "https://www.linkedin.com/in/khanh-nguyen-18838830/",
     email: "c3consults@gmail.com",
@@ -130,10 +115,6 @@ module.exports = {
     {
       label: 'Home',
       url: '/',
-    },
-    {
-      label: 'Portifolio',
-      url: '/portifolio',
     }
   ]
 }
