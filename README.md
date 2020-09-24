@@ -1,12 +1,5 @@
-[![Build Status](https://travis-ci.org/santosfrancisco/gatsby-starter-cv.svg?branch=master)](https://travis-ci.org/santosfrancisco/gatsby-starter-cv)
-[![GitHub version](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv.svg)](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/69322c88-9b45-4bb6-90e2-d6e601fb92f9/deploy-status)](https://app.netlify.com/sites/vigilant-sammet-370319/deploys)
 
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Gatsby's CV starter
 </h1>
@@ -14,6 +7,7 @@
 Create your resume in a few minutes with this totally responsive starter using React. Show off your skills, work experiences and activities in github.
 
 ### Sections
+
 - About
 - Skills
 - Job experiences
@@ -21,6 +15,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 - Portifolio
 
 ### Features
+
 - Responsive Design, optimized for Mobile devices
 - Google Analytics
 - SEO
@@ -40,7 +35,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1. **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
@@ -49,7 +44,7 @@ Create your resume in a few minutes with this totally responsive starter using R
     npx gatsby new my-default-starter https://github.com/santosfrancisco/gatsby-starter-cv
     ```
 
-2.  **Start developing.**
+2. **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -58,7 +53,7 @@ Create your resume in a few minutes with this totally responsive starter using R
     npm run develop
     ```
 
-3.  **Open the source code and start editing!**
+3. **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -69,6 +64,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 4. **Generate production build**
 
     That command will generate a production build on _public_ folder
+
     ```sh
       npm run build
     ```
@@ -77,7 +73,6 @@ Create your resume in a few minutes with this totally responsive starter using R
 
     That command will deploy the production build to gh-pages branch of your repository
     > ⚠️ don't forget to check `pathPrefix` in the configuration file.
-
 
     ```sh
       npm run deploy
@@ -143,7 +138,6 @@ Update the configuration file with your data. The configuration file is in ```da
         duration: null,
         occupation: "Frontend developer",
         description: "I am part of the Corporate team, responsible for the development and maintenance of the employee management platform, giving more and more autonomy to partner companies."
-    
       },  {
         company: "Lendico",
         begin: {
@@ -152,8 +146,7 @@ Update the configuration file with your data. The configuration file is in ```da
         },
         duration: null,
         occupation: "Frontend developer",
-        description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
-    
+        description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."  
       }, {
         company: "Anapro",
         begin: {
@@ -172,7 +165,6 @@ Update the configuration file with your data. The configuration file is in ```da
         duration: '4 yrs e 3 mos',
         occupation: "Support Technician",
         description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-    
       },
     ],
     portifolio: [
@@ -217,7 +209,3 @@ Update the configuration file with your data. The configuration file is in ```da
   }
 
 ```
-
-## It was useful?
-
-<a href="https://www.buymeacoffee.com/santosfrancisco" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" width="180px" ></a>
