@@ -26,7 +26,8 @@
     "react-icons": "3.10.0",
     "react-switch": "5.0.1",
     "simple-json-fetch": "1.0.1",
-    "styled-components": "5.1.1"
+    "styled-components": "5.1.1",
+    "xstate": "4.13.0"
   },
   "keywords": [
     "gatsby"
