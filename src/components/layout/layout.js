@@ -19,6 +19,7 @@ const StyledContainer = styled.div`
 `
 
 const Layout = ({ children, location }) => {
+  // console.log('LOCATION: ' + JSON.stringify(location))
   const [theme, setTheme] = useDarkMode()
   useEffect(() => {
     animateOnScroll()
@@ -45,7 +46,7 @@ const Layout = ({ children, location }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  location: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
 }
 
 export default Layout
