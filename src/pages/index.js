@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { AnimateSharedLayout, AnimatePresence } from 'framer-motion'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
 import { FaLinkedin, FaEnvelope, FaFacebook } from 'react-icons/fa'
 import siteConfig from '../../data/siteConfig'
@@ -12,6 +13,8 @@ import Wrapper from '../components/wrapper'
 import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
+import Testimonies from '../components/testimonies'
+import Testimonial from '../components/testimonial'
 
 const Layout = loadable(() => import('../components/layout'))
 
@@ -32,6 +35,8 @@ const Home = ({ className, location }) => {
 
   const title = siteConfig.siteTitle
   const { keywords } = siteConfig
+  const id = null
+
   return (
     <Layout location={location}>
       <SEO title={title} keywords={keywords} />
@@ -85,6 +90,17 @@ const Home = ({ className, location }) => {
           </Row>
           <Separator />
           <Timeline />
+          <Separator />
+          <Row>
+            <Col>
+              <AnimateSharedLayout type="crossfade">
+                <Testimonies selectedId={id} />
+                <AnimatePresence>
+                  {id && <Testimonial id={id} key="item" />}
+                </AnimatePresence>
+              </AnimateSharedLayout>
+            </Col>
+          </Row>
         </Container>
       </Wrapper>
     </Layout>
