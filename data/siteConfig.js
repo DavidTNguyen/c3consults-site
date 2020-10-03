@@ -4,7 +4,7 @@ module.exports = {
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
   authorAvatar: '/images/headshot.jpg',
-  logo: 'images/C3-logo-n-bg.png',
+  logo: '/images/C3-logo-bold-no-bg.png',
   authorDescription: `My family came as refugees from Vietnam in 1975 and we were sponsored by a church that helped us settle in the Twin Cities.  
   Growing up navigating multiple cultrues, my travels and service globally, experience as a professor, work with African refugees and diverse organizations 
   have led me to see the importance of cultural and racial intelligence and competence.  <br/><br/>
