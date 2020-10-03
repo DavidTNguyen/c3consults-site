@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from '@reach/router'
+import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
 const Card = ({ id, title, client, theme, headshot }) => {

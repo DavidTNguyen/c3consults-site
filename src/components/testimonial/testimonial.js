@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { Link } from '@reach/router'
+import { Link } from 'gatsby'
 import { testimonials } from '../../../data/testimonials'
 
 const Testimonial = ({ id }) => {
