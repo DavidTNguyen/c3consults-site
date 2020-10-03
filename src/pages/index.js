@@ -30,23 +30,30 @@ const Home = ({ className, location }) => {
     )
   }
 
-  const title = siteConfig.siteTitle
+  const title = siteConfig.siteTitle 
+  // const title = 'Under Construction!'
   const { keywords } = siteConfig
   return (
     <Layout location={location}>
       <SEO title={title} keywords={keywords} />
 
       <Hero heroImg={siteConfig.siteCover} title={title} />
-
       <Wrapper className={className}>
         <Container className="page-content" fluid>
           <Row>
             <Col xs={4} className="avatar">
-              <img
-                className="avatar__image"
-                src={withPrefix(siteConfig.authorAvatar)}
-                alt="user avatar"
-              />
+              <Row>
+                <img
+                  className="avatar__image"
+                  src={withPrefix(siteConfig.authorAvatar)}
+                  alt="user avatar"
+                />
+                <img
+                  className="logo__image"
+                  src={withPrefix(siteConfig.logo)}
+                  alt="c3 logo"
+                />
+              </Row>
               <div className="social">
                 {siteConfig.social.linkedin && (
                   <a
@@ -80,7 +87,7 @@ const Home = ({ className, location }) => {
               <About title="About" text={siteConfig.authorDescription} />
             </Col>
             <Col xs={4} sm={4}>
-              <Skills title="Training Offered" skills={siteConfig.skills} />
+              <Skills title="Trainings Offered" skills={siteConfig.skills} />
             </Col>
           </Row>
           <Separator />
@@ -106,6 +113,13 @@ export default styled(Home)`
   .avatar__image {
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
     max-width: 200px;
+    border-radius: 100px;
+    margin: 0 auto 24px;
+  }
+
+  .logo__image {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
+    max-width: 300px;
     border-radius: 100px;
     margin: 0 auto 24px;
   }

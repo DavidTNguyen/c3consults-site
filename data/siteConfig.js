@@ -4,10 +4,12 @@ module.exports = {
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
   authorAvatar: '/images/headshot.jpg',
+  logo: 'images/C3-logo-n-bg.png',
   authorDescription: `My family came as refugees from Vietnam in 1975 and we were sponsored by a church that helped us settle in the Twin Cities.  
   Growing up navigating multiple cultrues, my travels and service globally, experience as a professor, work with African refugees and diverse organizations 
-  have let me to see the importance of cultural and racial intelligence and competence.  
+  have led me to see the importance of cultural and racial intelligence and competence.  <br/><br/>
   I educate, speak on and provide training in cultural competency, racial justice, ethnic diversity, immigration & refugee advocacy and Asian American topics.
+  <br/><br/>
   I am certified in the IDI (Intercultural Development Inventory), and use a variety of teaching methods such as cultural assessment tools, interactive games, workshops, and simulations.  
   My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and abroad.
      `,
