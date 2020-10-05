@@ -1,16 +1,18 @@
 module.exports = {
   siteTitle: "Hi! I'm Khanh Nguyễn!",
-  siteDescription: `Cross Cultural Consulting `,
+  siteDescription: `Cultural Competency Consulting `,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
   authorAvatar: '/images/headshot.jpg',
-  authorDescription: `My family came as refugees from Vietnam in 1975 and we were introduced to the gospel of Jesus Christ
-  through the church that sponsored us. We have followed the Lord ever since. I am married to David
-  with two delightful children (Mỹ Linh and Khoa) who attend a Chinese immersion school. My
-  experiences as a YWAM missionary, Short-Term Mission director serving around the world, and
-  university professor teaching courses in race, culture, and ministry have shaped my passion for training
-  others to grow in cultural competency. I’ve been in leadership with multi-ethnic churches since 1998, and
-  my current role walking alongside African refugees has also enriched my understanding and teaching.`,
+  logo: '/images/C3-logo-bold-no-bg.png',
+  authorDescription: `My family came as refugees from Vietnam in 1975 and we were sponsored by a church that helped us settle in the Twin Cities.  
+  Growing up navigating multiple cultrues, my travels and service globally, experience as a professor, work with African refugees and diverse organizations 
+  have led me to see the importance of cultural and racial intelligence and competence.  <br/><br/>
+  I educate, speak on and provide training in cultural competency, racial justice, ethnic diversity, immigration & refugee advocacy and Asian American topics.
+  <br/><br/>
+  I am certified in the IDI (Intercultural Development Inventory), and use a variety of teaching methods such as cultural assessment tools, interactive games, workshops, and simulations.  
+  My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and abroad.
+     `,
   skills: [
     {
       name: 'Measuring Cultural Intelligence',
@@ -45,7 +47,7 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'Short-term missions training',
+      name: 'Global missions training',
       level: 100,
     },
     {
@@ -65,7 +67,7 @@ module.exports = {
       duration: null,
       occupation: 'Adjunct Professor',
       description:
-        'I am teaching the following classes: Ministry, Missions & Discipleship, Understanding Cultural Contexts, Christianity & Culture, Race & Ethnicity in America, Exegesis/Interpreting the Bible.  I directed the Mission and Outreach Program for 10 years.  ',
+        'I have taught the following classes: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Missions.  I was the Associate Director of Campus Ministries directing the Global Service and Local Outreach Program for 10 years.  ',
     },
     {
       company: 'CEEDS & ICF',
@@ -74,7 +76,7 @@ module.exports = {
         year: '2018',
       },
       duration: null,
-      occupation: 'Vice President',
+      occupation: 'Outreach Coordinator',
       description:
         'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Cameroon, and other African countries',
     },
@@ -90,13 +92,13 @@ module.exports = {
         'Provide Cultural Awareness training for job coaches mentoring diverse clients',
     },
     {
-      company: 'Youth with A Mission',
+      company: 'YWAM',
       begin: {
         month: 'set',
         year: '2012',
       },
       duration: '5 yrs e 3 mos',
-      occupation: 'Missionary',
+      occupation: 'Team Leader',
       description:
         'Led and participated in global service teams in Hawaii, Vietnam, Thailand, Japan.',
     },
