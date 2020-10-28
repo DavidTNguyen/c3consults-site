@@ -740,6 +740,13 @@ export default createGlobalStyle`
   text-transform: uppercase;
 }
 
+.quote {
+  color: #fff;
+  font-size: 12px;
+  font-style: italic;
+  vertical-align: text-bottom;
+}
+
 .overlay {
   z-index: 1;
   position: fixed;

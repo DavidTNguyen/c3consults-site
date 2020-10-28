@@ -62,7 +62,7 @@ module.exports = {
       company: 'University of Northwestern St. Paul',
       begin: {
         month: 'sep',
-        year: '2019',
+        year: '2011',
       },
       duration: null,
       occupation: 'Adjunct Professor',
@@ -94,7 +94,7 @@ module.exports = {
     {
       company: 'YWAM',
       begin: {
-        month: 'set',
+        month: 'sep',
         year: '2012',
       },
       duration: '5 yrs e 3 mos',

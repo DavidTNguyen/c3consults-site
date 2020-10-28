@@ -18,7 +18,7 @@ const Card = ({ id, title, client, theme, headshot }) => {
             layoutId={`title-container-${id}`}
           >
             <span className="client">{client}</span>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
           </motion.div>
         </motion.div>
       </div>

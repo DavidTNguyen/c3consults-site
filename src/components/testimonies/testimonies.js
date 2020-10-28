@@ -7,8 +7,9 @@ const Testimonies = ({ selectedId }) => {
     <>
       <h1>Testimonies</h1>
       <ul className="card-list">
-        {testimonials.map(card => (
-          <Card key={card.id} {...card} isSelected={card.id === selectedId} />
+        {testimonials.map(card => (         
+          <Card key={card.id} {...card} />
+          // <Card key={card.id} {...card} isSelected={card.id === selectedId} />
         ))}
       </ul>
     </>
