@@ -5,13 +5,20 @@ module.exports = {
   authorName: 'Nguyễn Thị Châu Khanh',
   authorAvatar: '/images/headshot.jpg',
   logo: '/images/C3-logo-bold-no-bg.png',
-  authorDescription: `My family came as refugees from Vietnam in 1975 and we were sponsored by a church that helped us settle in the Twin Cities.  
-  Growing up navigating multiple cultrues, my travels and service globally, experience as a professor, work with African refugees and diverse organizations 
-  have led me to see the importance of cultural and racial intelligence and competence.  <br/><br/>
+  authorDescription: `My family came as refugees from Vietnam and we were sponsored by a church that helped us settle in the Twin Cities.  
+  Growing up navigating multiple cultures, my service globally, travels to 22 countries,, experience as a university professor, work with African refugees and diverse organizations 
+  have led me to see the importance of growing in 
+  cultural and racial intelligence and competency.  <br/><br/>
   I educate, speak on and provide training in cultural competency, racial justice, ethnic diversity, immigration & refugee advocacy and Asian American topics.
   <br/><br/>
-  I am certified in the IDI (Intercultural Development Inventory), and use a variety of teaching methods such as cultural assessment tools, interactive games, workshops, and simulations.  
-  My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and abroad.
+  I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.   
+  <br/><br/>
+  I enjoy using a variety of teaching methods such as cultural assessment tools, interactive games, workshops, and simulations.  
+  My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
+  <br/><br/>
+  I can customize my trainings from a 30 min "Ted Talk", 1 hour presentation, 3 hour interactive workshop, to a 5 week virtual series.  I can work with you to fit your needs.
+
+
      `,
   skills: [
     {
@@ -19,7 +26,7 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'Growing in Cultural Competency',
+      name: 'Growing in Intercultural Competency',
       level: 100,
     },
     {
@@ -47,14 +54,14 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'Global missions training',
+      name: 'Global service training',
       level: 100,
     },
     {
       name: 'Immigration & Refugee Advocacy',
       level: 100,
     },
-    /* more skills here */
+    
   ],
   jobs: [
     /* more jobs here */
@@ -78,7 +85,7 @@ module.exports = {
       duration: null,
       occupation: 'Outreach Coordinator',
       description:
-        'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Cameroon, and other African countries',
+        'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Uganda, and other central African countries',
     },
     {
       company: 'Upworks',
@@ -89,7 +96,18 @@ module.exports = {
       duration: null,
       occupation: 'Instructor',
       description:
-        'Provide Cultural Awareness training for job coaches mentoring diverse clients',
+        'I provide Cultural Awareness training for "Life Advocates" mentoring diverse clients',
+    },
+    {
+      company: 'University of NorthWestern',
+      begin: {
+        month: 'sep',
+        year: '2012',
+      },
+      duration: '10 years',
+      occupation: 'Associate Director of Campus Ministries',
+      description:
+        'I directed the Global Service Program - leading, training and sending faculty and students to volunteer in service projects locally and around the world.  I also served on the Racial and Ethnic Diversity Committee, advised the Asian club, and organized a Civil Rights tour for faculty and students.'  ,
     },
     {
       company: 'YWAM',
@@ -97,10 +115,10 @@ module.exports = {
         month: 'sep',
         year: '2012',
       },
-      duration: '5 yrs e 3 mos',
+      duration: '3 years',
       occupation: 'Team Leader',
       description:
-        'Led and participated in global service teams in Hawaii, Vietnam, Thailand, Japan.',
+        'I led, and trained participants in global service teams to Hawaii, Vietnam, Thailand, and Japan.',
     },
   ],
   social: {
