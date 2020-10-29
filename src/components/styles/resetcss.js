@@ -511,6 +511,7 @@ export default createGlobalStyle`
   }
   ul li {
     padding-left: 0;
+    list-style: none;
   }
   li > ol {
     margin-left: 1.45rem;
@@ -615,4 +616,169 @@ export default createGlobalStyle`
       font-size: 100%;
     }
   }
+
+  /* This is from framer motion example */
+  * {
+    box-sizing: border-box;
+    font-family: ".SFNSText", "SFProText-Regular", "SFUIText-Regular", ".SFUIText",
+      Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .screen {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 990px;
+    flex: 1 1 100%;
+    padding: 45px 25px;
+  }
+
+  .date {
+    color: var(--secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  header {
+    border-bottom: 1px solid var(--divider);
+    position: relative;
+  }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  
+  .card {
+    position: relative;
+    padding: 25px;    
+    flex: 0 0 50%;
+  }
+
+
+.card-content-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  pointer-events: none;
+}
+
+.card-content-container.open {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.card-content {
+  pointer-events: auto;
+  position: relative;
+  border-radius: 20px;
+  background: #1c1c1e;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+.open .card-content {
+  height: auto;
+  max-width: 700px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.card-open-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 420px;
+  width: 100vw;
+}
+
+.open .card-image-container,
+.open .title-container {
+  z-index: 1;
+}
+
+
+.title-container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  max-width: 300px;
+}
+
+.open .title-container {
+  top: 30px;
+  left: 30px;
+}
+
+.client {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.quote {
+  color: #fff;
+  font-size: 12px;
+  font-style: italic;
+  vertical-align: text-bottom;
+}
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  will-change: opacity;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 990px;
+}
+
+.overlay a {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.content-container {
+  padding: 460px 35px 35px 35px;
+  max-width: 700px;
+  width: 90vw;
+}
+
+p {
+  color: #9d9ca1;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 `

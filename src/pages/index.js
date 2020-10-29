@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
 import { FaLinkedin, FaEnvelope, FaFacebook } from 'react-icons/fa'
-import siteConfig from '../../data/siteConfig'
 import { withPrefix } from 'gatsby'
 import loadable from '@loadable/component'
-
+import siteConfig from '../../data/siteConfig'
 import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
 import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
+import Testimonies from '../components/testimonies'
 
 const Layout = loadable(() => import('../components/layout'))
 
@@ -30,9 +30,11 @@ const Home = ({ className, location }) => {
     )
   }
 
-  const title = siteConfig.siteTitle 
+  const title = siteConfig.siteTitle
   // const title = 'Under Construction!'
   const { keywords } = siteConfig
+  const id = null
+
   return (
     <Layout location={location}>
       <SEO title={title} keywords={keywords} />
@@ -43,16 +45,20 @@ const Home = ({ className, location }) => {
           <Row>
             <Col xs={4} className="avatar">
               <Row>
-                <img
-                  className="avatar__image"
-                  src={withPrefix(siteConfig.authorAvatar)}
-                  alt="user avatar"
-                />
-                <img
-                  className="logo__image"
-                  src={withPrefix(siteConfig.logo)}
-                  alt="c3 logo"
-                />
+                <Col>
+                  <img
+                    className="avatar__image"
+                    src={withPrefix(siteConfig.authorAvatar)}
+                    alt="user avatar"
+                  />
+                </Col>
+                <Col>
+                  <img
+                    className="logo__image"
+                    src={withPrefix(siteConfig.logo)}
+                    alt="c3 logo"
+                  />
+                </Col>
               </Row>
               <div className="social">
                 {siteConfig.social.linkedin && (
@@ -92,6 +98,12 @@ const Home = ({ className, location }) => {
           </Row>
           <Separator />
           <Timeline />
+          <Separator />
+          <Row>
+            <Col>
+              <Testimonies />
+            </Col>
+          </Row>
         </Container>
       </Wrapper>
     </Layout>

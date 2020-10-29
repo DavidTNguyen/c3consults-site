@@ -14,8 +14,8 @@ const Timeline = ({ className }) => (
         >
           <div className="inner">
             <span className="timeline__date">
-              <span className="timeline__month">{job.begin.month}</span>
-              <span className="timeline__year">{job.begin.year}</span>
+              {/* <span className="timeline__month">{job.begin.month}</span>
+              <span className="timeline__year">{job.begin.year}</span> */}
             </span>
             <div className="timeline__card">
               <h2 className="timeline__card-title">
@@ -76,7 +76,8 @@ export default styled(Timeline)`
     font-size: 12px;
     font-weight: 900;
     text-transform: uppercase;
-    background: ${({ theme }) => theme.colors.primary};
+    background:#BA0E0E;
+    // background: ${({ theme }) => theme.colors.primary};
     color: #fff;
     box-shadow: 0 0 0 7px ${({ theme }) => theme.colors.background};
   }
@@ -129,6 +130,7 @@ export default styled(Timeline)`
     }
   }
   .timeline__card-title {
+    // background: #BA0E0E
     background: ${({ theme }) => theme.colors.primary};
   }
   .timeline__card-title:after {
