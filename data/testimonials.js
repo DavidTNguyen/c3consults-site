@@ -12,14 +12,14 @@ export const testimonials = [
   
   {
     "id": "b",
-    "client": "Kevin L. Saunders",
-    "headshot": "Kevin-Saunders.png",
-    "title": "Director for Empowering and Restoring Adults – UpWorks",
-    "quote": "Understanding cultural differences is a critical part of being a good neighbor. Many individuals have best intentions, however their lack of recognizing bias, privilege, assumptions, and worldview differences leads to major gaps in communication with other ethnic groups. Khanh provides practical, easy to understand tools to help navigate many cultural land mines that typically are overlooked. UpWorks, has integrated Khanh’s Cultural Awareness training as a part of its “Life Advocate’ program that involve mentors and clients from diverse backgrounds. Life Advocates walk beside Upworks clients utilizing these all important skills Khanh introduces. If your church or organization works with people from diverse backgrounds I highly recommend Khanh to you!",
-    "pointOfInterest": 260,
-    "backgroundColor": "#5DBCD2"
+    "client": "Choua LeMay",
+    "headshot": "Chua-LeMay.png",
+    "title": "Intercultural Programs Manager, UNW - St. Paul",
+    "quote": "I invited Khanh to lead workshops on race, culture and Asian American women in leadership for my college student leader's training. I was impressed with the way she incorporated activities to help my students understand and contextualize difficult topics like systemic racism, white privilege, cultural nuances among other topics. What I appreciated most about Khanh is her perspective as a Vietnamese-American woman. There aren't enough Asian voices represented in this space and Khanh has been able to use her years of professional experience in predominantly white higher ed spaces to push the status quo rather than backing down when there's push back. Her resilient faith paired with her heart for justice is a force to be reckoned with. ",
+    "pointOfInterest": 80,
+    "backgroundColor": "#FEE3EC"
   },
-  
+
   {
     "id": "c",
     "client": "Rose Lee-Norman",
@@ -39,7 +39,18 @@ export const testimonials = [
     "pointOfInterest": 80,
     "backgroundColor": "#814A0E"
   },
-  
+
+  {
+    "id": "e",
+    "client": "Kevin L. Saunders",
+    "headshot": "Kevin-Saunders.png",
+    "title": "Director for Empowering and Restoring Adults – UpWorks",
+    "quote": "Understanding cultural differences is a critical part of being a good neighbor. Many individuals have best intentions, however their lack of recognizing bias, privilege, assumptions, and worldview differences leads to major gaps in communication with other ethnic groups. Khanh provides practical, easy to understand tools to help navigate many cultural land mines that typically are overlooked. UpWorks, has integrated Khanh’s Cultural Awareness training as a part of its “Life Advocate’ program that involve mentors and clients from diverse backgrounds. Life Advocates walk beside Upworks clients utilizing these all important skills Khanh introduces. If your church or organization works with people from diverse backgrounds I highly recommend Khanh to you!",
+    "pointOfInterest": 260,
+    "backgroundColor": "#5DBCD2"
+  }
+
+
 ]
 
 export const openSpring = { type: "spring", stiffness: 200, damping: 30 }

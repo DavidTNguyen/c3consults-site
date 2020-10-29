@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 
 const Testimony = ({ id, title, client, theme, headshot, quote }) => {
-  console.log('HEADSHOT:' + `/static/images/${headshot}`)
+  console.log(`card ${theme}`)
   return (
     <li className={`card ${theme}`}>
       <Card>
