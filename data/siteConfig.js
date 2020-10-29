@@ -21,6 +21,7 @@ module.exports = {
 
      `,
   skills: [
+    { name: 'Virtual or Live', level: 100 },
     {
       name: 'Measuring Cultural Intelligence',
       level: 100,
@@ -61,7 +62,6 @@ module.exports = {
       name: 'Immigration & Refugee Advocacy',
       level: 100,
     },
-    
   ],
   jobs: [
     /* more jobs here */
@@ -74,7 +74,7 @@ module.exports = {
       duration: null,
       occupation: 'Adjunct Professor',
       description:
-        'I have taught the following classes: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service.  I\'ve also presented locally and nationally on culture, leadership, injustice and dismantling stereotypes in the Asian American community.  ',
+        "I have taught the following classes: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service.  I've also presented locally and nationally on culture, leadership, injustice and dismantling stereotypes in the Asian American community.  ",
     },
     {
       company: 'CEEDS & ICF',
@@ -107,7 +107,7 @@ module.exports = {
       duration: '10 years',
       occupation: 'Associate Director of Campus Ministries',
       description:
-        'I directed the Global Leadership Program - leading, training and sending faculty and students to volunteer in service projects locally and around the world.  I also served on the Racial and Ethnic Diversity Committee, advised the Asian club, and organized a Civil Rights tour for faculty and students.'  ,
+        'I directed the Global Leadership Program - leading, training and sending faculty and students to volunteer in service projects locally and around the world.  I also served on the Racial and Ethnic Diversity Committee, advised the Asian club, and organized a Civil Rights tour for faculty and students.',
     },
     {
       company: 'YWAM',
