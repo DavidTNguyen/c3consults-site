@@ -35,7 +35,7 @@ export const testimonials = [
     "client": "Jon Lundberg",
     "headshot": "Jon-Lundberg.jpg",
     "title": "Equity and Engagement Program Manager – Urban Homeworks",
-    "quote": "Khanh Nguyễn brings a raw authenticity to her instruction and teaching that is both rare and powerful. Her unique story and experience in the areas of race, culture, and justice give her immense credibility for almost any sociological, theological, or other topic. She brings audiences with her on journeys of triumph and pain while motivating them to fulfill the calling of Christ in the world.",
+    "quote": "Khanh Nguyễn brings a raw authenticity to her instruction and teaching that is both rare and powerful. Her unique story and experience in the areas of race, culture, and justice give her immense credibility for almost any sociological, theological, or other topic. She brings audiences with her on journeys of triumph and pain while motivating them to fulfill their calling in the world.",
     "pointOfInterest": 80,
     "backgroundColor": "#814A0E"
   },
