@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { AnimateSharedLayout, AnimatePresence } from 'framer-motion'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
 import { FaLinkedin, FaEnvelope, FaFacebook } from 'react-icons/fa'
-import { Router } from '@reach/router'
 import { withPrefix } from 'gatsby'
 import loadable from '@loadable/component'
 import siteConfig from '../../data/siteConfig'
@@ -14,7 +12,6 @@ import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
 import Testimonies from '../components/testimonies'
-import Testimonial from '../components/testimonial'
 
 const Layout = loadable(() => import('../components/layout'))
 
@@ -33,7 +30,7 @@ const Home = ({ className, location }) => {
     )
   }
 
-  const title = siteConfig.siteTitle 
+  const title = siteConfig.siteTitle
   // const title = 'Under Construction!'
   const { keywords } = siteConfig
   const id = null
@@ -48,16 +45,20 @@ const Home = ({ className, location }) => {
           <Row>
             <Col xs={4} className="avatar">
               <Row>
-                <img
-                  className="avatar__image"
-                  src={withPrefix(siteConfig.authorAvatar)}
-                  alt="user avatar"
-                />
-                <img
-                  className="logo__image"
-                  src={withPrefix(siteConfig.logo)}
-                  alt="c3 logo"
-                />
+                <Col>
+                  <img
+                    className="avatar__image"
+                    src={withPrefix(siteConfig.authorAvatar)}
+                    alt="user avatar"
+                  />
+                </Col>
+                <Col>
+                  <img
+                    className="logo__image"
+                    src={withPrefix(siteConfig.logo)}
+                    alt="c3 logo"
+                  />
+                </Col>
               </Row>
               <div className="social">
                 {siteConfig.social.linkedin && (
@@ -100,12 +101,7 @@ const Home = ({ className, location }) => {
           <Separator />
           <Row>
             <Col>
-              <AnimateSharedLayout type="crossfade">
-                <Testimonies selectedId={id} />
-                <AnimatePresence>
-                  {id && <Testimonial id={id} key="item" />}
-                </AnimatePresence>
-              </AnimateSharedLayout>
+              <Testimonies />
             </Col>
           </Row>
         </Container>

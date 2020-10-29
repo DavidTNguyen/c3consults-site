@@ -13,10 +13,10 @@ module.exports = {
   <br/><br/>
   I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.   
   <br/><br/>
-  I enjoy using a variety of teaching methods such as cultural assessment tools, interactive games, workshops, and simulations.  
+  I enjoy using a variety of teaching methods such as cultural assessment tools, interactive games, workshops, and simulations and discussion.  
   My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
   <br/><br/>
-  I can customize my trainings from a 30 min "Ted Talk", 1 hour presentation, 3 hour interactive workshop, to a 5 week virtual series.  I can work with you to fit your needs.
+  I can customize my trainings and speaking from a 30 min -1 hour presentation, 3 hour interactive workshop, to a 5 week virtual series.  I can work with you to fit your needs.
 
 
      `,
@@ -34,7 +34,7 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'Envisioning and building Multi-ethnic churches',
+      name: 'Envisioning and building Multi-ethnic ministry',
       level: 100,
     },
     {
@@ -74,7 +74,7 @@ module.exports = {
       duration: null,
       occupation: 'Adjunct Professor',
       description:
-        'I have taught the following classes: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Missions.  I was the Associate Director of Campus Ministries directing the Global Service and Local Outreach Program for 10 years.  ',
+        'I have taught the following classes: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service.  I\'ve also presented locally and nationally on culture, leadership, injustice and dismantling stereotypes in the Asian American community.  ',
     },
     {
       company: 'CEEDS & ICF',
@@ -85,7 +85,7 @@ module.exports = {
       duration: null,
       occupation: 'Outreach Coordinator',
       description:
-        'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Uganda, and other central African countries',
+        'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Uganda, and other central African countries.',
     },
     {
       company: 'Upworks',
@@ -96,7 +96,7 @@ module.exports = {
       duration: null,
       occupation: 'Instructor',
       description:
-        'I provide Cultural Awareness training for "Life Advocates" mentoring diverse clients',
+        'I provide Cultural Awareness training for this non-profit organization.  Our "Life Advocates" mentor diverse clients overcoming various life challenges to create and execute goals for employment and/or higher education. ',
     },
     {
       company: 'University of NorthWestern',
@@ -107,12 +107,12 @@ module.exports = {
       duration: '10 years',
       occupation: 'Associate Director of Campus Ministries',
       description:
-        'I directed the Global Service Program - leading, training and sending faculty and students to volunteer in service projects locally and around the world.  I also served on the Racial and Ethnic Diversity Committee, advised the Asian club, and organized a Civil Rights tour for faculty and students.'  ,
+        'I directed the Global Leadership Program - leading, training and sending faculty and students to volunteer in service projects locally and around the world.  I also served on the Racial and Ethnic Diversity Committee, advised the Asian club, and organized a Civil Rights tour for faculty and students.'  ,
     },
     {
       company: 'YWAM',
       begin: {
-        month: 'sep',
+        month: 'oct',
         year: '2012',
       },
       duration: '3 years',
