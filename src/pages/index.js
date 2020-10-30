@@ -33,7 +33,7 @@ const Home = ({ className, location }) => {
   const title = siteConfig.siteTitle
   // const title = 'Under Construction!'
   const { keywords } = siteConfig
-  const id = null
+  // const id = null
 
   return (
     <Layout location={location}>
