@@ -4,7 +4,6 @@ import { config } from 'react-awesome-styled-grid'
 import siteConfig from '../../../data/siteConfig'
 
 const Timeline = ({ className }) => {
-  console.log('Timeline className: ' + className)
   return (
     <div className={className}>
       <h1>Experience</h1>
