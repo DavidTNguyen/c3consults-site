@@ -12,7 +12,7 @@ import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
 import Testimonies from '../components/testimonies'
-import TrainingFormat from '../components/trainingformat'
+import Offerings from '../components/offerings'
 
 const Layout = loadable(() => import('../components/layout'))
 
@@ -96,13 +96,21 @@ const Home = ({ className, location }) => {
             <Col xs={2} sm={4}>
               <Row>
                 <Skills title="Trainings Offered" skills={siteConfig.skills} />
-                <br />
-                <TrainingFormat />
               </Row>
             </Col>
           </Row>
           <Separator />
-          <Timeline />
+          <Row>
+            <Col>
+              <Offerings />
+            </Col>
+          </Row>
+          <Separator />
+          <Row>
+            <Col>
+              <Timeline />
+            </Col>
+          </Row>
           <Separator />
           <Row>
             <Col>
