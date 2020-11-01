@@ -23,17 +23,6 @@ export const testimonials = [
 
   {
     id: 'c',
-    client: 'Rose Lee-Norman',
-    headshot: 'Rose-Lee-Norman.jpg',
-    title: 'Associate Pastor of Formation',
-    quote:
-      'Bold truth-telling paired with biblical and theological faithfulness is a core competency in faith-based leadership today. Khanh Nguyễn embodies this convergence of expertise as an academician, facilitator, preacher, and woman of God. I have seen her take contentious, divisive, and complex topics regarding faith, race, politics, and economics and apply a thick theological framing where others often resign to a thin theology that is void of relevant application. Khanh marries theory and practice and offers a robust praxis for audiences around the Twin Cities and beyond. Khanh’s voice is integral in this moment in the Church and its gritty application in real life, and she does it all with courage, wit, intentionality, and grace. Khanh has something to offer not many possess and any organization or individual considering their next steps toward faith-filled cultural competency needs to contact Khanh Nguyen.',
-    pointOfInterest: 80,
-    backgroundColor: '#FEE3EC',
-  },
-
-  {
-    id: 'd',
     client: 'Jon Lundberg',
     headshot: 'Jon-Lundberg.png',
     title: 'Equity and Engagement Program Manager – Urban Homeworks',
@@ -41,6 +30,17 @@ export const testimonials = [
       'Khanh Nguyễn brings a raw authenticity to her instruction and teaching that is both rare and powerful. Her unique story and experience in the areas of race, culture, and justice give her immense credibility for almost any sociological, theological, or other topic. She brings audiences with her on journeys of triumph and pain while motivating them to fulfill their calling in the world.',
     pointOfInterest: 80,
     backgroundColor: '#814A0E',
+  },
+
+  {
+    id: 'd',
+    client: 'Rose Lee-Norman',
+    headshot: 'Rose-Lee-Norman.jpg',
+    title: 'Associate Pastor of Formation - Sanctuary Cov',
+    quote:
+      'Bold truth-telling paired with biblical and theological faithfulness is a core competency in faith-based leadership today. Khanh Nguyễn embodies this convergence of expertise as an academician, facilitator, preacher, and woman of God. I have seen her take contentious, divisive, and complex topics regarding faith, race, politics, and economics and apply a thick theological framing where others often resign to a thin theology that is void of relevant application. Khanh marries theory and practice and offers a robust praxis for audiences around the Twin Cities and beyond. Khanh’s voice is integral in this moment in the Church and its gritty application in real life, and she does it all with courage, wit, intentionality, and grace. Khanh has something to offer not many possess and any organization or individual considering their next steps toward faith-filled cultural competency needs to contact Khanh Nguyen.',
+    pointOfInterest: 80,
+    backgroundColor: '#FEE3EC',
   },
 
   {
