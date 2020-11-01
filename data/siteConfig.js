@@ -21,12 +21,13 @@ module.exports = {
      `,
   skills: [
     { name: 'Virtual or Live', level: 100 },
+    
     {
-      name: 'Measuring Cultural Intelligence',
+      name: 'Growing in Cultural Competency and Intelligence',
       level: 100,
     },
     {
-      name: 'Growing in Intercultural Competency',
+      name: 'IDI (Intercultural Development Inventory) Testing',
       level: 100,
     },
     {
@@ -34,23 +35,11 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'Envisioning and building Multi-ethnic ministry',
+      name: 'Building Multi-Ethnic Ministries',
       level: 100,
     },
     {
-      name: 'Learning from ethnic diversity',
-      level: 100,
-    },
-    {
-      name: 'Implicit Bias',
-      level: 100,
-    },
-    {
-      name: 'Theology of Culture',
-      level: 100,
-    },
-    {
-      name: 'Asian-American issues',
+      name: 'Education on Asian-American issues',
       level: 100,
     },
     {
