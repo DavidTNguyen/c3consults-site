@@ -45,7 +45,7 @@ const Offerings = ({ className }) => {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/images/Editorial.jpg" alt="Pastor Kevin's book" />
+            <img src="/images/Signed-Book.jpg" alt="Pastor Kevin's book" />
             <h1 className="legend">www.staceybjones.com</h1>
           </a>
         </div>
