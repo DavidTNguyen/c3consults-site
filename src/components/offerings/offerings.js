@@ -6,7 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const Offerings = ({ className }) => {
   return (
     <div className={className}>
-      <h1>Speaking/Training Services</h1>
+      <h2>Speaking/Training Services</h2>
       <Carousel
         autoPlay
         showArrows

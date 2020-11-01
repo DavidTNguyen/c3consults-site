@@ -6,7 +6,7 @@ import { testimonials } from '../../../data/testimonials'
 const Testimonies = ({ className }) => {
   return (
     <div className={className}>
-      <h1>Testimonies</h1>
+      <h2>Testimonies</h2>
       {testimonials.map(testimony => (
         <article
           key={testimony.id}
