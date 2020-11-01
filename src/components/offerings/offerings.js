@@ -23,7 +23,7 @@ const Offerings = ({ className }) => {
           <h1 className="legend">Speaking Engagement</h1>
         </div>
         <div>
-          <img src="/images/Webinar.jpg" alt="Zoom Webinar"/>
+          <img src="/images/Webinar.jpg" alt="Zoom Webinar" />
           <h1 className="legend">Webinar</h1>
         </div>
         <div>
@@ -32,13 +32,22 @@ const Offerings = ({ className }) => {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/images/Pastor-Hip-Hop.png" alt="Khanh's at launch event for Pastor's Kevin's book"/>
+            <img
+              src="/images/Pastor-Hip-Hop.png"
+              alt="Khanh's at launch event for Pastor's Kevin's book"
+            />
             <h1 className="legend">Writing</h1>
           </a>
         </div>
         <div>
-          <img src="/images/Editorial.jpg" alt="Pastor Kevin's book" />
-          <h1 className="legend">www.staceybjones.com</h1>
+          <a
+            href="https://www.staceybjones.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src="/images/Editorial.jpg" alt="Pastor Kevin's book" />
+            <h1 className="legend">www.staceybjones.com</h1>
+          </a>
         </div>
       </Carousel>
     </div>
