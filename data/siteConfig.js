@@ -117,7 +117,7 @@ module.exports = {
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '/images/road-to-dalat.jpg',
-  googleAnalyticsId: 'UA-000000000-1',
+  googleAnalyticsId: ['G-9J2JV09MQY','G-F9H93Y061G'],
   background_color: '#ffffff',
   theme_color: '#25303B',
   fontColor: '#000000cc',
