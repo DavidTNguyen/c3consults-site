@@ -17,12 +17,16 @@ const Offerings = ({ className }) => {
         stopOnHover
         swipeable
         emulateTouch
-        dynamicHeight={false}
+        dynamicHeight
         className="carousel-background"
       >
         <div>
           <h4>Speaking Engagement</h4>
           <img src="/images/Preaching.png" alt="Khanh's Preaching" />
+        </div>
+        <div>
+          <h4>Workshop</h4>
+          <img src="/images/Linked-Workshop.jpg" alt="Linked Workshop" />
         </div>
         <div>
           <h4>Webinar</h4>
@@ -64,8 +68,6 @@ export default styled(Offerings)`
 
   .carousel-background {
     margin: auto;
-    overflow: hidden;
-    height: 500px;
     width: 100%;
   }
 `

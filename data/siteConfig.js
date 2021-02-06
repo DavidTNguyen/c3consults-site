@@ -21,7 +21,7 @@ module.exports = {
      `,
   skills: [
     { name: 'Virtual or Live', level: 100 },
-    
+
     {
       name: 'Growing in Cultural Competency and Intelligence',
       level: 100,
@@ -65,15 +65,15 @@ module.exports = {
         "I have taught the following classes: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service.  I've also presented locally and nationally on culture, leadership, injustice and dismantling stereotypes in the Asian American community.  ",
     },
     {
-      company: 'CEEDS & ICF',
+      company: ' Multi-Ethnic Work',
       begin: {
-        month: 'apr',
-        year: '2018',
+        month: 'jan',
+        year: '1995',
       },
       duration: null,
-      occupation: 'Outreach Coordinator',
+      occupation: 'Leader',
       description:
-        'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Uganda, and other central African countries.',
+        'I have held various leadership roles for over 25 years in multi-ethnic ministries and churches locally and abroad',
     },
     {
       company: 'Upworks',
@@ -84,7 +84,18 @@ module.exports = {
       duration: null,
       occupation: 'Instructor',
       description:
-        'I provide Cultural Awareness training for this non-profit organization.  Our "Life Advocates" mentor diverse clients overcoming various life challenges to create and execute goals for employment and/or higher education. ',
+        'I provide Cultural Awareness training for this non-profit organization.  Our "Life Advocates" mentor diverse clients overcoming addictions, incarceration and abuse to help them execute goals for employment and/or higher education. ',
+    },
+    {
+      company: 'CEEDS & ICF',
+      begin: {
+        month: 'apr',
+        year: '2018',
+      },
+      duration: null,
+      occupation: 'Outreach Coordinator',
+      description:
+        'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Uganda, and other central African countries.',
     },
     {
       company: 'University of NorthWestern',
@@ -117,7 +128,7 @@ module.exports = {
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '/images/road-to-dalat.jpg',
-  googleAnalyticsId: ['G-9J2JV09MQY','G-F9H93Y061G'],
+  googleAnalyticsId: ['G-9J2JV09MQY', 'G-F9H93Y061G'],
   background_color: '#ffffff',
   theme_color: '#25303B',
   fontColor: '#000000cc',

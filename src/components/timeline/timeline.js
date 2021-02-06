@@ -21,7 +21,7 @@ const Timeline = ({ className }) => {
               <div className="timeline__card">
                 <h2 className="timeline__card-title">
                   {job.company
-                    ? `${job.occupation} at ${job.company}`
+                    ? `${job.occupation}: ${job.company}`
                     : `${job.occupation}`}
                   <br />
                   <small className="timeline__card-title--small">
