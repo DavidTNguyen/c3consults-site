@@ -22,24 +22,24 @@ const Offerings = ({ className }) => {
         className="carousel-background"
       >
         <div>
-          <h4>Speaking Engagement</h4>
+          <h3>Speaking Engagement</h3>
           <img src="/images/Preaching.png" alt="Khanh's Preaching" />
         </div>
         <div>
-          <h4>Workshop</h4>
+          <h3>Workshop</h3>
           <img src="/images/Linked-Workshop.jpg" alt="Linked Workshop" />
         </div>
         <div>
-          <h4>Webinar</h4>
+          <h3>Webinar</h3>
           <img src="/images/Webinar.jpg" alt="Zoom Webinar" />
         </div>
         <div>
-          <h4>Writing</h4>
           <a
             href="https://www.staceybjones.com/"
             rel="noreferrer"
             target="_blank"
           >
+            <h3>Writing</h3>
             <img
               src="/images/Pastor-Hip-Hop.png"
               alt="Khanh's at launch event for Pastor's Stacy's book"
@@ -47,12 +47,12 @@ const Offerings = ({ className }) => {
           </a>
         </div>
         <div>
-          <h4>Book Endorsement</h4>
           <a
             href="https://www.staceybjones.com/"
             rel="noreferrer"
             target="_blank"
           >
+            <h3>Book Endorsement</h3>
             <img src="/images/Signed-Book.jpg" alt="Pastor Stacy's book" />
           </a>
         </div>
