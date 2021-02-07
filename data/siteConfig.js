@@ -6,7 +6,7 @@ module.exports = {
   authorAvatar: '/images/headshot.jpg',
   logo: '/images/C3-logo-bold-no-bg.png',
   authorDescription: `My family came as refugees from Vietnam and we were sponsored by a church that helped us settle in the Twin Cities.  
-  Growing up navigating multiple cultures, my service globally, travels to 22 countries,, experience as a university professor, work with African refugees and diverse organizations 
+  Growing up navigating multiple cultures, my service globally, travels to 22 countries, experience as a university professor, work with African refugees and diverse organizations 
   have led me to see the importance of growing in 
   cultural and racial intelligence and competency.  <br/><br/>
   I educate, speak on and provide training in cultural competency, racial justice, ethnic diversity, immigration & refugee advocacy and Asian American topics.
@@ -34,14 +34,14 @@ module.exports = {
       level: 100,
     },
     {
-      name: 'Introduction to Multi-Ethnic Church Ministry',
+      name: 'Multi-Ethnic Church Ministry',
       description:
         'Dr. Martin Luther King Jr. famously said the 11 O’clock hour is the most segregated hour of the week. Learn the history of the Multi-Ethnic Church movement including why the church has segregated and different models of historically multi-ethnic churches.   Gain a basic understanding of the Why, What, and How of multi-ethnic church ministry from a Biblical Perspective. Participate in interactive Cultural Competency activities or take assessments to help you gain a better understanding of cultural awareness. ',
       level: 100,
     },
     {
       name: 'Immigration and Refugee Advocacy',
-      description: `Are we a land of <u><i>immigrants</i></u> or aren’t we? What does history teach about who’s "in" and who's "out"? How have laws in the U.S. benefited some and restricted others? What does scripture say about how to treat immigrants justly? What are some myths that we believe about immigrants and refugees that need to be dismantled? How do we discern what the truth is? <u>This includes</u> my story as a refugee from Vietnam and my work with African refugees.`,
+      description: `Are we a land of immigrants or aren’t we? What does history teach about who’s "in" and who's "out"? How have laws in the U.S. benefited some and restricted others? What does scripture say about how to treat immigrants justly? What are some myths that we believe about immigrants and refugees that need to be dismantled? How do we discern what the truth is? This includes my story as a refugee from Vietnam and work with African refugees.`,
       level: 100,
     },
     {
@@ -53,7 +53,7 @@ module.exports = {
     {
       name: 'Individualized Cultural Coaching',
       description:
-        'An individualized coaching session that digs deeper into your current approach to cultural issues. Take the Intercultural Development Inventory (IDI), a premier tool to assess your intercultural competency. Get a personalized debrief of your results and learn where you are on a <u>five stage</u> continuum. Receive personal coaching tailored to your needs and current perspectives to grow.',
+        'An individualized coaching session that digs deeper into your current approach to cultural issues. Take the Intercultural Development Inventory (IDI), a premier tool to assess your intercultural competency. Get a personalized debrief of your results and learn where you are on a five stage continuum. Receive personal coaching tailored to your needs and current perspectives to grow.',
       level: 100,
     },
   ],
