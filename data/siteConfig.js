@@ -20,34 +20,40 @@ module.exports = {
 
      `,
   skills: [
-    { name: 'Virtual or Live', level: 100 },
-
     {
-      name: 'Growing in Cultural Competency and Intelligence',
+      name: 'Cultural Competency & Diversity',
+      description: `Understand and grow in Cultural Competency and Intelligence. Learn how to adapt to different environments and learn from different cultures especially those who have been marginalized.  Utilize various assessments to learn about:
+        <br/> <br/> 
+        <ol><li> Implicit bias</li><li>Four dimensions of cultural intelligence </li> <li> The Intercultural Development Inventory a premier tool measures intercultural competency on a five stage continuum. </li></ol>`,
       level: 100,
     },
     {
-      name: 'IDI (Intercultural Development Inventory) Testing',
+      name: 'Anti-Racism & Racial Justice',
+      description:
+        'Addressing racism takes more than simply being kind to one another. Interpersonal and institutional racism are only some of the issues that need to be addressed. How did whites become white, Africans black, Asians yellow, and Natives red? Learn about the 4 Layers of Racism,  how to tackle them, and how bogus science used color to develop racial hierarchies, and steps we can take to disrupt racism. ',
       level: 100,
     },
     {
-      name: 'Racial justice & inequality awareness',
+      name: 'Introduction to Multi-Ethnic Church Ministry',
+      description:
+        'Dr. Martin Luther King Jr. famously said the 11 O’clock hour is the most segregated hour of the week. Learn the history of the Multi-Ethnic Church movement including why the church has segregated and different models of historically multi-ethnic churches.   Gain a basic understanding of the Why, What, and How and models of multi-ethnic church ministry from a Biblical Perspective. Participate in interactive Cultural Competency activities or take assessments to help you gain a better understanding of cultural awareness. ',
       level: 100,
     },
     {
-      name: 'Building Multi-Ethnic Ministries',
+      name: 'Immigration and Refugee Advocacy',
+      description: `Are we a land of <u><i>immigrants</i></u> or aren’t we? What does history teach about who’s "in" and who's "out"? How have laws in the U.S. benefited some and restricted others? What does scripture say about how to treat immigrants justly? What are some myths that we believe about immigrants and refugees? How do we discern what the truth is? <u>This includes</u> my story as a refugee from Vietnam and my work with African refugees.`,
       level: 100,
     },
     {
-      name: 'Education on Asian-American issues',
+      name: 'Asian in America',
+      description:
+        'Not all Asians are crazy rich or good at math. How did the Asian American Community move from “yellow peril” to Model Minority? Where is the Asian place on issues of race? How do we understand the Asian American demographic and the importance of seeing Asian Americans? Learn the difference between stereotypes and generalizations in comparing East versus West Cultures.',
       level: 100,
     },
     {
-      name: 'Global service training',
-      level: 100,
-    },
-    {
-      name: 'Immigration & Refugee Advocacy',
+      name: 'Individualized Cultural Coaching',
+      description:
+        'An individualized method that digs deeper into your current approach to cultural issues. Take the Intercultural Development Inventory (IDI), a premier tool to assess your intercultural competency. Get a personalized debrief of your results and learn where you are on a <u>five stage</u> continuum. Receive personal coaching tailored to your needs and current perspectives to grow.',
       level: 100,
     },
   ],

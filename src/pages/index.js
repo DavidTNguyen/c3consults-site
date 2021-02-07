@@ -9,7 +9,7 @@ import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
 import About from '../components/about'
-import Skills from '../components/skills'
+import Skill from '../components/skill'
 import Timeline from '../components/timeline'
 import Testimonies from '../components/testimonies'
 import Offerings from '../components/offerings'
@@ -97,7 +97,7 @@ const Home = ({ className, location }) => {
           <Row>  
             <Col>
               <Row>
-                <Skills title="Trainings Offered" skills={siteConfig.skills} />
+                <Skill/>
               </Row>
             </Col>
           </Row>
