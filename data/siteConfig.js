@@ -122,8 +122,7 @@ module.exports = {
   ],
   social: {
     linkedin: 'https://www.linkedin.com/in/khanh-nguyen-18838830/',
-    email: 'c3consults@gmail.com',
-    facebook: 'https://www.facebook.com/khanh.nguyen.3192',
+    email: 'mailto://c3consults@gmail.com',
   },
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.

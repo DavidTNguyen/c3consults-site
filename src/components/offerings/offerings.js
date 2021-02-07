@@ -9,6 +9,7 @@ const Offerings = ({ className }) => {
       <h2>Speaking/Training Services</h2>
       <Carousel
         autoPlay
+        interval="2000"
         centermode
         showArrows
         showIndicators
@@ -17,7 +18,7 @@ const Offerings = ({ className }) => {
         stopOnHover
         swipeable
         emulateTouch
-        dynamicHeight
+        dynamicHeight={true}
         className="carousel-background"
       >
         <div>
@@ -41,18 +42,18 @@ const Offerings = ({ className }) => {
           >
             <img
               src="/images/Pastor-Hip-Hop.png"
-              alt="Khanh's at launch event for Pastor's Kevin's book"
+              alt="Khanh's at launch event for Pastor's Stacy's book"
             />
           </a>
         </div>
         <div>
-          <h4>Pastor Hip-Hop</h4>
+          <h4>Book Endorsement</h4>
           <a
             href="https://www.staceybjones.com/"
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/images/Signed-Book.jpg" alt="Pastor Kevin's book" />
+            <img src="/images/Signed-Book.jpg" alt="Pastor Stacy's book" />
           </a>
         </div>
       </Carousel>
@@ -68,6 +69,5 @@ export default styled(Offerings)`
 
   .carousel-background {
     margin: auto;
-    width: 100%;
   }
 `

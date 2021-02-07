@@ -34,7 +34,7 @@ export const testimonials = [
 
   {
     id: 'd',
-    client: 'Rose Lee-Norman',
+    client: 'Dr. Rose Lee-Norman',
     headshot: 'Rose-Lee-Norman.jpg',
     title: 'Associate Pastor of Formation - Sanctuary Cov',
     quote:
