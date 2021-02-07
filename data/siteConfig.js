@@ -56,6 +56,11 @@ module.exports = {
         'An individualized coaching session that digs deeper into your current approach to cultural issues. Take the Intercultural Development Inventory (IDI), a premier tool to assess your intercultural competency. Get a personalized debrief of your results and learn where you are on a five stage continuum. Receive personal coaching tailored to your needs and current perspectives to grow.',
       level: 100,
     },
+    {
+      name: 'Intercultural Development Inventory - IDI ®',
+      description: `<img src="/images/idi_logo.png" style="float: left"/>I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.`,
+      level: 100,
+    },
   ],
   jobs: [
     /* more jobs here */
