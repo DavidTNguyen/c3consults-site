@@ -25,7 +25,7 @@ const Skill = ({ className }) => {
   return(
   
     <div className={className}>
-      <h2>Training Offer</h2>
+      <h2>Trainings Offered</h2>
 
       {siteConfig.skills &&
         siteConfig.skills.map(skill => (
