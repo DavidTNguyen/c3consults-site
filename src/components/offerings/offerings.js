@@ -27,7 +27,7 @@ const Offerings = ({ className }) => {
         </div>
         <div>
           <h3>Workshop</h3>
-          <img src="/images/Linked-Workshop.jpg" alt="Linked Workshop" />
+          <img src="/images/Linked-Workshop.png" alt="Linked Workshop" />
         </div>
         <div>
           <h3>Webinar</h3>
@@ -69,5 +69,13 @@ export default styled(Offerings)`
 
   .carousel-background {
     margin: auto;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  a img {
+    display: block;
   }
 `
