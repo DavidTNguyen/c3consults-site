@@ -91,7 +91,7 @@ const Home = ({ className, location }) => {
           </Row>
           <Row>
             <Col>
-              <About title="About" text={siteConfig.authorDescription} />
+              <About title="Bio" text={siteConfig.authorDescription} />
             </Col>
           </Row>
           <Row>  

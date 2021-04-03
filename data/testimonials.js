@@ -34,6 +34,17 @@ export const testimonials = [
 
   {
     id: 'd',
+    client: 'Nash Shaikh',
+    headshot: 'Nash-Shaikh.jpg',
+    title: 'Director, Chief of Staff to the President & CEO Blue Cross Blue Shield MN',
+    quote:
+      'Khanh knocked it out of the ball park!',
+    pointOfInterest: 80,
+    backgroundColor: '#814A0E',
+  },
+
+  {
+    id: 'e',
     client: 'Dr. Rose Lee-Norman',
     headshot: 'Rose-Lee-Norman.jpg',
     title: 'Associate Pastor of Formation - Sanctuary Cov',
@@ -44,12 +55,12 @@ export const testimonials = [
   },
 
   {
-    id: 'e',
-    client: 'Kevin L. Saunders',
-    headshot: 'Kevin-Saunders.png',
-    title: 'Director for Empowering and Restoring Adults – UpWorks',
+    id: 'f',
+    client: 'Lonnie Gonzales',
+    headshot: 'Lonnie-Gonzales.jpg',
+    title: 'City Director, LINC Houston',
     quote:
-      'Understanding cultural differences is a critical part of being a good neighbor. Many individuals have best intentions, however their lack of recognizing bias, privilege, assumptions, and worldview differences leads to major gaps in communication with other ethnic groups. Khanh provides practical, easy to understand tools to help navigate many cultural land mines that typically are overlooked. UpWorks, has integrated Khanh’s Cultural Awareness training as a part of its “Life Advocate’ program that involve mentors and clients from diverse backgrounds. Life Advocates walk beside Upworks clients utilizing these all important skills Khanh introduces. If your church or organization works with people from diverse backgrounds I highly recommend Khanh to you!',
+      "I appreciate Khanh Nguyen's professional and ministerial approach to her training. She drew me into a willingness to struggle with words like justice and racism. I feel empowered and emboldened not just to talk about hard things but to take action. If you are ready to be informed, inspired, and ignited don't pass up on this opportunity.",
     pointOfInterest: 260,
     backgroundColor: '#5DBCD2',
   },
