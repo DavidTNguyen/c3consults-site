@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "Hi! I'm Khanh Nguyễn!",
+  siteTitle: "",
   siteDescription: `Cultural Competency Consulting `,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
