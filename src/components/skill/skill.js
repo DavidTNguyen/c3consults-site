@@ -22,20 +22,18 @@ const Accordion = ({ title, children }) => {
 }
 
 const Skill = ({ className }) => {
-  return(
-  
+  return (
     <div className={className}>
       <h2>Trainings Offered</h2>
 
       {siteConfig.skills &&
         siteConfig.skills.map(skill => (
-        <Accordion key={skill.name} title={skill.name}>
-          {skill.description}
-        </Accordion>
-      ))}
+          <Accordion key={skill.name} title={skill.name}>
+            {skill.description}
+          </Accordion>
+        ))}
     </div>
   )
-
 }
 
 export default styled(Skill)`

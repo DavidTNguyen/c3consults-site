@@ -8,6 +8,4 @@ const About = ({ className, title = 'Bio', text = '' }) => (
   </div>
 )
 
-export default styled(About)`
-  
-`
+export default styled(About)``
