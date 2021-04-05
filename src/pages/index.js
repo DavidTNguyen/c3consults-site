@@ -8,6 +8,7 @@ import siteConfig from '../../data/siteConfig'
 import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
+import Videos from '../components/videos'
 import About from '../components/about'
 import Skill from '../components/skill'
 import Timeline from '../components/timeline'
@@ -91,13 +92,19 @@ const Home = ({ className, location }) => {
           </Row>
           <Row>
             <Col>
+              <Videos />
+            </Col>
+          </Row>
+          <Separator />
+          <Row>
+            <Col>
               <About title="Bio" text={siteConfig.authorDescription} />
             </Col>
           </Row>
-          <Row>  
+          <Row>
             <Col>
               <Row>
-                <Skill/>
+                <Skill />
               </Row>
             </Col>
           </Row>
