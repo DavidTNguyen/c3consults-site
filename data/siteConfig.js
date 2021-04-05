@@ -6,16 +6,16 @@ module.exports = {
   authorAvatar: '/images/headshot.jpg',
   logo: '/images/C3-logo-bold-no-bg.png',
   authorDescription: `My family came as refugees from Vietnam and we were sponsored by a church that helped us settle in the Twin Cities.  
-  Growing up navigating multiple cultures, my service globally, travels to 22 countries, experience as a university professor, work with African refugees and diverse organizations 
+  Growing up navigating multiple cultures, my service globally, travels to 22 countries, experience teaching in Higher Ed., work with African refugees and diverse organizations 
   have led me to see the importance of growing in 
   cultural and racial intelligence and competency.  <br/><br/>
   I educate, speak on and provide training in cultural competency, racial justice, ethnic diversity, immigration & refugee advocacy and Asian American topics.
   <br/><br/>
   I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.   
   <br/><br/>
-  I enjoy using a variety of teaching methods such as cultural assessment tools, interactive games, workshops, discussion and simulations with audience participation. My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
+  Learning should be fun, engagin, and thought provoking so I employ a variety of teaching methods such as cultural assessment tools, games, workshops, discussion and interactive simulations. My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
   <br/><br/>
-  I can customize my trainings and speaking from a 30 min -1 hour presentation, 3 hour interactive workshop, to a 5 week virtual series.  I can work with you to fit your needs.
+  I can customize my trainings from a 30 min speaking engagement, 1 hour webinar, 1/2 - full day interactive workshop, to a 5 week virtual series.  I'd love to work with you or adapt to fit your needs.
 
 
      `,
@@ -47,7 +47,7 @@ module.exports = {
     {
       name: 'Asian in America',
       description:
-        'Not all Asians are crazy rich or good at math. How did the Asian American Community move from “yellow peril” to Model Minority? Where is the Asian place on issues of race? How do we understand the Asian American demographic and the importance of seeing Asian Americans? Learn the difference between stereotypes and generalizations in comparing East versus West Cultures.',
+        'With the rise in Anti-Asian racism it is more urgent than ever to address issues concerning the Asian-American community.  Learn the history of xenophopia and that not all Asians are crazy rich or good at math. How did the Asian American Community move from “yellow peril” to Model Minority? Where is the Asian place on issues of race? How do we understand the Asian American demographic and the importance of seeing Asian Americans? Learn the difference between stereotypes and generalizations in comparing East versus West Cultures.',
       level: 100,
     },
     {
@@ -65,67 +65,39 @@ module.exports = {
   jobs: [
     /* more jobs here */
     {
-      company: 'University of Northwestern St. Paul',
-      begin: {
-        month: 'sep',
-        year: '2011',
-      },
-      duration: null,
-      occupation: 'Adjunct Professor',
-      description:
-        "I have taught the following classes: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service.  I've also presented locally and nationally on culture, leadership, injustice and dismantling stereotypes in the Asian American community.  ",
-    },
-    {
       company: ' Multi-Ethnic Work',
-      begin: {
-        month: 'jan',
-        year: '1995',
-      },
-      duration: null,
       occupation: 'Leader',
       description:
-        'I have held various leadership roles for over 25 years in multi-ethnic ministries and churches locally and abroad',
+        "I have held various leadership roles for over 25 years doing multi-ethnic work in organizations and churches locally and abroad.  I've traveled to 5 continents and over 20 countries sending and leading teams to serve globally. I've also spoken locally and nationally on culture, leadership, injustice and dismantling stereotypes of and tackling racism toward the Asian American community. ",
+    },
+    {
+      company: 'University of Northwestern St. Paul',
+      
+      occupation: 'Adjunct Instructor',
+      description:
+        "I have taught courses such as: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service. I've spoken in workshops to students, faculty and staff on issues of intercultural competency.  ",
     },
     {
       company: 'Upworks',
-      begin: {
-        month: 'dec',
-        year: '2016',
-      },
-      duration: null,
+      
       occupation: 'Instructor',
       description:
         'I provide Cultural Awareness training for this non-profit organization.  Our "Life Advocates" mentor diverse clients overcoming addictions, incarceration and abuse to help them execute goals for employment and/or higher education. ',
     },
     {
       company: 'CEEDS & ICF',
-      begin: {
-        month: 'apr',
-        year: '2018',
-      },
-      duration: null,
       occupation: 'Outreach Coordinator',
       description:
         'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Uganda, and other central African countries.',
     },
     {
       company: 'University of NorthWestern',
-      begin: {
-        month: 'sep',
-        year: '2012',
-      },
-      duration: '10 years',
       occupation: 'Associate Director of Campus Ministries',
       description:
         'I directed the Global Leadership Program - leading, training and sending faculty and students to volunteer in service projects locally and around the world.  I also served on the Racial and Ethnic Diversity Committee, advised the Asian club, and organized a Civil Rights tour for faculty and students.',
     },
     {
       company: 'YWAM',
-      begin: {
-        month: 'oct',
-        year: '2012',
-      },
-      duration: '3 years',
       occupation: 'Team Leader',
       description:
         'I led, and trained participants in global service teams to Hawaii, Vietnam, Thailand, and Japan.',

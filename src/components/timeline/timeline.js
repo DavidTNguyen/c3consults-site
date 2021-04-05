@@ -10,7 +10,7 @@ const Timeline = ({ className }) => {
       {siteConfig.jobs &&
         siteConfig.jobs.map(job => (
           <article
-            key={job.begin.month + job.begin.year}
+            // key={job.begin.month + job.begin.year}
             className="timeline__item animate-on-scroll"
           >
             <div className="inner">
@@ -25,7 +25,7 @@ const Timeline = ({ className }) => {
                     : `${job.occupation}`}
                   <br />
                   <small className="timeline__card-title--small">
-                    ({job.duration || 'present'})
+                    {/* ({job.duration || 'present'}) */}
                   </small>
                 </h2>
                 <p>{job.description}</p>
