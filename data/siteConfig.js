@@ -13,7 +13,7 @@ module.exports = {
   <br/><br/>
   I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.   
   <br/><br/>
-  Learning should be fun, engagin, and thought provoking so I employ a variety of teaching methods such as cultural assessment tools, games, workshops, discussion and interactive simulations. My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
+  To make learning fun and engaging, I employ a variety of teaching methods such as cultural assessment tools, games, workshops, discussion and interactive simulations. My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
   <br/><br/>
   I can customize my trainings from a 30 min speaking engagement, 1 hour webinar, 1/2 - full day interactive workshop, to a 5 week virtual series.  I'd love to work with you or adapt to fit your needs.
 
