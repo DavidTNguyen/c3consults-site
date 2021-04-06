@@ -23,7 +23,7 @@ const Videos = ({ className }) => {
   const customRenderThumb = (children) =>
     children.map(item => {
       const videoId = getVideoId(item.props.url)
-      return <img src={getVideoThumb(videoId)} />
+      return <img src={getVideoThumb(videoId)} alt={"Video Thumb " + videoId}/>
     })
 
   return (

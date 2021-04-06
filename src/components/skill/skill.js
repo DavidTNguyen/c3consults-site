@@ -8,6 +8,9 @@ const Accordion = ({ title, children }) => {
     <div className="accordion-wrapper">
       <div
         className={`accordion-title ${isOpen ? 'open' : ''}`}
+        role="button"
+        tabIndex={-1}
+        onKeyDown={() => setOpen(!isOpen)}
         onClick={() => setOpen(!isOpen)}
       >
         {title}
