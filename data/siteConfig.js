@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "",
+  siteTitle: '',
   siteDescription: `Cultural Competency Consulting `,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
@@ -15,10 +15,19 @@ module.exports = {
   <br/><br/>
   To make learning fun and engaging, I employ a variety of teaching methods such as cultural assessment tools, games, workshops, discussion and interactive simulations. My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
   <br/><br/>
-  I can customize my trainings from a 30 min speaking engagement, 1 hour webinar, 1/2 - full day interactive workshop, to a 5 week virtual series.  I'd love to work with you or adapt to fit your needs.
-
-
-     `,
+  I can customize my trainings from a 30 min speaking engagement, 1 hour webinar, 1/2 - full day interactive workshop, to a 5 week virtual series.  I'd love to work with you or adapt to fit your needs.`,
+  videos: [
+    {
+      playing: true,
+      key: 'promo',
+      url: 'https://www.youtube.com/embed/9LAVC2kUOzo',
+    },
+    {
+      playing: false,
+      key: 'aapi',
+      url: 'https://www.youtube.com/embed/nPy1n8vIfC0',
+    },
+  ],
   skills: [
     {
       name: 'Cultural Competency & Diversity',
@@ -72,14 +81,14 @@ module.exports = {
     },
     {
       company: 'University of Northwestern St. Paul',
-      
+
       occupation: 'Adjunct Instructor',
       description:
         "I have taught courses such as: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service. I've spoken in workshops to students, faculty and staff on issues of intercultural competency.  ",
     },
     {
       company: 'Upworks',
-      
+
       occupation: 'Instructor',
       description:
         'I provide Cultural Awareness training for this non-profit organization.  Our "Life Advocates" mentor diverse clients overcoming addictions, incarceration and abuse to help them execute goals for employment and/or higher education. ',
