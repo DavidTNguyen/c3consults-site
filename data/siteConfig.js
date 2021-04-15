@@ -30,7 +30,7 @@ module.exports = {
   ],
   resources: [
     {
-      title: 'Anti-Asian Violence',
+      title: 'Transform Minnesota',
       url:
         'https://transformmn.org/event/anti-asian-violence/?fbclid=IwAR2fkoTp2bfIV-pEm0WNe7-CWkGyvaDbhlbZL_XEIxl8I-vrQbQ0h2VA_jo',
       image: '/images/anti_asian_violence_transform_mn.png',
@@ -39,6 +39,12 @@ module.exports = {
       title: 'Black/Asian Solidarity',
       url: 'https://www.facebook.com/RyanDFB/posts/10158267542473450',
       image: '/images/candid_conversation_ryan_daniel.jpg',
+    },
+    {
+      title: 'Anti-Asian Racism',
+      url:
+        'https://us02web.zoom.us/webinar/register/1016184180718/WN_vVUMZw6LQniOr8TnzNSxdg',
+      image: '/images/kairos_webinar_anti_asian_violence.png',
     },
   ],
   skills: [
