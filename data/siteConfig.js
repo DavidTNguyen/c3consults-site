@@ -28,6 +28,19 @@ module.exports = {
       url: 'https://www.youtube.com/embed/nPy1n8vIfC0',
     },
   ],
+  resources: [
+    {
+      title: 'Anti-Asian Violence',
+      url:
+        'https://transformmn.org/event/anti-asian-violence/?fbclid=IwAR2fkoTp2bfIV-pEm0WNe7-CWkGyvaDbhlbZL_XEIxl8I-vrQbQ0h2VA_jo',
+      image: '/images/anti_asian_violence_transform_mn.png',
+    },
+    {
+      title: 'Black/Asian Solidarity',
+      url: 'https://www.facebook.com/RyanDFB/posts/10158267542473450',
+      image: '/images/candid_conversation_ryan_daniel.jpg',
+    },
+  ],
   skills: [
     {
       name: 'Cultural Competency & Diversity',
@@ -116,8 +129,8 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/khanh-nguyen-18838830/',
     email: 'mailto://c3consults@gmail.com',
   },
-  siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
-  pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
+  siteUrl: 'https://github.com/DavidTNguyen/c3consults-site',
+  pathPrefix: '/c3consults-site', // Note: it must *not* have a trailing slash.
   siteCover: '/images/road-to-dalat.png',
   googleAnalyticsId: ['G-9J2JV09MQY', 'G-F9H93Y061G'],
   background_color: '#ffffff',
@@ -130,6 +143,10 @@ module.exports = {
     {
       label: 'Home',
       url: '/',
+    },
+    {
+      label: 'Resources',
+      url: '/resource',
     },
   ],
 }
