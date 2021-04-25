@@ -30,21 +30,24 @@ module.exports = {
   ],
   resources: [
     {
-      title: 'Transform Minnesota',
-      url:
-        'https://transformmn.org/event/anti-asian-violence/?fbclid=IwAR2fkoTp2bfIV-pEm0WNe7-CWkGyvaDbhlbZL_XEIxl8I-vrQbQ0h2VA_jo',
-      image: '/images/anti_asian_violence_transform_mn.png',
-    },
-    {
       title: 'Black/Asian Solidarity',
-      url: 'https://www.facebook.com/RyanDFB/posts/10158267542473450',
+      url: 'https://www.facebook.com/586908449/videos/10158274147193450/',
       image: '/images/candid_conversation_ryan_daniel.jpg',
     },
     {
-      title: 'Anti-Asian Racism',
-      url:
-        'https://us02web.zoom.us/webinar/register/1016184180718/WN_vVUMZw6LQniOr8TnzNSxdg',
+      title: 'Addressing Anti-Asian Racism',
+      url: 'https://www.youtube.com/watch?v=pjPinM-0xbc',
       image: '/images/kairos_webinar_anti_asian_violence.png',
+    },
+  ],
+  events: [
+    {
+      title: 'Understanding the Current Crisis in America',
+      description:
+        'Hate crimes toward Asian Americans increased by nearly 150% in 2020. While discrimination toward the AAPI community has existed for centuries, Covid and the recent shooting in Atlanta shooting have brought this issue to the forefront. The cumulative impact on Asian Americans is that many feel threatened, unsafe, and unwelcome.',
+      url:
+        'https://transformmn.org/event/anti-asian-violence/?fbclid=IwAR2fkoTp2bfIV-pEm0WNe7-CWkGyvaDbhlbZL_XEIxl8I-vrQbQ0h2VA_jo',
+      image: '/images/anti_asian_violence_transform_mn.png',
     },
   ],
   skills: [
@@ -153,6 +156,10 @@ module.exports = {
     {
       label: 'Resources',
       url: '/resource',
+    },
+    {
+      label: 'Public Events',
+      url: '/event',
     },
   ],
 }
