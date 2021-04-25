@@ -1,7 +1,7 @@
 {
   "name": "c3consults-site",
   "private": true,
-  "description": "A simple site for digital curriculum with GatsbyJS",
+  "description": "Cross Cultural Consultant site built with GatsbyJS",
   "version": "0.0.1",
   "author": "David Nguyen <davidnguy@gmail.com>",
   "dependencies": {
