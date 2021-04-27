@@ -54,13 +54,13 @@ const Home = ({ className, location }) => {
                     alt="user avatar"
                   />
                 </Col>
-                <Col>
+                {/* <Col>
                   <img
                     className="logo__image"
                     src={withPrefix(siteConfig.logo)}
                     alt="c3 logo"
                   />
-                </Col>
+                </Col> */}
               </Row>
               <div className="social">
                 {siteConfig.social.linkedin && (

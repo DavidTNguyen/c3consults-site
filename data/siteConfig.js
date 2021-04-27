@@ -1,10 +1,11 @@
 module.exports = {
-  siteTitle: '',
+  siteTitle: 'Motivate, Educate, Activate',
   siteDescription: `Cultural Competency Consulting `,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
   authorAvatar: '/images/headshot.jpg',
-  logo: '/images/C3-logo-bold-no-bg.png',
+  logo:
+    '/images/C3_Logo_Helvetica_Text.png',
   authorDescription: `My family came as refugees from Vietnam and we were sponsored by a church that helped us settle in the Twin Cities.  
   Growing up navigating multiple cultures, my service globally, travels to 22 countries, experience teaching in Higher Ed., work with African refugees and diverse organizations 
   have led me to see the importance of growing in 
@@ -140,7 +141,7 @@ module.exports = {
   },
   siteUrl: 'https://github.com/DavidTNguyen/c3consults-site',
   pathPrefix: '/c3consults-site', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/diversed-people-working-together.jpg',
+  siteCover: '/images/diversed-people-hand-circle.png',
   googleAnalyticsId: ['G-9J2JV09MQY', 'G-F9H93Y061G'],
   background_color: '#ffffff',
   theme_color: '#25303B',

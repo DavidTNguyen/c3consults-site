@@ -1,5 +1,6 @@
 import React from 'react'
 import { withPrefix } from 'gatsby'
+import { Container, Row, Col } from 'react-awesome-styled-grid'
 import siteConfig from '../../../data/siteConfig'
 import styled from 'styled-components'
 
@@ -19,7 +20,7 @@ const TitleContainer = styled.div`
 
 const HeroTitle = styled.h1`
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 10px 60px;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
@@ -28,7 +29,26 @@ const HeroTitle = styled.h1`
 const Hero = ({ className, title }) => (
   <HeroContainer className={className}>
     <TitleContainer>
-      <HeroTitle>{title}</HeroTitle>
+      <Container fluid>
+        <Row>
+          <Col xs={4} className="avatar">
+            <Row>
+              <Col>
+                <img
+                  className="logo__image"
+                  src={withPrefix(siteConfig.logo)}
+                  alt="c3 logo"
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <HeroTitle>{title}</HeroTitle>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </TitleContainer>
   </HeroContainer>
 )
@@ -36,12 +56,24 @@ const Hero = ({ className, title }) => (
 export default styled(Hero)`
   ${p =>
     `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
-  height: 100vh;
+  height: 70vh;
   background-attachment: fixed;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* Add the blur effect */
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+
+  .logo__image {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
+    max-width: 500px;
+    border-radius: 100px;
+    margin: 0 auto 24px;
+    /* Add the blur effect */
+    // filter: blur(3px);
+  }
+
+  .avatar {
+    align-items: center;
+    margin-bottom: 24px;
+    flex-direction: column;
+  }
 `
