@@ -41,4 +41,7 @@ export default styled(Hero)`
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 `

@@ -27,7 +27,8 @@ const Testimonies = ({ className }) => {
                   {testimony.title}
                 </small>
               </h2>
-              <p>{testimony.quote}</p>
+              {/* <p>{testimony.quote}</p> */}
+              <p dangerouslySetInnerHTML={{ __html: testimony.quote }}></p>
             </div>
           </div>
         </article>

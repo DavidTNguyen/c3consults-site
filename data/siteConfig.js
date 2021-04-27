@@ -140,7 +140,7 @@ module.exports = {
   },
   siteUrl: 'https://github.com/DavidTNguyen/c3consults-site',
   pathPrefix: '/c3consults-site', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/road-to-dalat.png',
+  siteCover: '/images/diversed-people-working-together.jpg',
   googleAnalyticsId: ['G-9J2JV09MQY', 'G-F9H93Y061G'],
   background_color: '#ffffff',
   theme_color: '#25303B',
