@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Motivate, Educate, Activate',
+  siteTitle: 'Motivate. Educate. Activate.',
   siteDescription: `Cultural Competency Consulting `,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
@@ -146,7 +146,8 @@ module.exports = {
   },
   siteUrl: 'https://github.com/DavidTNguyen/c3consults-site',
   pathPrefix: '/c3consults-site', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/diversed-people-hand-circle.png',
+  siteCover:
+    '/images/Multi-Ethnic-Diverse-Group-People-Circle-Variation-Concept-1.png',
   googleAnalyticsId: ['G-9J2JV09MQY', 'G-F9H93Y061G'],
   background_color: '#ffffff',
   theme_color: '#25303B',
