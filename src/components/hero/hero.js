@@ -58,7 +58,7 @@ export default styled(Hero)`
     `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
   height: 100vh;
   background-attachment: fixed;
-  background-position: bottom center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 
