@@ -19,8 +19,8 @@ const TitleContainer = styled.div`
 `
 
 const HeroTitle = styled.h1`
-  font-weight: 700;
-  font-size: 4rem;
+  font-weight: 400;
+  font-size: 3rem;
   margin: 10px 60px;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
@@ -56,7 +56,7 @@ const Hero = ({ className, title }) => (
 export default styled(Hero)`
   ${p =>
     `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
-  height: 70vh;
+  height: 100vh;
   background-attachment: fixed;
   background-position: bottom center;
   background-repeat: no-repeat;
