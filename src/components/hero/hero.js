@@ -64,7 +64,7 @@ export default styled(Hero)`
 
   .logo__image {
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
-    max-width: 500px;
+    max-width: 350px;
     border-radius: 100px;
     margin: 0 auto 24px;
     /* Add the blur effect */

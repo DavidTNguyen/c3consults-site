@@ -159,7 +159,7 @@ module.exports = {
       url: '/resource',
     },
     {
-      label: 'Public Events',
+      label: 'Events',
       url: '/event',
     },
   ],
