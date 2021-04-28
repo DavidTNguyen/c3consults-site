@@ -4,8 +4,7 @@ module.exports = {
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
   authorAvatar: '/images/headshot.jpg',
-  logo:
-    '/images/C3_Logo_Helvetica_Text.png',
+  logo: '/images/C3_Logo_Helvetica_Text.png',
   authorDescription: `My family came as refugees from Vietnam and we were sponsored by a church that helped us settle in the Twin Cities.  
   Growing up navigating multiple cultures, my service globally, travels to 22 countries, experience teaching in Higher Ed., work with African refugees and diverse organizations 
   have led me to see the importance of growing in 
@@ -39,6 +38,12 @@ module.exports = {
       title: 'Addressing Anti-Asian Racism',
       url: 'https://www.youtube.com/watch?v=pjPinM-0xbc',
       image: '/images/kairos_webinar_anti_asian_violence.png',
+    },
+    {
+      title: 'Sermon - No Longer Foreigners',
+      url:
+        'https://sanctuarycov.simplecast.com/episodes/voices-from-gods-mosaic-khanh-nguyen',
+      image: '/images/sanctuary_podcast_mosaic.jpg',
     },
   ],
   events: [
