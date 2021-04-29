@@ -18,7 +18,7 @@ module.exports = {
   I can customize my trainings from a 30 min speaking engagement, 1 hour webinar, 1/2 - full day interactive workshop, to a 5 week virtual series.  I'd love to work with you or adapt to fit your needs.`,
   videos: [
     {
-      playing: true,
+      playing: false,
       key: 'promo',
       url: 'https://www.youtube.com/embed/9LAVC2kUOzo',
     },
