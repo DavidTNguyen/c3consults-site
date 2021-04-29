@@ -7,6 +7,9 @@ import loadable from '@loadable/component'
 import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import IconButton from '@material-ui/core/IconButton'
 
 const Layout = loadable(() => import('../components/layout'))
 
@@ -58,8 +61,25 @@ const TeamMember = ({ className, location }) => {
                   target="_blank"
                 >
                   <Image src={withPrefix(member.image)} />
+                  <p>
+                    <IconButton
+                      aria-label="Linkedin.com"
+                      onClick={() =>
+                        window.open(`${member.linkedin}`, '_blank')
+                      }
+                    >
+                      <LinkedInIcon fontSize="large" />
+                    </IconButton>{' '}
+                    <IconButton
+                      aria-label="Linkedin.com"
+                      onClick={() =>
+                        window.open(`${member.twitter}`, '_blank')
+                      }
+                    >
+                      <TwitterIcon fontSize="large" />
+                    </IconButton>
+                  </p>
                   <h3>{member.title}</h3>
-                  
                   <p dangerouslySetInnerHTML={{ __html: member.bio }}></p>
                 </TeamMemberCard>
               </Col>

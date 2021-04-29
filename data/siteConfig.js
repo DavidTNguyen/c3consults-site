@@ -62,12 +62,17 @@ module.exports = {
       title: 'CEO & Founder',
       bio: '',
       image: '/images/headshot.jpg',
+      linkedin: 'https://www.linkedin.com/in/khanh-nguyen-18838830/',
+      twitter: 'https://twitter.com/',
+      facebook: 'https://www.facebook.com/c3consults'
     },
     {
       name: 'David Nguyễn ',
       title: 'Chief Technology Officer',
       bio: 'He is working as Lead Engineer for a major U.S. retailer.  His team built the pricing engine for both our mobile app and the retail site. When not building the next product features, he teaches classes on web development using ReactJS, Restful micro services, and CI/CD pipeline.<BR/><BR/> He loves to coach soccer and teach students in elementary/middle schools in robotics and web design. His motto is "One percent better everyday"',
       image: '/images/David.Nguyen.jpg',
+      linkedin: 'https://www.linkedin.com/in/cubi/',
+      twitter: 'https://twitter.com/vietroadie',
     },
   ],
   skills: [
