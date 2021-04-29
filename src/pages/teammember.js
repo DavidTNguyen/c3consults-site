@@ -19,7 +19,7 @@ const Image = styled.img`
   box-shadow: 24px 47px 79px -21px rgba(0, 0, 0, 0.51);
 `
 
-const ResourceCard = styled.a`
+const TeamMemberCard = styled.a`
   text-decoration: none;
   color: inherit;
 
@@ -33,9 +33,9 @@ const ResourceCard = styled.a`
     `}
 `
 
-const Resource = ({ className, location }) => {
-  const title = 'Resources'
-  const { keywords, resources } = siteConfig
+const TeamMember = ({ className, location }) => {
+  const title = 'Our Team'
+  const { keywords, team } = siteConfig
   return (
     <Layout location={location}>
       <SEO title={title} keywords={keywords} />
@@ -50,16 +50,18 @@ const Resource = ({ className, location }) => {
       <Wrapper className={className}>
         <Container className="page-content" fluid>
           <Row>
-            {resources.map(res => (
-              <Col key={res.title} align="center">
-                <ResourceCard
-                  as={res.url ? 'a' : 'div'}
-                  href={res.url}
+            {team.map(member => (
+              <Col key={member.title} align="center">
+                <TeamMemberCard
+                  as={member.url ? 'a' : 'div'}
+                  href={member.url}
                   target="_blank"
                 >
-                  <Image src={withPrefix(res.image)} />
-                  <p>{res.title}</p>
-                </ResourceCard>
+                  <Image src={withPrefix(member.image)} />
+                  <h3>{member.title}</h3>
+                  
+                  <p dangerouslySetInnerHTML={{ __html: member.bio }}></p>
+                </TeamMemberCard>
               </Col>
             ))}
           </Row>
@@ -69,7 +71,7 @@ const Resource = ({ className, location }) => {
   )
 }
 
-export default styled(Resource)`
+export default styled(TeamMember)`
   .page-content {
     max-width: 100%;
     margin-bottom: 40px;
