@@ -40,7 +40,7 @@ module.exports = {
       image: '/images/kairos_webinar_anti_asian_violence.png',
     },
     {
-      title: 'Sermon - No Longer Foreigners',
+      title: 'Podcast - No Longer Foreigners',
       url:
         'https://sanctuarycov.simplecast.com/episodes/voices-from-gods-mosaic-khanh-nguyen',
       image: '/images/sanctuary_podcast_mosaic.jpg',
