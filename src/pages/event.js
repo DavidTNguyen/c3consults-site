@@ -40,16 +40,13 @@ const Event = ({ className, location }) => {
     <Layout location={location}>
       <SEO title={title} keywords={keywords} />
 
-      <Hero
-        heroImg={withPrefix('/images/Linked-Workshop.jpg')}
-        title={title}
-      />
+      <Hero heroImg={withPrefix('/images/Linked-Workshop.jpg')} title={title} />
 
       <Wrapper className={className}>
         <Container className="page-content" fluid>
           <Row>
             {events.map(event => (
-              <Col key={event.title} align="center">
+              <Col key={event.title} xs={2}>
                 <EventCard
                   as={event.url ? 'a' : 'div'}
                   href={event.url}
@@ -57,7 +54,7 @@ const Event = ({ className, location }) => {
                 >
                   <Image src={withPrefix(event.image)} />
                   <h3>{event.title}</h3>
-									<p>{event.description}</p>
+                  <p>{event.description}</p>
                 </EventCard>
               </Col>
             ))}
