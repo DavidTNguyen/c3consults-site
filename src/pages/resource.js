@@ -51,14 +51,15 @@ const Resource = ({ className, location }) => {
         <Container className="page-content" fluid>
           <Row>
             {resources.map(res => (
-              <Col key={res.title} align="center">
+              <Col xs={2} key={res.title}>
                 <ResourceCard
                   as={res.url ? 'a' : 'div'}
                   href={res.url}
                   target="_blank"
                 >
                   <Image src={withPrefix(res.image)} />
-                  <p>{res.title}</p>
+                  <h3>{res.title}</h3>
+                  <p>{res.description}</p>
                 </ResourceCard>
               </Col>
             ))}

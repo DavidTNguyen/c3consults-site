@@ -33,17 +33,27 @@ module.exports = {
       title: 'Black/Asian Solidarity',
       url: 'https://www.facebook.com/586908449/videos/10158274147193450/',
       image: '/images/candid_conversation_ryan_daniel.jpg',
+      description: 'Candid Conversation - Addressing the rise in Anti-Asian Violence.',
     },
     {
       title: 'Addressing Anti-Asian Racism',
       url: 'https://www.youtube.com/watch?v=pjPinM-0xbc',
       image: '/images/kairos_webinar_anti_asian_violence.png',
+      description:
+        'Interview with the Kairos Network. Discuss the history of Anti-Asian racism in America and how to dismantle Asian stereotypes. A Christ-Centered perspective on how to deal with these issues ',
     },
     {
-      title: 'Podcast - No Longer Foreigners',
-      url:
-        'https://sanctuarycov.simplecast.com/episodes/voices-from-gods-mosaic-khanh-nguyen',
+      title: 'No Longer Foreigners',
+      url: 'https://sojo.net/biography/khanh-nguy-n',
       image: '/images/sanctuary_podcast_mosaic.jpg',
+      description: 'Top 100 sermons on immigration by Sojourner magazine',
+    },
+    {
+      title: '3CPtv - Interview',
+      url: 'https://www.youtube.com/watch?v=WZq06T3n1OM',
+      image: '/images/3cp_e014.jpeg',
+      description:
+        'Asian American history. Break down the stereotypes associated with Asian culture',
     },
   ],
   events: [
