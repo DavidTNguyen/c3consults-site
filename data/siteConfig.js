@@ -18,7 +18,7 @@ module.exports = {
   I can customize my trainings from a 30 min speaking engagement, 1 hour webinar, 1/2 - full day interactive workshop, to a 5 week virtual series.  I'd love to work with you or adapt to fit your needs.`,
   videos: [
     {
-      playing: true,
+      playing: false,
       key: 'promo',
       url: 'https://www.youtube.com/embed/9LAVC2kUOzo',
     },
@@ -64,6 +64,27 @@ module.exports = {
       url:
         'https://transformmn.org/event/anti-asian-violence/?fbclid=IwAR2fkoTp2bfIV-pEm0WNe7-CWkGyvaDbhlbZL_XEIxl8I-vrQbQ0h2VA_jo',
       image: '/images/anti_asian_violence_transform_mn.png',
+    },
+  ],
+  team: [
+    {
+      name: 'Khanh Nguyễn ',
+      title: 'CEO & Founder',
+      bio: '',
+      image: '/images/headshot.jpg',
+      email: 'c3consults@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/khanh-nguyen-18838830/',
+      facebook: 'https://www.facebook.com/c3consults'
+    },
+    {
+      name: 'David Nguyễn ',
+      title: 'Chief Technology Officer',
+      bio: 'David is working as Lead Engineer for a major U.S. retailer.  His team built the pricing engine for both our mobile app and the retail site. When not building the next product features, he teaches classes on web development using ReactJS, Restful micro services, and CI/CD pipeline.<BR/><BR/> He loves to coach soccer and teach students in elementary/middle schools in robotics and web design. His motto is "One percent better everyday."',
+      image: '/images/David.Nguyen.jpg',
+      email: 'davidnguy@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/cubi/',
+      twitter: 'https://twitter.com/vietroadie',
+      github: 'https://www.github.com/DavidTNguyen',
     },
   ],
   skills: [
@@ -177,5 +198,9 @@ module.exports = {
       label: 'Events',
       url: '/event',
     },
+    {
+      label: 'Team',
+      url: '/teammember'
+    }
   ],
 }
