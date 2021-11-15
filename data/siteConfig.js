@@ -152,7 +152,7 @@ module.exports = {
   ],
   social: {
     linkedin: 'https://www.linkedin.com/in/khanh-nguyen-18838830/',
-    email: 'mailto://c3consults@gmail.com',
+    email: 'mailto:c3consults@gmail.com',
   },
   siteUrl: 'https://github.com/DavidTNguyen/c3consults-site',
   pathPrefix: '/c3consults-site', // Note: it must *not* have a trailing slash.
