@@ -16,11 +16,12 @@ const Link = styled(({ className, icon: Icon, color, ...props }) => (
 
 const Footer = ({ className }) => {
   const { email, linkedin, facebook } = siteConfig.social
+  console.log(email)
   return (
     <footer className={className}>
       {`© ${new Date().getFullYear()} ${siteConfig.authorName}`}
       <div>
-        {email && <Link href={email} icon={FaEnvelope} />}
+        {email && <Link href={'mailto:' + email} icon={FaEnvelope} />}
         {facebook && <Link href={facebook} icon={FaFacebook} />}
         {linkedin && <Link href={linkedin} icon={FaLinkedin} />}
       </div>

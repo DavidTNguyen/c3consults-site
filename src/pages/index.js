@@ -66,6 +66,7 @@ const Home = ({ className, location }) => {
                 {siteConfig.social.linkedin && (
                   <a
                     className="social-link linkedin"
+                    target="_blank"
                     href={siteConfig.social.linkedin}
                   >
                     <FaLinkedin className="social-icon" size="32" />
@@ -74,6 +75,7 @@ const Home = ({ className, location }) => {
                 {siteConfig.social.facebook && (
                   <a
                     className="social-link facebook"
+                    target="_blank"
                     href={siteConfig.social.facebook}
                   >
                     <FaFacebook className="social-icon" size="32" />
@@ -82,6 +84,7 @@ const Home = ({ className, location }) => {
                 {siteConfig.social.email && (
                   <a
                     className="social-link email"
+                    target="_blank"
                     href={`mailto:${siteConfig.social.email}`}
                   >
                     <FaEnvelope className="social-icon" size="32" />
