@@ -19,14 +19,3 @@ steps:
       npm install
       npm run build
     displayName: 'npm install and build'
-
-  - task: CopyFiles@2
-    inputs:
-      sourceFolder: '$(System.DefaultWorkingDirectory)'
-      contents: |
-        public/**/*
-      targetFolder: '$(Build.ArtifactStagingDirectory)'
-      overWrite: true
-    displayName: 'Copying built static files'
-
-  - task: PublishBuildArtifacts@1
