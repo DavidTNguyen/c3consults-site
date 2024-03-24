@@ -8,13 +8,11 @@
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@loadable/component": "5.12.0",
-    "@mui/material": "latest",
     "babel-plugin-styled-components": "1.11.1",
     "framer-motion": "11.0.20",
     "gatsby": "latest",
     "gatsby-plugin-image": "latest",
     "gatsby-plugin-google-gtag": "latest",
-    "gatsby-plugin-material-ui": "latest",
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-sharp": "latest",
@@ -49,7 +47,6 @@
   },
   "devDependencies": {
     "gatsby-plugin-pnpm-gatsby-5": "latest",
-    "gatsby-plugin-pnpm": "latest",
     "gh-pages": "2.2.0",
     "prettier": "1.19.1"
   },
