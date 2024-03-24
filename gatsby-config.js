@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-pnpm`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-material-ui`,
     {

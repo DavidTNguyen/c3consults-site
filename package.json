@@ -12,7 +12,7 @@
     "babel-plugin-styled-components": "1.11.1",
     "framer-motion": "11.0.20",
     "gatsby": "latest",
-    "gatsby-image": "latest",
+    "gatsby-plugin-image": "latest",
     "gatsby-plugin-google-gtag": "latest",
     "gatsby-plugin-material-ui": "latest",
     "gatsby-plugin-manifest": "latest",
