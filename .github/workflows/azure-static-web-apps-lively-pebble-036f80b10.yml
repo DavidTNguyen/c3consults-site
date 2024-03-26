@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: c3consults-site
-          path: .
+          path: public
           
   deploy:
     runs-on: ubuntu-latest
