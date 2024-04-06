@@ -22,6 +22,10 @@ steps:
   - script: |
       npm install -g gatsby-cli
     displayName: 'Install gatsby-cli'
+  
+  - script: |
+      gatsby build
+    displayName: 'Gatsby Build'
 
   - task: CopyFiles@2
     inputs:
