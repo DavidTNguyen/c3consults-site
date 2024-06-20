@@ -66,6 +66,27 @@ module.exports = {
       image: '/images/anti_asian_violence_transform_mn.png',
     },
   ],
+  team: [
+    {
+      name: 'Khanh Nguyễn ',
+      title: 'CEO & Founder',
+      bio: '',
+      image: '/images/headshot.jpg',
+      email: 'c3consults@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/khanh-nguyen-18838830/',
+      facebook: 'https://www.facebook.com/c3consults'
+    },
+    {
+      name: 'David Nguyễn ',
+      title: 'Chief Technology Officer',
+      bio: 'David is working as Lead Engineer for a major U.S. retailer.  His team built the pricing engine for both our mobile app and the retail site. When not building the next product features, he teaches classes on web development using ReactJS, Restful micro services, and CI/CD pipeline.<BR/><BR/> He loves to coach soccer and teach students in elementary/middle schools in robotics and web design. His motto is "One percent better everyday."',
+      image: '/images/David.Nguyen.jpg',
+      email: 'davidnguy@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/cubi/',
+      twitter: 'https://twitter.com/vietroadie',
+      github: 'https://www.github.com/DavidTNguyen',
+    },
+  ],
   skills: [
     {
       name: 'Cultural Competency & Diversity',
@@ -178,5 +199,9 @@ module.exports = {
       label: 'Events',
       url: '/event',
     },
+    {
+      label: 'Team',
+      url: '/teammember'
+    }
   ],
 }
