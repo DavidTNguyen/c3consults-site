@@ -1,126 +1,130 @@
 import React from 'react'
 import { withPrefix } from 'gatsby'
 import styled from 'styled-components'
-import { FiPlus } from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 import siteConfig from '../../../data/siteConfig'
 
 const TrainingsSection = styled.section`
   .trainings__grid {
     display: grid;
-    gap: 1rem;
-    align-items: start;
+    gap: 2rem clamp(2rem, 5vw, 4rem);
   }
 
   .training {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--surface);
-    box-shadow: var(--shadow-sm);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .training:hover,
-  .training[open] {
-    border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
-    box-shadow: var(--shadow);
-  }
-
-  .training summary {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.25rem 1.35rem;
-    cursor: pointer;
-    list-style: none;
-    font-weight: 700;
-    font-size: 1.075rem;
-    line-height: 1.35;
-  }
-
-  .training summary::-webkit-details-marker {
-    display: none;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    min-width: 0;
   }
 
   .training__num {
-    flex-shrink: 0;
-    display: grid;
-    place-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 12px;
-    background: var(--accent-soft);
+    display: block;
+    margin-bottom: 0.85rem;
     color: var(--accent);
     font-size: 0.85rem;
-    font-weight: 800;
+    font-weight: 750;
+    letter-spacing: 0.1em;
   }
 
-  .training__title {
-    flex: 1;
+  .training h3 {
+    font-size: clamp(1.25rem, 2vw, 1.6rem);
   }
 
-  .training__icon {
-    flex-shrink: 0;
+  .training p {
+    margin-top: 0.85rem;
+    max-width: 70ch;
     color: var(--muted);
-    transition: transform 0.25s ease;
   }
 
-  .training[open] .training__icon {
-    transform: rotate(45deg);
-    color: var(--accent);
+  .trainings__coaching {
+    display: grid;
+    gap: 2rem;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: var(--radius);
+    background: var(--surface-2);
   }
 
-  .training__body {
-    padding: 0 1.35rem 1.35rem calc(1.35rem + 3.5rem);
+  .coaching__intro,
+  .coaching__details,
+  .coaching__assessment {
+    min-width: 0;
+  }
+
+  .coaching__intro h3 {
+    font-size: clamp(1.65rem, 2.5vw, 2.2rem);
+  }
+
+  .coaching__details h4 {
+    font-size: 1.15rem;
+  }
+
+  .coaching__details p {
+    margin-top: 0.85rem;
     color: var(--muted);
-    font-size: 1rem;
   }
 
-  .training__body ol {
-    margin-top: 0.75rem;
-  }
-
-  .training__body li + li {
-    margin-top: 0.35rem;
+  .coaching__assessment {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
   }
 
   .training__credentials {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1.25rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
 
   .training__credentials img {
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 140px;
+    max-height: 120px;
     padding: 0.75rem;
     border-radius: var(--radius-sm);
     background: #fff;
   }
 
-  .trainings__note {
+  .trainings__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem 2rem;
     margin-top: 2rem;
+  }
+
+  .trainings__note {
+    flex: 1 1 360px;
     color: var(--muted);
+  }
+
+  .trainings__footer .btn {
+    gap: 0.75rem;
   }
 
   @media (min-width: 860px) {
     .trainings__grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-  }
 
-  @media (max-width: 520px) {
-    .training__body {
-      padding-left: 1.35rem;
+    .training:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+
+    .trainings__coaching {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    }
+
+    .coaching__assessment {
+      grid-column: 1 / -1;
     }
   }
 `
 
-// Some descriptions contain <br/> spacing meant for the old layout.
-const cleanHtml = html => html.replace(/(?:<br\s*\/?>\s*)+(?=<ol)/gi, '')
+const topics = siteConfig.skills.filter(skill => skill.category === 'training')
+const coaching = siteConfig.skills.filter(skill => skill.category === 'coaching')
+const assessments = siteConfig.skills.filter(skill => skill.category === 'assessment')
 
 const Trainings = () => (
   <TrainingsSection
@@ -139,42 +143,60 @@ const Trainings = () => (
       </div>
 
       <div className="trainings__grid">
-        {siteConfig.skills.map((skill, i) => (
-          <details className="training reveal" key={skill.name}>
-            <summary>
-              <span className="training__num" aria-hidden="true">
-                {String(i + 1).padStart(2, '0')}
-              </span>
-              <span className="training__title">{skill.name}</span>
-              <FiPlus className="training__icon" size={22} aria-hidden="true" />
-            </summary>
-            <div className="training__body">
-              {skill.images && (
-                <div className="training__credentials">
-                  {skill.images.map(image => (
-                    <img
-                      key={image.src}
-                      src={withPrefix(image.src)}
-                      alt={image.alt}
-                      width={image.width}
-                      height={image.height}
-                      loading="lazy"
-                    />
-                  ))}
-                </div>
-              )}
-              <div
-                dangerouslySetInnerHTML={{ __html: cleanHtml(skill.description) }}
-              />
-            </div>
-          </details>
+        {topics.map((topic, i) => (
+          <article className="training reveal" key={topic.name}>
+            <span className="training__num" aria-hidden="true">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <h3>{topic.name}</h3>
+            <p>{topic.description}</p>
+          </article>
         ))}
       </div>
 
-      <p className="trainings__note">
-        Every training can be customized – from a 30-minute talk or 1-hour
-        webinar to a half- or full-day workshop or a 5-week virtual series.
-      </p>
+      <section className="trainings__coaching" aria-labelledby="coaching-title">
+        <div className="coaching__intro">
+          <p className="eyebrow">Coaching &amp; assessments</p>
+          <h3 id="coaching-title">Personal growth, grounded in insight</h3>
+        </div>
+        <div className="coaching__details">
+          {coaching.map(skill => (
+            <div key={skill.name}>
+              <h4>{skill.name}</h4>
+              <p>{skill.description}</p>
+            </div>
+          ))}
+        </div>
+        {assessments.map(skill => (
+          <div className="coaching__assessment coaching__details" key={skill.name}>
+            <h4>{skill.name}</h4>
+            <p>{skill.description}</p>
+            <div className="training__credentials">
+              {skill.images.map(image => (
+                <img
+                  key={image.src}
+                  src={withPrefix(image.src)}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <div className="trainings__footer">
+        <p className="trainings__note">
+          Every training can be customized – from a 30-minute talk or 1-hour
+          webinar to a half- or full-day workshop or a 5-week virtual series.
+        </p>
+        <a className="btn btn--primary" href={`mailto:${siteConfig.social.email}`}>
+          Discuss a training
+          <FiArrowRight aria-hidden="true" />
+        </a>
+      </div>
     </div>
   </TrainingsSection>
 )

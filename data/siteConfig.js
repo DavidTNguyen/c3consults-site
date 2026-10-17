@@ -73,42 +73,47 @@ module.exports = {
   skills: [
     {
       name: 'Cultural Competency & Diversity',
-      description: `Understand and grow in Cultural Competency and Intelligence. Learn how to adapt to different environments and learn from different cultures especially those who have been marginalized.  Utilize various assessments to learn about:
-        <br/> <br/> 
-        <ol><li> Implicit bias</li><li>Four dimensions of cultural intelligence </li> <li> The Intercultural Development Inventory a premier tool measuring intercultural competency on a five stage continuum. </li></ol>`,
+      category: 'training',
+      description: 'Build cultural awareness, recognize implicit bias, and develop practical skills for working across differences. Explore the four dimensions of cultural intelligence and learn from cultures and communities that have been marginalized.',
       level: 100,
     },
     {
       name: 'Anti-Racism',
+      category: 'training',
       description:
-        'Addressing racism and becoming a more just society takes more than simply being kind to one another. Interpersonal and institutional racism are only some of the issues that need to be addressed. How did whites become white, Africans black, Asians yellow, and Natives red? Learn about the 4 Layers of Racism,  how to tackle them, and how bogus science used color to develop racial hierarchies. Take steps to disrupt racism. ',
+        'Explore the four layers of racism, how racial hierarchies were constructed, and why kindness alone is not enough. Learn practical ways to challenge stereotypes, address interpersonal and institutional racism, and take steps toward a more just society.',
       level: 100,
     },
     {
       name: 'Multi-Ethnic Church Ministry',
+      category: 'training',
       description:
-        'Dr. Martin Luther King Jr. famously said the 11 O’clock hour is the most segregated hour of the week. Learn the history of the Multi-Ethnic Church movement including why the church has segregated and different models of historically multi-ethnic churches.   Gain a basic understanding of the Why, What, and How of multi-ethnic church ministry from a Biblical Perspective. Participate in interactive Cultural Competency activities or take assessments to help you gain a better understanding of cultural awareness. ',
+        'Discover the why, what, and how of multi-ethnic church ministry from a Biblical perspective. Explore the history of church segregation, learn from different ministry models, and build cultural awareness through interactive activities and assessments.',
       level: 100,
     },
     {
       name: 'Immigration and Refugee Advocacy',
-      description: `Are we a land of immigrants or aren’t we? What does history teach about who’s "in" and who's "out"? How have laws in the U.S. benefited some and restricted others? What does scripture say about how to treat immigrants justly? What are some myths that we believe about immigrants and refugees that need to be dismantled? How do we discern what the truth is? This includes my story as a refugee from Vietnam and work with African refugees.`,
+      category: 'training',
+      description: 'Examine how history, U.S. laws, and common myths shape our understanding of immigrants and refugees. Reflect on what scripture teaches about justice, informed by my own journey as a refugee from Vietnam and my work with African refugees.',
       level: 100,
     },
     {
       name: 'Asian in America',
+      category: 'training',
       description:
-        'With the rise in Anti-Asian racism it is more urgent than ever to address issues concerning the Asian-American community.  Learn the history of xenophopia and that not all Asians are crazy rich or good at math. How did the Asian American Community move from “yellow peril” to Model Minority? Where is the Asian place on issues of race? How do we understand the Asian American demographic and the importance of seeing Asian Americans? Learn the difference between stereotypes and generalizations in comparing East versus West Cultures.',
+        'Explore Asian American history, identity, and belonging, from "yellow peril" to the model minority myth. Unpack stereotypes, understand the diversity within Asian American communities, and learn how to recognize and challenge anti-Asian racism.',
       level: 100,
     },
     {
       name: 'Individualized Cultural Coaching',
+      category: 'coaching',
       description:
         'An individualized coaching session that digs deeper into your current approach to cultural issues. Take the Intercultural Development Inventory (IDI), a premier tool to assess your intercultural competency. Get a personalized debrief of your results and learn where you are on a five stage continuum. Receive personal coaching tailored to your needs and current perspectives to grow. The Cultural Intelligence (CQ) assessment measures 4 different capabilities that measure how you relate and work in culturally diverse settings. You can also get measured in 10 different behavioral preferences or cultural values. These are beneficial tools to help you grow in cultural intelligence.',
       level: 100,
     },
     {
       name: 'Intercultural Development Inventory - IDI® and Cultural Intelligence (CQ)®',
+      category: 'assessment',
       description: `I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency. I am a certified facilitator of the Cultural Intelligence assessment.`,
       images: [
         {

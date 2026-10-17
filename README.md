@@ -45,6 +45,9 @@ Keep the override when updating dependencies.
 
 The training credentials use the IDI logo and CQ Certified Facilitator badge
 provided in the website update document.
+The Trainings section groups `skills` in `data/siteConfig.js` by `category`:
+`training` for the open topic grid, `coaching` for individualized support, and
+`assessment` for assessment descriptions and credential images.
 
 The Experience section displays client names and logos from
 `static/images/clients/sources.json`. Add or update entries there alongside the
