@@ -1,0 +1,215 @@
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[[plugins]]
+origin = "default"
+package = "@netlify/plugin-gatsby"
+
+[plugins.inputs]
+
+[build]
+publish = "C:\\Dev\\c3consults-site\\public"
+publishOrigin = "ui"
+commandOrigin = "ui"
+command = "npm run build"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/*"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/framework-5803fec82d83e325f3c8.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/framework-5803fec82d83e325f3c8.js.LICENSE.txt"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/framework-5803fec82d83e325f3c8.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/app-78bb6ecb7705553b3b36.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/app-78bb6ecb7705553b3b36.js.LICENSE.txt"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/app-78bb6ecb7705553b3b36.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/551-ef13306c37ed1dcde65c.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/551-ef13306c37ed1dcde65c.js.LICENSE.txt"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/551-ef13306c37ed1dcde65c.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-index-js-c8d6f95e11c87ddd063d.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-index-js-c8d6f95e11c87ddd063d.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/commons-5cf9be66cb6aaf670719.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/commons-5cf9be66cb6aaf670719.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-event-js-9fa8105075c90e046926.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-event-js-9fa8105075c90e046926.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-team-js-493e6d9e1ce1078a354e.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-team-js-493e6d9e1ce1078a354e.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-resource-js-c3ea6a7f5b872c50cb04.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-resource-js-c3ea6a7f5b872c50cb04.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/webpack-runtime-e6ac1ebe98eccc152141.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/webpack-runtime-e6ac1ebe98eccc152141.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/452-d5c4d3eb917a1f681c1c.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/452-d5c4d3eb917a1f681c1c.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/cb355538-b41be89ec959d91ee031.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/cb355538-b41be89ec959d91ee031.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-404-js-106d76f97df74484d11a.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/component---src-pages-404-js-106d76f97df74484d11a.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/522-c5377c7a301ec91e0dc5.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
