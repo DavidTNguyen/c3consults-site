@@ -97,7 +97,6 @@ const services = [
   },
   {
     title: 'Writing',
-    href: 'https://www.staceybjones.com/',
     image: (
       <StaticImage
         src="../../images/services/Pastor-Hip-Hop.png"
@@ -110,7 +109,6 @@ const services = [
   },
   {
     title: 'Book Endorsement',
-    href: 'https://www.staceybjones.com/',
     image: (
       <StaticImage
         src="../../images/services/Signed-Book.jpg"
