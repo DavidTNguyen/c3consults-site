@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Hero from '../components/hero'
 import About from '../components/about'
+import Journey from '../components/journey'
 import Videos from '../components/videos'
 import Trainings from '../components/trainings'
 import Services from '../components/services'
@@ -14,6 +15,7 @@ const Home = () => (
   <Layout>
     <Hero />
     <About />
+    <Journey />
     <Videos />
     <Trainings />
     <Services />

@@ -171,7 +171,7 @@ const Hero = () => (
           />
           <div>
             <strong>Motivate · Educate · Activate</strong>
-            <span>Talks · Workshops · Coaching</span>
+            <span>Speaking · Training · Consulting</span>
           </div>
         </div>
       </div>

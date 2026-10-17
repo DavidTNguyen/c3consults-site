@@ -187,7 +187,7 @@ module.exports = {
     },
   ],
   social: {
-    linkedin: 'https://www.linkedin.com/in/khanh-nguy%E1%BB%85n-m-a-t-s-18838830/',
+    linkedin: 'https://www.linkedin.com/in/khanh-tc-nguyen/',
     facebook: 'https://www.facebook.com/c3consults/',
     email: 'c3consults@gmail.com',
   },
