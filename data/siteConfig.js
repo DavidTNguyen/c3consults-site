@@ -115,7 +115,21 @@ module.exports = {
       name: 'Intercultural Development Inventory - IDI® and Cultural Intelligence (CQ)®',
       category: 'assessment',
       description: `I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency. I am a certified facilitator of the Cultural Intelligence assessment.`,
-      images: [
+            certifications: [
+              {
+                name: 'IDI® Qualified Administrator',
+                issuer: 'Intercultural Development Inventory',
+              },
+              {
+                name: 'CQ® Certified Facilitator',
+                issuer: 'Cultural Intelligence Center',
+              },
+              {
+                name: 'Developing CQ® Workshop Facilitator',
+                issuer: 'Cultural Intelligence Center',
+              },
+            ],
+            images: [
         {
           src: '/images/idi-logo.png',
           alt: 'Intercultural Development Inventory (IDI) logo',
@@ -128,8 +142,40 @@ module.exports = {
           width: 400,
           height: 400,
         },
+        {
+          src: '/images/cq-developing-workshop-facilitator.png',
+          alt: 'Developing CQ Workshop – CQ Certified Facilitator badge, Cultural Intelligence Center',
+          width: 392,
+          height: 374,
+        },
       ],
       level: 100,
+    },
+  ],
+  engagements: [
+    {
+      type: 'Short-term',
+      name: 'Customized trainings',
+      description:
+        'Every training is designed around your audience, goals, and context – whether you are kicking off a conversation or going deeper with a team that is ready for more.',
+      formats: [
+        '30-minute keynote or talk',
+        '1-hour interactive webinar',
+        'Half- or full-day workshop',
+        'Multi-week virtual series',
+      ],
+    },
+    {
+      type: 'Long-term',
+      name: 'Consultation services',
+      description:
+        'Ongoing partnership for organizations, churches, and leaders committed to lasting change. We assess where you are, set clear goals, and build cultural competency into how you lead, hire, and serve.',
+      formats: [
+        'IDI® and CQ® group assessments with debriefs',
+        'Strategy and action planning',
+        'Recurring leadership coaching and check-ins',
+        'Review of policies, practices, and programs',
+      ],
     },
   ],
   jobs: [

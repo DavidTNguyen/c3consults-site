@@ -1,7 +1,7 @@
 import React from 'react'
 import { withPrefix } from 'gatsby'
 import styled from 'styled-components'
-import { FiArrowRight } from 'react-icons/fi'
+import { FiArrowRight, FiAward, FiCheck } from 'react-icons/fi'
 import siteConfig from '../../../data/siteConfig'
 
 const TrainingsSection = styled.section`
@@ -68,6 +68,49 @@ const TrainingsSection = styled.section`
     border-top: 1px solid var(--border);
   }
 
+  .certifications {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .certifications li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    line-height: 1.35;
+  }
+
+  .certifications__icon {
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+    font-size: 1.25rem;
+    color: var(--accent);
+  }
+
+  .certifications strong {
+    display: block;
+  }
+
+  .certifications__issuer {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  @media (min-width: 720px) {
+    .certifications {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
   .training__credentials {
     display: flex;
     flex-wrap: wrap;
@@ -80,10 +123,78 @@ const TrainingsSection = styled.section`
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 120px;
+    max-height: 140px;
     padding: 0.75rem;
     border-radius: var(--radius-sm);
     background: #fff;
+  }
+
+  .engagements {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .engagements__head h3 {
+    font-size: clamp(1.5rem, 2.3vw, 2rem);
+  }
+
+  .engagements__grid {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .engagement {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 0;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .engagement__tag {
+    align-self: flex-start;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .engagement h4 {
+    font-size: 1.3rem;
+  }
+
+  .engagement p {
+    color: var(--muted);
+  }
+
+  .engagement ul {
+    display: grid;
+    gap: 0.55rem;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .engagement li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    line-height: 1.4;
+  }
+
+  .engagement li svg {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    color: var(--accent);
   }
 
   .trainings__footer {
@@ -104,6 +215,10 @@ const TrainingsSection = styled.section`
   }
 
   @media (min-width: 860px) {
+    .engagements__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .trainings__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -171,6 +286,19 @@ const Trainings = () => (
           <div className="coaching__assessment coaching__details" key={skill.name}>
             <h4>{skill.name}</h4>
             <p>{skill.description}</p>
+            {skill.certifications?.length > 0 && (
+              <ul className="certifications" aria-label="Certifications">
+                {skill.certifications.map(cert => (
+                  <li key={cert.name}>
+                    <FiAward className="certifications__icon" aria-hidden="true" />
+                    <span>
+                      <strong>{cert.name}</strong>
+                      <span className="certifications__issuer">{cert.issuer}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
             <div className="training__credentials">
               {skill.images.map(image => (
                 <img
@@ -187,13 +315,37 @@ const Trainings = () => (
         ))}
       </section>
 
+      <section className="engagements" aria-labelledby="engagements-title">
+        <div className="engagements__head">
+          <p className="eyebrow">Ways to work together</p>
+          <h3 id="engagements-title">One-time events or ongoing partnership</h3>
+        </div>
+        <div className="engagements__grid">
+          {siteConfig.engagements.map(item => (
+            <article className="engagement reveal" key={item.name}>
+              <span className="engagement__tag">{item.type}</span>
+              <h4>{item.name}</h4>
+              <p>{item.description}</p>
+              <ul>
+                {item.formats.map(format => (
+                  <li key={format}>
+                    <FiCheck aria-hidden="true" />
+                    {format}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <div className="trainings__footer">
         <p className="trainings__note">
-          Every training can be customized – from a 30-minute talk or 1-hour
-          webinar to a half- or full-day workshop or a 5-week virtual series.
+          Not sure which fits? Let&rsquo;s talk about your goals and build the
+          right plan together.
         </p>
         <a className="btn btn--primary" href={`mailto:${siteConfig.social.email}`}>
-          Discuss a training
+          Start a conversation
           <FiArrowRight aria-hidden="true" />
         </a>
       </div>

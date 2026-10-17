@@ -47,13 +47,22 @@ The training credentials use the IDI logo and CQ Certified Facilitator badge
 provided in the website update document.
 The Trainings section groups `skills` in `data/siteConfig.js` by `category`:
 `training` for the open topic grid, `coaching` for individualized support, and
-`assessment` for assessment descriptions and credential images.
+`assessment` for assessment descriptions and credential images. An assessment
+entry can also include a `certifications` array (`name`, `issuer`), shown as a
+list between the description and the badges.
+The "Ways to work together" cards below the trainings come from `engagements`
+in `data/siteConfig.js` (`type`, `name`, `description`, `formats`).
 
 The Experience section displays client names and logos from
 `static/images/clients/sources.json`. Add or update entries there alongside the
 corresponding image files. Set `"background": "dark"` for white logos.
 Source URLs and usage notes are recorded in the same file. Blue Cross Minnesota
 currently uses the official Careers logo variant selected by the site owner.
+
+The Testimonials section is a spotlight: one featured quote with a portrait
+selector (click, tap, or arrow keys). Entries come from `data/testimonials.js`;
+`headshot` must match a file in `src/images/testimonials/`. Quotes longer than
+six lines at the current width get a "Read full testimonial" toggle.
 
 ## Configuration
 
