@@ -22,7 +22,8 @@
     "styled-components": "5.1.1"
   },
   "overrides": {
-    "msgpackr": "^1.11.14"
+    "msgpackr": "^1.11.14",
+    "ordered-binary": "^1.6.2"
   },
   "keywords": [
     "gatsby"

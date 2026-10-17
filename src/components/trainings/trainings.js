@@ -1,4 +1,5 @@
 import React from 'react'
+import { withPrefix } from 'gatsby'
 import styled from 'styled-components'
 import { FiPlus } from 'react-icons/fi'
 import siteConfig from '../../../data/siteConfig'
@@ -82,17 +83,22 @@ const TrainingsSection = styled.section`
     margin-top: 0.35rem;
   }
 
-  .training__body img {
-    float: left;
-    width: auto;
-    max-height: 84px;
-    margin: 0.25rem 1rem 0.5rem 0;
+  .training__credentials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
   }
 
-  .training__body::after {
-    content: '';
-    display: block;
-    clear: both;
+  .training__credentials img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 140px;
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    background: #fff;
   }
 
   .trainings__note {
@@ -142,10 +148,25 @@ const Trainings = () => (
               <span className="training__title">{skill.name}</span>
               <FiPlus className="training__icon" size={22} aria-hidden="true" />
             </summary>
-            <div
-              className="training__body"
-              dangerouslySetInnerHTML={{ __html: cleanHtml(skill.description) }}
-            />
+            <div className="training__body">
+              {skill.images && (
+                <div className="training__credentials">
+                  {skill.images.map(image => (
+                    <img
+                      key={image.src}
+                      src={withPrefix(image.src)}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+              )}
+              <div
+                dangerouslySetInnerHTML={{ __html: cleanHtml(skill.description) }}
+              />
+            </div>
           </details>
         ))}
       </div>

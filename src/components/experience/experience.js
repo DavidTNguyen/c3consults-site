@@ -1,6 +1,8 @@
 import React from 'react'
+import { withPrefix } from 'gatsby'
 import styled from 'styled-components'
 import siteConfig from '../../../data/siteConfig'
+import clientSources from '../../../static/images/clients/sources.json'
 
 const ExperienceSection = styled.section`
   .experience__grid {
@@ -64,6 +66,56 @@ const ExperienceSection = styled.section`
     max-width: 64ch;
   }
 
+  .experience__clients {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .clients__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1rem;
+    padding: 0;
+    margin-top: 1.5rem;
+    list-style: none;
+  }
+
+  .client {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .client__logo {
+    display: grid;
+    place-items: center;
+    height: 160px;
+    padding: 1.5rem;
+    background: #fff;
+  }
+
+  .client__logo--dark {
+    background: #252021;
+  }
+
+  .client__logo img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+  }
+
+  .client__name {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--border);
+    font-size: 1rem;
+    font-weight: 650;
+    line-height: 1.45;
+    text-align: center;
+  }
+
   @media (min-width: 900px) {
     .experience__grid {
       grid-template-columns: 0.8fr 1.2fr;
@@ -109,6 +161,27 @@ const Experience = () => {
             )
           })}
         </ol>
+      </div>
+
+      <div className="container experience__clients">
+        <h3 id="clients-title">Clients I have worked with</h3>
+        <ul className="clients__grid" aria-labelledby="clients-title">
+          {clientSources.logos.map(client => (
+            <li className="client reveal" key={client.file}>
+              <div
+                className={`client__logo${client.background === 'dark' ? ' client__logo--dark' : ''}`}
+              >
+                <img
+                  src={withPrefix(`/images/clients/${client.file}`)}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p className="client__name">{client.organization}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </ExperienceSection>
   )

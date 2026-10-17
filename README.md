@@ -33,6 +33,25 @@ Create your resume in a few minutes with this totally responsive starter using R
 
 ![Preview desktop](./preview-desktop.gif)
 
+## Local development
+
+Install dependencies with `npm install`, then run `npm run start`.
+The development server is available at http://localhost:8000.
+
+The `ordered-binary` dependency override fixes a Node.js 24 incompatibility
+in Gatsby's LMDB cache encoder that otherwise reports
+`Key size is larger than the maximum key size (1978)` for normal image paths.
+Keep the override when updating dependencies.
+
+The training credentials use the IDI logo and CQ Certified Facilitator badge
+provided in the website update document.
+
+The Experience section displays client names and logos from
+`static/images/clients/sources.json`. Add or update entries there alongside the
+corresponding image files. Set `"background": "dark"` for white logos.
+Source URLs and usage notes are recorded in the same file. Blue Cross Minnesota
+currently uses the official Careers logo variant selected by the site owner.
+
 ## Configuration
 
 Update the configuration file with your data. The configuration file is in ```data/siteConfig.js```

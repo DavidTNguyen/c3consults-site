@@ -1,0 +1,81 @@
+{
+  "retrievedOn": "2026-10-17",
+  "usageNote": "These logos remain the property of their respective owners. Downloading an official asset does not grant permission to imply endorsement; confirm permission and brand guidelines before publication.",
+  "logos": [
+    {
+      "organization": "Blue Cross and Blue Shield of Minnesota",
+      "file": "blue-cross-blue-shield-minnesota-careers.svg",
+      "sourcePage": "https://careers.bluecrossmn.com/",
+      "assetUrl": "https://tbcdn.talentbrew.com/company/42354/gst_v1_0/img/careers-logo-title-desktop-v2.svg",
+      "displayNote": "Official careers lockup, including the word Careers. The site owner selected this available variant for the client showcase; replace when a general-purpose logo is available."
+    },
+    {
+      "organization": "Minnesota Timberwolves",
+      "file": "minnesota-timberwolves.png",
+      "sourcePage": "https://www.nba.com/timberwolves/",
+      "assetUrl": "https://cdn.nba.com/teams/uploads/sites/1610612750/2026/06/TW_Primary.png"
+    },
+    {
+      "organization": "Minnesota Lynx",
+      "file": "minnesota-lynx.svg",
+      "sourcePage": "https://lynx.wnba.com/",
+      "assetUrl": "https://cdn.wnba.com/logos/wnba/1611661324/primary/D/logo.svg"
+    },
+    {
+      "organization": "Shakopee Mdewakanton Sioux Community",
+      "file": "shakopee-mdewakanton-sioux-community.png",
+      "sourcePage": "https://shakopeedakota.org/",
+      "assetUrl": "https://shakopeedakota.org/wp-content/uploads/2024/06/SMSC-LOGO_COLOR-w-text-HORZ.png"
+    },
+    {
+      "organization": "Minnehaha Academy",
+      "file": "minnehaha-academy.svg",
+      "sourcePage": "https://www.minnehahaacademy.net/",
+      "assetUrl": "https://resources.finalsite.net/images/v1775469526/minnehahaacademynet/njq63kvjiy00ln6lyftn/header-logo.svg"
+    },
+    {
+      "organization": "Golden Valley Lutheran Church",
+      "file": "golden-valley-lutheran-church.jpg",
+      "sourcePage": "https://www.gvlc.net/",
+      "assetUrl": "https://storage1.snappages.site/48K99J/assets/images/14771130_500x500_500.jpg"
+    },
+    {
+      "organization": "A.D. Players at the George Theater",
+      "file": "ad-players.png",
+      "sourcePage": "https://www.adplayers.org/",
+      "assetUrl": "https://images.squarespace-cdn.com/content/v1/5b1168f4d274cb8d16ce4591/cf7a9789-8df3-41c2-a558-ad59b70df705/George+little+g+gray.png?format=1500w"
+    },
+    {
+      "organization": "Urban Ventures",
+      "file": "urban-ventures-white.png",
+      "background": "dark",
+      "sourcePage": "https://urbanventures.org/",
+      "assetUrl": "https://images.squarespace-cdn.com/content/v1/564e21c0e4b0d26c39afd890/1483457487059-AZN6ZIGKJR15X41753ZH/UV+Logo+-+White.png?format=1500w",
+      "displayNote": "White logo; use a dark background."
+    },
+    {
+      "organization": "LINC",
+      "file": "linc.avif",
+      "sourcePage": "https://www.linc.org/about",
+      "assetUrl": "https://cdn.prod.website-files.com/660e51cf0141bef1407fdbae/6625e22e6861d64e2353c6bd_LINClogoblue%20(1).avif"
+    },
+    {
+      "organization": "National League of Cities",
+      "file": "national-league-of-cities.png",
+      "sourcePage": "https://www.nlc.org/",
+      "assetUrl": "https://www.nlc.org/wp-content/uploads/2023/08/cropped-NLC-Color-Logo-Digital.png"
+    },
+    {
+      "organization": "Ecolab",
+      "file": "ecolab.jpg",
+      "sourcePage": "https://investor.ecolab.com/overview/default.aspx",
+      "assetUrl": "https://cdn.cookielaw.org/logos/6f8d980e-d526-4ea2-86c9-d08d4127ec5e/29e30c5b-9894-4c09-8550-71f7417e891e/20d3ecbd-af59-4ef9-b8ee-9026f985b6b4/Ecolab_Logo_Blue_RGB.jpg"
+    },
+    {
+      "organization": "Housing in Action",
+      "file": "housing-in-action.svg",
+      "sourcePage": "https://housinginaction.org/",
+      "assetUrl": "https://housinginaction.org/wp-content/uploads/2024/11/HOUSING_IN_ACTION_Logo_4C-01.svg"
+    }
+  ]
+}

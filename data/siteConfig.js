@@ -2,20 +2,20 @@ module.exports = {
   siteName: 'C3 Consults – Cultural Competency Consulting',
   siteShortName: 'C3 Consults',
   siteTitle: 'Motivate. Educate. Activate.',
-  siteDescription: `Cultural competency, anti-racism, and intercultural training, speaking, and coaching with Khanh Nguyễn – Qualified IDI® Administrator.`,
+  siteDescription: `Cultural competency, anti-racism, and intercultural training, speaking, and coaching with Khanh Nguyễn – Qualified IDI® Administrator and Certified CQ® Facilitator.`,
   heroLead: `Speaking, workshops, and coaching that help people and organizations grow in cultural and racial intelligence – and build equitable, multi-ethnic communities.`,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
   authorShortName: 'Khanh Nguyễn',
-  authorRole: 'Cultural Competency Consultant · Qualified IDI® Administrator',
+  authorRole: 'Cultural Competency Consultant · Qualified IDI® Administrator · Certified CQ® Facilitator',
   logo: '/images/C3_Logo_Helvetica_Text.png',
   authorDescription: `My family came as refugees from Vietnam and we were sponsored by a church that helped us settle in the Twin Cities.  
   Growing up navigating multiple cultures, my service globally, travels to 22 countries, experience teaching in Higher Ed., work with African refugees and diverse organizations 
   have led me to see the importance of growing in 
   cultural and racial intelligence and competency.  <br/><br/>
-  I educate, speak on and provide training in cultural competency, racial justice, ethnic diversity, immigration & refugee advocacy and Asian American topics.
+  I educate, speak on and provide training in cultural competency, racial justice, ethnic diversity, immigration, refugee, and Asian American Advocacy.
   <br/><br/>
-  I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.   
+  I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency. I am also a certified facilitator of the Cultural Intelligence (CQ) assessment that measures your capability to relate and work in culturally diverse situations.
   <br/><br/>
   To make learning fun and engaging, I employ a variety of teaching methods such as cultural assessment tools, games, workshops, discussion and interactive simulations. My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
   <br/><br/>
@@ -104,54 +104,35 @@ module.exports = {
     {
       name: 'Individualized Cultural Coaching',
       description:
-        'An individualized coaching session that digs deeper into your current approach to cultural issues. Take the Intercultural Development Inventory (IDI), a premier tool to assess your intercultural competency. Get a personalized debrief of your results and learn where you are on a five stage continuum. Receive personal coaching tailored to your needs and current perspectives to grow.',
+        'An individualized coaching session that digs deeper into your current approach to cultural issues. Take the Intercultural Development Inventory (IDI), a premier tool to assess your intercultural competency. Get a personalized debrief of your results and learn where you are on a five stage continuum. Receive personal coaching tailored to your needs and current perspectives to grow. The Cultural Intelligence (CQ) assessment measures 4 different capabilities that measure how you relate and work in culturally diverse settings. You can also get measured in 10 different behavioral preferences or cultural values. These are beneficial tools to help you grow in cultural intelligence.',
       level: 100,
     },
     {
-      name: 'Intercultural Development Inventory - IDI ®',
-      description: `<img src="/images/idi_logo.png" style="float: left"/>I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.`,
+      name: 'Intercultural Development Inventory - IDI® and Cultural Intelligence (CQ)®',
+      description: `I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency. I am a certified facilitator of the Cultural Intelligence assessment.`,
+      images: [
+        {
+          src: '/images/idi-logo.png',
+          alt: 'Intercultural Development Inventory (IDI) logo',
+          width: 370,
+          height: 100,
+        },
+        {
+          src: '/images/cq-certified-facilitator.png',
+          alt: 'Cultural Intelligence Center CQ Certified Facilitator badge',
+          width: 400,
+          height: 400,
+        },
+      ],
       level: 100,
     },
   ],
   jobs: [
-    /* more jobs here */
     {
       company: ' Multi-Ethnic Work',
       occupation: 'Leader',
       description:
         "I have held various leadership roles for over 25 years doing multi-ethnic work in organizations and churches locally and abroad.  I've traveled to 5 continents and over 20 countries sending and leading teams to serve globally. I've also spoken locally and nationally on culture, leadership, injustice and dismantling stereotypes of and tackling racism toward the Asian American community. ",
-    },
-    {
-      company: 'University of Northwestern St. Paul',
-
-      occupation: 'Adjunct Instructor',
-      description:
-        "I have taught courses such as: Understanding Cultural Contexts, Race & Ethnicity in America, Exegesis, and others related to Ministry & Global service. I've spoken in workshops to students, faculty and staff on issues of intercultural competency.  ",
-    },
-    {
-      company: 'Upworks',
-
-      occupation: 'Instructor',
-      description:
-        'I provide Cultural Awareness training for this non-profit organization.  Our "Life Advocates" mentor diverse clients overcoming addictions, incarceration and abuse to help them execute goals for employment and/or higher education. ',
-    },
-    {
-      company: 'CEEDS & ICF',
-      occupation: 'Outreach Coordinator',
-      description:
-        'I currently serve on the Leadership Team to serve newly-arrived refugees from Congo, Gabon, Uganda, and other central African countries.',
-    },
-    {
-      company: 'University of NorthWestern',
-      occupation: 'Associate Director of Campus Ministries',
-      description:
-        'I directed the Global Leadership Program - leading, training and sending faculty and students to volunteer in service projects locally and around the world.  I also served on the Racial and Ethnic Diversity Committee, advised the Asian club, and organized a Civil Rights tour for faculty and students.',
-    },
-    {
-      company: 'YWAM',
-      occupation: 'Team Leader',
-      description:
-        'I led, and trained participants in global service teams to Hawaii, Vietnam, Thailand, and Japan.',
     },
   ],
   social: {
