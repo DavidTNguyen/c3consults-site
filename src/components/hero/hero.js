@@ -1,79 +1,182 @@
 import React from 'react'
-import { withPrefix } from 'gatsby'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
-import siteConfig from '../../../data/siteConfig'
 import styled from 'styled-components'
+import { StaticImage } from 'gatsby-plugin-image'
+import { FiArrowRight } from 'react-icons/fi'
+import siteConfig from '../../../data/siteConfig'
 
-const HeroContainer = styled.div`
+const HeroSection = styled.section`
   position: relative;
-  display: table;
-  width: 100%;
   overflow: hidden;
+  padding-block: clamp(3rem, 7vw, 6rem) clamp(4rem, 8vw, 7rem);
+  background: radial-gradient(
+      60rem 40rem at 85% -10%,
+      var(--accent-soft),
+      transparent 60%
+    ),
+    var(--bg);
+
+  .hero__grid {
+    display: grid;
+    gap: clamp(2.5rem, 6vw, 4.5rem);
+    align-items: center;
+  }
+
+  .hero__lead {
+    max-width: 56ch;
+    margin-top: 1.25rem;
+    font-size: clamp(1.1rem, 0.6vw + 1rem, 1.3rem);
+    color: var(--muted);
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .hero__stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    margin-top: 2.75rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hero__stats strong {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+
+  .hero__stats span {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .hero__media {
+    position: relative;
+    max-width: 560px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero__media::before {
+    content: '';
+    position: absolute;
+    inset: 8% -6% -6% 10%;
+    border-radius: 32px;
+    background: var(--accent);
+    opacity: 0.9;
+    transform: rotate(3deg);
+  }
+
+  .hero__image {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    aspect-ratio: 1 / 1;
+  }
+
+  .hero__badge {
+    position: absolute;
+    left: -4%;
+    bottom: 8%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem 0.75rem 0.75rem;
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .hero__badge strong {
+    display: block;
+    color: var(--text);
+  }
+
+  .hero__badge span {
+    color: var(--muted);
+  }
+
+  @media (min-width: 900px) {
+    .hero__grid {
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+  }
 `
 
-const TitleContainer = styled.div`
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  width: 100%;
-`
+const Hero = () => (
+  <HeroSection aria-labelledby="hero-title">
+    <div className="container hero__grid">
+      <div>
+        <p className="eyebrow">Cultural Competency Consulting</p>
+        <h1 id="hero-title">{siteConfig.siteTitle}</h1>
+        <p className="hero__lead">{siteConfig.heroLead}</p>
+        <div className="hero__actions">
+          <a
+            className="btn btn--primary"
+            href={`mailto:${siteConfig.social.email}`}
+          >
+            Book a training
+            <FiArrowRight aria-hidden="true" />
+          </a>
+          <a className="btn btn--ghost" href="#trainings">
+            Explore trainings
+          </a>
+        </div>
+        <ul className="hero__stats">
+          <li>
+            <strong>25+ years</strong>
+            <span>multi-ethnic leadership</span>
+          </li>
+          <li>
+            <strong>22 countries</strong>
+            <span>of global experience</span>
+          </li>
+          <li>
+            <strong>IDI®</strong>
+            <span>Qualified Administrator</span>
+          </li>
+        </ul>
+      </div>
 
-const HeroTitle = styled.h1`
-  font-weight: 400;
-  font-size: 3rem;
-  margin: 10px 60px;
-  color: #fff;
-  text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
-`
-
-const Hero = ({ className, title }) => (
-  <HeroContainer className={className}>
-    <TitleContainer>
-      <Container fluid>
-        <Row>
-          <Col xs={4} className="avatar">
-            <Row>
-              <Col>
-                <img
-                  className="logo__image"
-                  src={withPrefix(siteConfig.logo)}
-                  alt="c3 logo"
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <HeroTitle>{title}</HeroTitle>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-    </TitleContainer>
-  </HeroContainer>
+      <div className="hero__media">
+        <div className="hero__image">
+          <StaticImage
+            src="../../images/heroes/diverse-people-hand-stack.png"
+            alt="A diverse group of colleagues stacking their fists together in a show of unity"
+            loading="eager"
+            fetchPriority="high"
+            width={560}
+            aspectRatio={1}
+            transformOptions={{ cropFocus: 'center' }}
+            style={{ height: '100%' }}
+          />
+        </div>
+        <div className="hero__badge">
+          <StaticImage
+            src="../../images/c3-mark.png"
+            alt=""
+            width={36}
+            height={36}
+            placeholder="none"
+          />
+          <div>
+            <strong>Motivate · Educate · Activate</strong>
+            <span>Talks · Workshops · Coaching</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </HeroSection>
 )
 
-export default styled(Hero)`
-  ${p =>
-    `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .logo__image {
-    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
-    max-width: 350px;
-    border-radius: 100px;
-    margin: 0 auto 24px;
-    /* Add the blur effect */
-    // filter: blur(3px);
-  }
-
-  .avatar {
-    align-items: center;
-    margin-bottom: 24px;
-    flex-direction: column;
-  }
-`
+export default Hero

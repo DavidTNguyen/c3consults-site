@@ -1,123 +1,205 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+import { StaticImage } from 'gatsby-plugin-image'
 import { FiSun, FiMoon } from 'react-icons/fi'
-import { withPrefix } from 'gatsby'
-import Switch from 'react-switch'
 import siteConfig from '../../../data/siteConfig'
 
-const HeaderWrapper = styled.header`
-  position: fixed;
+const Bar = styled.header`
+  position: sticky;
   top: 0;
-  left: 0;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
   z-index: 1000;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background: var(--header-bg);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--border);
 `
 
-const HeaderNav = styled.nav`
-  margin-left: auto;
-  margin-right: auto;
-  height: 60px;
+const Inner = styled.div`
   display: flex;
-  flex-direction: row;
-  max-width: 960px;
-  z-index: 1000;
+  align-items: center;
   justify-content: space-between;
-  overflow-x: auto;
-  overflow-y: hidden;
-  background-color: ${({ theme }) => theme.colors.primary};
-  a:hover {
-    filter: brightness(0.6);
+  gap: 1rem;
+  height: var(--header-h);
+`
+
+const Brand = styled(Link)`
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text);
+  text-decoration: none;
+  flex-shrink: 0;
+
+  &:hover {
+    color: var(--text);
+  }
+
+  .brand__text {
+    display: none;
+    line-height: 1.1;
+  }
+
+  .brand__name {
+    display: block;
+    font-weight: 800;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+  }
+
+  .brand__tag {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+
+  @media (min-width: 720px) {
+    .brand__text {
+      display: block;
+    }
   }
 `
 
-const HeaderLinkGroup = styled.div`
-  display: flex;
-  flex-direction: row;
-`
-
-const HeaderLink = styled(Link)`
-  position: relative;
-  box-sizing: border-box;
-  text-decoration: none;
+const Nav = styled.nav`
   display: flex;
   align-items: center;
-  color: #fff;
-  border: 0;
-  margin: 0;
-  margin-right: 0.5rem;
-  padding-left: 20px;
-  padding-right: 20px;
-  min-width: 42px;
-  z-index: 10;
-  ${({ active }) =>
-    active &&
-    css`
-      pointer-events: none;
-      border-bottom: 2px solid #fff;
-    `}
+  gap: 0.25rem;
+
+  ul {
+    display: flex;
+    gap: 0.15rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 0.5rem 0.7rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .nav__link:hover {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+
+  .nav__link[aria-current='page'] {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .nav__cta {
+    display: none;
+    min-height: 40px;
+    padding: 0.55rem 1.1rem;
+    margin-left: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  @media (min-width: 900px) {
+    gap: 0.5rem;
+
+    .nav__link {
+      padding: 0.5rem 0.95rem;
+    }
+
+    .nav__cta {
+      display: inline-flex;
+    }
+  }
 `
 
-const StyledSwitch = styled(Switch).attrs(props => ({
-  onHandleColor: props.theme.colors.primary,
-  offHandleColor: props.theme.colors.primary,
-}))``
+const ThemeToggle = styled.button`
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  color: var(--muted);
+  transition: color 0.2s ease, background-color 0.2s ease;
 
-const SwitchWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
+  &:hover {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+
+  .icon--sun {
+    display: none;
+  }
+
+  [data-theme='dark'] & .icon--sun {
+    display: block;
+  }
+
+  [data-theme='dark'] & .icon--moon {
+    display: none;
+  }
 `
 
-const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-`
+const toggleTheme = () => {
+  if (typeof window === 'undefined' || !window.__setPreferredTheme) return
+  window.__setPreferredTheme(window.__theme === 'dark' ? 'light' : 'dark')
+}
 
-const Header = ({ location, onChangeTheme, theme }) => {
-  const { headerLinks } = siteConfig
+const Header = () => {
+  const { headerLinks, social, enableDarkmode, siteShortName } = siteConfig
 
   return (
-    <HeaderWrapper>
-      <HeaderNav>
-        <HeaderLinkGroup>
-          {headerLinks.map((headerLink, i) => (
-            <HeaderLink
-              active={location.pathname === withPrefix(headerLink.url)}
-              to={headerLink.url}
-              key={`header-link-${i}`}
+    <Bar>
+      <Inner className="container">
+        <Brand to="/" aria-label={`${siteShortName} home`}>
+          <StaticImage
+            src="../../images/c3-mark.png"
+            alt=""
+            width={40}
+            height={40}
+            placeholder="none"
+            loading="eager"
+          />
+          <span className="brand__text">
+            <span className="brand__name">{siteShortName}</span>
+            <span className="brand__tag">Cultural Competency Consulting</span>
+          </span>
+        </Brand>
+
+        <Nav aria-label="Main">
+          <ul>
+            {headerLinks.map(link => (
+              <li key={link.url}>
+                <Link className="nav__link" to={link.url}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {enableDarkmode && (
+            <ThemeToggle
+              type="button"
+              onClick={toggleTheme}
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode"
             >
-              {headerLink.label}
-            </HeaderLink>
-          ))}
-        </HeaderLinkGroup>
-        {siteConfig.enableDarkmode && (
-          <SwitchWrapper>
-            <StyledSwitch
-              onChange={onChangeTheme}
-              checked={theme === 'light'}
-              onColor="#626262"
-              offColor="#212121"
-              checkedIcon={
-                <IconWrapper>
-                  <FiSun color="yellow" />
-                </IconWrapper>
-              }
-              uncheckedIcon={
-                <IconWrapper>
-                  <FiMoon color="white" />
-                </IconWrapper>
-              }
-            />
-          </SwitchWrapper>
-        )}
-      </HeaderNav>
-    </HeaderWrapper>
+              <FiMoon className="icon--moon" size={19} aria-hidden="true" />
+              <FiSun className="icon--sun" size={19} aria-hidden="true" />
+            </ThemeToggle>
+          )}
+          {social.email && (
+            <a
+              className="btn btn--primary nav__cta"
+              href={`mailto:${social.email}`}
+            >
+              Book Khanh
+            </a>
+          )}
+        </Nav>
+      </Inner>
+    </Bar>
   )
 }
 

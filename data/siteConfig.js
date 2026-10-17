@@ -1,9 +1,13 @@
 module.exports = {
+  siteName: 'C3 Consults – Cultural Competency Consulting',
+  siteShortName: 'C3 Consults',
   siteTitle: 'Motivate. Educate. Activate.',
-  siteDescription: `Cultural Competency Consulting `,
+  siteDescription: `Cultural competency, anti-racism, and intercultural training, speaking, and coaching with Khanh Nguyễn – Qualified IDI® Administrator.`,
+  heroLead: `Speaking, workshops, and coaching that help people and organizations grow in cultural and racial intelligence – and build equitable, multi-ethnic communities.`,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
-  authorAvatar: '/images/headshot.jpg',
+  authorShortName: 'Khanh Nguyễn',
+  authorRole: 'Cultural Competency Consultant · Qualified IDI® Administrator',
   logo: '/images/C3_Logo_Helvetica_Text.png',
   authorDescription: `My family came as refugees from Vietnam and we were sponsored by a church that helped us settle in the Twin Cities.  
   Growing up navigating multiple cultures, my service globally, travels to 22 countries, experience teaching in Higher Ed., work with African refugees and diverse organizations 
@@ -18,13 +22,13 @@ module.exports = {
   I can customize my trainings from a 30 min speaking engagement, 1 hour webinar, 1/2 - full day interactive workshop, to a 5 week virtual series.  I'd love to work with you or adapt to fit your needs.`,
   videos: [
     {
-      playing: false,
       key: 'promo',
+      title: 'Meet C3 Consults',
       url: 'https://www.youtube.com/embed/9LAVC2kUOzo',
     },
     {
-      playing: false,
       key: 'aapi',
+      title: 'MPLS National Rally for AAPI Lives & Dignity (March 28, 2021)',
       url: 'https://www.youtube.com/embed/nPy1n8vIfC0',
     },
   ],
@@ -32,26 +36,26 @@ module.exports = {
     {
       title: 'No Longer Foreigners',
       url: 'https://sanctuarycov.simplecast.com/episodes/voices-from-gods-mosaic-khanh-nguyen',
-      image: '/images/sanctuary_podcast_mosaic.jpg',
+      image: 'sanctuary_podcast_mosaic.jpg',
       description: 'Top 100 sermons on immigration by Sojourner magazine',
     },
     {
       title: 'Black/Asian Solidarity',
       url: 'https://www.facebook.com/586908449/videos/10158274147193450/',
-      image: '/images/candid_conversation_ryan_daniel.jpg',
+      image: 'candid_conversation_ryan_daniel.jpg',
       description: 'Candid Conversation - Addressing the rise in Anti-Asian Violence.',
     },
     {
       title: 'Addressing Anti-Asian Racism',
       url: 'https://www.youtube.com/watch?v=pjPinM-0xbc',
-      image: '/images/kairos_webinar_anti_asian_violence.png',
+      image: 'kairos_webinar_anti_asian_violence.png',
       description:
         'Interview with the Kairos Network. Discuss the history of Anti-Asian racism in America and how to dismantle Asian stereotypes. A Christ-Centered perspective on how to deal with these issues ',
     },
     {
       title: '3CPtv - Interview',
       url: 'https://www.youtube.com/watch?v=WZq06T3n1OM',
-      image: '/images/3cp_e014.jpeg',
+      image: '3cp_e014.jpeg',
       description:
         'Asian American history. Break down the stereotypes associated with Asian culture',
     }
@@ -63,7 +67,7 @@ module.exports = {
         'Hate crimes toward Asian Americans increased by nearly 150% in 2020. While discrimination toward the AAPI community has existed for centuries, Covid and the recent shooting in Atlanta shooting have brought this issue to the forefront. The cumulative impact on Asian Americans is that many feel threatened, unsafe, and unwelcome.',
       url:
         'https://transformmn.org/event/anti-asian-violence/?fbclid=IwAR2fkoTp2bfIV-pEm0WNe7-CWkGyvaDbhlbZL_XEIxl8I-vrQbQ0h2VA_jo',
-      image: '/images/anti_asian_violence_transform_mn.png',
+      image: 'anti_asian_violence_transform_mn.png',
     },
   ],
   skills: [
@@ -155,16 +159,14 @@ module.exports = {
     facebook: 'https://www.facebook.com/c3consults/',
     email: 'c3consults@gmail.com',
   },
-  siteUrl: 'https://github.com/DavidTNguyen/c3consults-site',
+  siteUrl: 'https://c3consults.com',
   pathPrefix: '/c3consults-site', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/diverse-people-hand-stack.png',
   googleAnalyticsId: ['G-9J2JV09MQY', 'G-F9H93Y061G'],
-  background_color: '#ffffff',
-  theme_color: '#25303B',
-  fontColor: '#000000cc',
+  background_color: '#fbf8f5',
+  theme_color: '#a3101a',
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: 'src/images/c3-icon.png',
   headerLinks: [
     {
       label: 'Home',

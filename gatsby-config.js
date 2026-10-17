@@ -9,16 +9,31 @@ module.exports = {
   },
   pathPrefix: config.pathPrefix,
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`, `avif`],
+          placeholder: `blurred`,
+          quality: 72,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitle,
-        start_url: config.pathPrefix,
+        name: config.siteName,
+        short_name: config.siteShortName,
+        start_url: `/`,
         background_color: config.background_color,
         theme_color: config.theme_color,
         display: config.display,

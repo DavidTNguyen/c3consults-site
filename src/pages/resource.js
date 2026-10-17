@@ -1,78 +1,44 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
+import { StaticImage } from 'gatsby-plugin-image'
 import siteConfig from '../../data/siteConfig'
-import { withPrefix } from 'gatsby'
-import loadable from '@loadable/component'
-import Hero from '../components/hero'
-import SEO from '../components/SEO'
-import Wrapper from '../components/wrapper'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import PageHeader from '../components/page-header'
+import LinkCards from '../components/link-cards'
+import Contact from '../components/contact'
 
-const Layout = loadable(() => import('../components/layout'))
-
-const Image = styled.img`
-  max-height: 220px;
-  max-width: 220px;
-  object-fit: cover;
-  object-position: center center;
-  border-radius: 10px;
-  box-shadow: 24px 47px 79px -21px rgba(0, 0, 0, 0.51);
-`
-
-const ResourceCard = styled.a`
-  text-decoration: none;
-  color: inherit;
-
-  ${({ href }) =>
-    href &&
-    css`
-      &:hover ${Image} {
-        transition: transform 0.5s;
-        transform: translateY(-5px);
+const Resources = () => (
+  <Layout>
+    <PageHeader
+      eyebrow="Listen & watch"
+      title="Resources"
+      lead="Sermons, interviews, and conversations on race, immigration, and the Asian American experience."
+      image={
+        <StaticImage
+          className="page-header__bg"
+          src="../images/heroes/pierre-chatel-innocenti-W5INoOK-5eI-unsplash.jpeg"
+          alt=""
+          layout="fullWidth"
+          loading="eager"
+          fetchPriority="high"
+        />
       }
-    `}
-`
+    />
+    <section className="section" aria-label="Resource list">
+      <div className="container">
+        <LinkCards items={siteConfig.resources} ctaLabel="Watch or listen" />
+      </div>
+    </section>
+    <Contact />
+  </Layout>
+)
 
-const Resource = ({ className, location }) => {
-  const title = 'Resources'
-  const { keywords, resources } = siteConfig
-  return (
-    <Layout location={location}>
-      <SEO title={title} keywords={keywords} />
+export default Resources
 
-      <Hero
-        heroImg={withPrefix(
-          '/images/pierre-chatel-innocenti-W5INoOK-5eI-unsplash.jpeg'
-        )}
-        title={title}
-      />
-
-      <Wrapper className={className}>
-        <Container className="page-content" fluid>
-          <Row>
-            {resources.map(res => (
-              <Col xs={2} key={res.title}>
-                <ResourceCard
-                  as={res.url ? 'a' : 'div'}
-                  href={res.url}
-                  target="_blank"
-                >
-                  <Image src={withPrefix(res.image)} />
-                  <h3>{res.title}</h3>
-                  <p>{res.description}</p>
-                </ResourceCard>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </Wrapper>
-    </Layout>
-  )
-}
-
-export default styled(Resource)`
-  .page-content {
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-`
+export const Head = ({ location }) => (
+  <Seo
+    title="Resources"
+    description="Sermons, interviews, and conversations with Khanh Nguyễn on race, immigration, and the Asian American experience."
+    pathname={location.pathname}
+  />
+)

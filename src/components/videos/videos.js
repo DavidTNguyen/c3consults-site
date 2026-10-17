@@ -1,67 +1,148 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import ReactPlayer from 'react-player'
-import { Carousel } from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { FaPlay } from 'react-icons/fa'
 import siteConfig from '../../../data/siteConfig'
 
-const YoutubeSlide = ({ url, isSelected }) => (
-  <ReactPlayer width="100%" height="500px" url={url} playing={isSelected} />
-)
+const VideosSection = styled.section`
+  .videos__grid {
+    display: grid;
+    gap: 1.5rem;
+  }
 
-const Videos = ({ className }) => {
-  const customRenderItem = (item, props) => (
-    <item.type {...item.props} {...props} />
-  )
+  .video {
+    margin: 0;
+  }
 
-  const getVideoThumb = videoId =>
-    `https://img.youtube.com/vi/${videoId}/default.jpg`
+  .video__frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--shadow);
+  }
 
-  const getVideoId = url =>
-    url.substr('https://www.youtube.com/embed/'.length, url.length)
+  .video__frame iframe,
+  .video__poster,
+  .video__poster img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
-  const customRenderThumb = (children) =>
-    children.map(item => {
-      const videoId = getVideoId(item.props.url)
-      return <img src={getVideoThumb(videoId)} alt={"Video Thumb " + videoId}/>
-    })
+  .video__poster img {
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    opacity: 0.88;
+  }
+
+  .video__poster:hover img {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+
+  .video__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease;
+  }
+
+  .video__play svg {
+    margin-left: 4px;
+  }
+
+  .video__poster:hover .video__play {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+
+  figcaption {
+    margin-top: 0.85rem;
+    font-weight: 600;
+  }
+
+  @media (min-width: 800px) {
+    .videos__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+`
+
+const getVideoId = url => url.split('/').pop().split('?')[0]
+
+// Lightweight facade: shows a thumbnail and only loads the YouTube player on click.
+const LiteYouTube = ({ id, title }) => {
+  const [active, setActive] = useState(false)
 
   return (
-    <div className={className}>
-      <div className="player-wrapper">
-        <Carousel
-          renderItem={customRenderItem}
-          renderThumbs={customRenderThumb}
+    <div className="video__frame">
+      {active ? (
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`}
+          title={title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      ) : (
+        <button
+          type="button"
+          className="video__poster"
+          onClick={() => setActive(true)}
+          aria-label={`Play video: ${title}`}
         >
-          {siteConfig.videos &&
-            siteConfig.videos.map(vid => (
-              <YoutubeSlide key={vid.key} url={vid.url} />
-            ))}
-        </Carousel>
-      </div>
+          <img
+            src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+            alt=""
+            width="480"
+            height="360"
+            loading="lazy"
+            decoding="async"
+          />
+          <span className="video__play" aria-hidden="true">
+            <FaPlay size={22} />
+          </span>
+        </button>
+      )}
     </div>
   )
 }
 
-export default styled(Videos)`
-  position: relative;
-  margin: auto;
-  width: 100%;
-  height:100%;
-  background: ${({ theme }) => theme.colors.primary};
+const Videos = () => {
+  if (!siteConfig.videos || !siteConfig.videos.length) return null
 
-  .carousel-background {
-    margin: auto;
-  }
+  return (
+    <VideosSection
+      id="videos"
+      className="section section--alt"
+      aria-labelledby="videos-title"
+    >
+      <div className="container">
+        <div className="section-head">
+          <p className="eyebrow">Watch</p>
+          <h2 id="videos-title">See Khanh in action</h2>
+        </div>
+        <div className="videos__grid">
+          {siteConfig.videos.map(video => (
+            <figure className="video reveal" key={video.key}>
+              <LiteYouTube id={getVideoId(video.url)} title={video.title} />
+              <figcaption>{video.title}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </VideosSection>
+  )
+}
 
-  .player-wrapper {
-    position: relative;
-    // padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
-  }
-
-  .react-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-`
+export default Videos

@@ -1,73 +1,44 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
+import { StaticImage } from 'gatsby-plugin-image'
 import siteConfig from '../../data/siteConfig'
-import { withPrefix } from 'gatsby'
-import loadable from '@loadable/component'
-import Hero from '../components/hero'
-import SEO from '../components/SEO'
-import Wrapper from '../components/wrapper'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import PageHeader from '../components/page-header'
+import LinkCards from '../components/link-cards'
+import Contact from '../components/contact'
 
-const Layout = loadable(() => import('../components/layout'))
-
-const Image = styled.img`
-  max-height: 220px;
-  max-width: 220px;
-  object-fit: cover;
-  object-position: center center;
-  border-radius: 10px;
-  box-shadow: 24px 47px 79px -21px rgba(0, 0, 0, 0.51);
-`
-
-const EventCard = styled.a`
-  text-decoration: none;
-  color: inherit;
-
-  ${({ href }) =>
-    href &&
-    css`
-      &:hover ${Image} {
-        transition: transform 0.5s;
-        transform: translateY(-5px);
+const Events = () => (
+  <Layout>
+    <PageHeader
+      eyebrow="Events"
+      title="Upcoming Events"
+      lead="Workshops, webinars, and speaking engagements with Khanh."
+      image={
+        <StaticImage
+          className="page-header__bg"
+          src="../images/heroes/Linked-Workshop.jpg"
+          alt=""
+          layout="fullWidth"
+          loading="eager"
+          fetchPriority="high"
+        />
       }
-    `}
-`
+    />
+    <section className="section" aria-label="Event list">
+      <div className="container">
+        <LinkCards items={siteConfig.events} ctaLabel="Event details" />
+      </div>
+    </section>
+    <Contact />
+  </Layout>
+)
 
-const Event = ({ className, location }) => {
-  const title = 'Upcoming Events'
-  const { keywords, events } = siteConfig
-  return (
-    <Layout location={location}>
-      <SEO title={title} keywords={keywords} />
+export default Events
 
-      <Hero heroImg={withPrefix('/images/Linked-Workshop.jpg')} title={title} />
-
-      <Wrapper className={className}>
-        <Container className="page-content" fluid>
-          <Row>
-            {events.map(event => (
-              <Col key={event.title} xs={2}>
-                <EventCard
-                  as={event.url ? 'a' : 'div'}
-                  href={event.url}
-                  target="_blank"
-                >
-                  <Image src={withPrefix(event.image)} />
-                  <h3>{event.title}</h3>
-                  <p>{event.description}</p>
-                </EventCard>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </Wrapper>
-    </Layout>
-  )
-}
-
-export default styled(Event)`
-  .page-content {
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-`
+export const Head = ({ location }) => (
+  <Seo
+    title="Events"
+    description="Workshops, webinars, and speaking engagements with Khanh Nguyễn of C3 Consults."
+    pathname={location.pathname}
+  />
+)
