@@ -272,20 +272,24 @@ const Trainings = () => (
       <section className="trainings__coaching" aria-labelledby="coaching-title">
         <div className="coaching__intro">
           <p className="eyebrow">Coaching &amp; assessments</p>
-          <h3 id="coaching-title">Personal growth, grounded in insight</h3>
+          <h3 id="coaching-title">Personal and team growth, grounded in insight</h3>
         </div>
         <div className="coaching__details">
           {coaching.map(skill => (
             <div key={skill.name}>
               <h4>{skill.name}</h4>
-              <p>{skill.description}</p>
+              {skill.description.split('\n\n').map(paragraph => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
             </div>
           ))}
         </div>
         {assessments.map(skill => (
           <div className="coaching__assessment coaching__details" key={skill.name}>
             <h4>{skill.name}</h4>
-            <p>{skill.description}</p>
+            {skill.description.split('\n\n').map(paragraph => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
             {skill.certifications?.length > 0 && (
               <ul className="certifications" aria-label="Certifications">
                 {skill.certifications.map(cert => (

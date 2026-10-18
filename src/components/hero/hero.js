@@ -36,9 +36,10 @@ const HeroSection = styled.section`
   }
 
   .hero__stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 2rem;
+    max-width: 30rem;
     margin-top: 2.75rem;
     padding: 0;
     list-style: none;
@@ -117,7 +118,7 @@ const Hero = () => (
   <HeroSection aria-labelledby="hero-title">
     <div className="container hero__grid">
       <div>
-        <p className="eyebrow">Cultural Competency Consulting</p>
+        <p className="eyebrow">C3: Cultural Competency Consulting</p>
         <h1 id="hero-title">{siteConfig.siteTitle}</h1>
         <p className="hero__lead">{siteConfig.heroLead}</p>
         <div className="hero__actions">
@@ -138,12 +139,16 @@ const Hero = () => (
             <span>multi-ethnic leadership</span>
           </li>
           <li>
-            <strong>22 countries</strong>
+            <strong>20+ countries</strong>
             <span>of global experience</span>
           </li>
           <li>
             <strong>IDI®</strong>
-            <span>Qualified Administrator</span>
+            <span>Intercultural Development Inventory Administrator</span>
+          </li>
+          <li>
+            <strong>CQ®</strong>
+            <span>Cultural Intelligence Facilitator</span>
           </li>
         </ul>
       </div>

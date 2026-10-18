@@ -131,8 +131,8 @@ const Services = () => (
         <p className="eyebrow">Services</p>
         <h2 id="services-title">Speaking &amp; training services</h2>
         <p>
-          In person or virtual, for churches, campuses, nonprofits, and
-          workplaces.
+          In person or virtual, for organizations, campuses, nonprofits,
+          churches, and workplaces.
         </p>
       </div>
 

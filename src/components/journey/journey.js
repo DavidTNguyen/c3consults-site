@@ -94,8 +94,8 @@ const Journey = () => (
           <p className="eyebrow">The journey</p>
           <h2 id="journey-title">Every journey carries a story</h2>
           <p>
-            From a refugee family settling in the Twin Cities to service in 22
-            countries, I bring a lived, global perspective to every training.
+            From a refugee family settling in the Twin Cities to service in
+            20+ countries, I bring a lived, global perspective to every training.
           </p>
         </div>
       </div>

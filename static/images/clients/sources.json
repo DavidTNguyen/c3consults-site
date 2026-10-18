@@ -28,16 +28,22 @@
       "assetUrl": "https://shakopeedakota.org/wp-content/uploads/2024/06/SMSC-LOGO_COLOR-w-text-HORZ.png"
     },
     {
+      "organization": "National League of Cities",
+      "file": "national-league-of-cities.png",
+      "sourcePage": "https://www.nlc.org/",
+      "assetUrl": "https://www.nlc.org/wp-content/uploads/2023/08/cropped-NLC-Color-Logo-Digital.png"
+    },
+    {
+      "organization": "Ecolab",
+      "file": "ecolab.jpg",
+      "sourcePage": "https://investor.ecolab.com/overview/default.aspx",
+      "assetUrl": "https://cdn.cookielaw.org/logos/6f8d980e-d526-4ea2-86c9-d08d4127ec5e/29e30c5b-9894-4c09-8550-71f7417e891e/20d3ecbd-af59-4ef9-b8ee-9026f985b6b4/Ecolab_Logo_Blue_RGB.jpg"
+    },
+    {
       "organization": "Minnehaha Academy",
       "file": "minnehaha-academy.svg",
       "sourcePage": "https://www.minnehahaacademy.net/",
       "assetUrl": "https://resources.finalsite.net/images/v1775469526/minnehahaacademynet/njq63kvjiy00ln6lyftn/header-logo.svg"
-    },
-    {
-      "organization": "Golden Valley Lutheran Church",
-      "file": "golden-valley-lutheran-church.jpg",
-      "sourcePage": "https://www.gvlc.net/",
-      "assetUrl": "https://storage1.snappages.site/48K99J/assets/images/14771130_500x500_500.jpg"
     },
     {
       "organization": "A.D. Players at the George Theater",
@@ -60,16 +66,10 @@
       "assetUrl": "https://cdn.prod.website-files.com/660e51cf0141bef1407fdbae/6625e22e6861d64e2353c6bd_LINClogoblue%20(1).avif"
     },
     {
-      "organization": "National League of Cities",
-      "file": "national-league-of-cities.png",
-      "sourcePage": "https://www.nlc.org/",
-      "assetUrl": "https://www.nlc.org/wp-content/uploads/2023/08/cropped-NLC-Color-Logo-Digital.png"
-    },
-    {
-      "organization": "Ecolab",
-      "file": "ecolab.jpg",
-      "sourcePage": "https://investor.ecolab.com/overview/default.aspx",
-      "assetUrl": "https://cdn.cookielaw.org/logos/6f8d980e-d526-4ea2-86c9-d08d4127ec5e/29e30c5b-9894-4c09-8550-71f7417e891e/20d3ecbd-af59-4ef9-b8ee-9026f985b6b4/Ecolab_Logo_Blue_RGB.jpg"
+      "organization": "Golden Valley Lutheran Church",
+      "file": "golden-valley-lutheran-church.jpg",
+      "sourcePage": "https://www.gvlc.net/",
+      "assetUrl": "https://storage1.snappages.site/48K99J/assets/images/14771130_500x500_500.jpg"
     },
     {
       "organization": "Housing in Action",

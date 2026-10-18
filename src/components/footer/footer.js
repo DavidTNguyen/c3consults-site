@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import { StaticImage } from 'gatsby-plugin-image'
 import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
 import siteConfig from '../../../data/siteConfig'
@@ -17,10 +18,15 @@ const FooterBar = styled.footer`
     padding-block: 3rem 2rem;
   }
 
-  .footer__name {
-    color: var(--text);
-    font-weight: 800;
-    font-size: 1.1rem;
+  .footer__logo {
+    display: block;
+    width: 200px;
+  }
+
+  [data-theme='dark'] & .footer__logo {
+    padding: 6px 12px;
+    border-radius: 14px;
+    background: #fff;
   }
 
   .footer__about p {
@@ -89,13 +95,19 @@ const FooterBar = styled.footer`
 `
 
 const Footer = () => {
-  const { social, headerLinks, authorName, siteShortName } = siteConfig
+  const { social, headerLinks, authorName } = siteConfig
 
   return (
     <FooterBar>
       <div className="container footer__grid">
         <div className="footer__about">
-          <div className="footer__name">{siteShortName}</div>
+          <StaticImage
+            className="footer__logo"
+            src="../../images/c3-logo.png"
+            alt="C3 Cultural Competency Consulting"
+            width={200}
+            placeholder="none"
+          />
           <p>
             Cultural competency, anti-racism, and intercultural training that
             motivates, educates, and activates.
@@ -164,7 +176,8 @@ const Footer = () => {
       </div>
 
       <div className="container footer__bottom">
-        © {new Date().getFullYear()} {authorName} · {siteShortName}
+        © {new Date().getFullYear()} {authorName} · C3: Cultural Competency
+        Consulting
       </div>
     </FooterBar>
   )

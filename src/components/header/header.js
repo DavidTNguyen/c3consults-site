@@ -35,28 +35,20 @@ const Brand = styled(Link)`
     color: var(--text);
   }
 
-  .brand__text {
-    display: none;
-    line-height: 1.1;
+  .brand__logo {
+    display: block;
+    width: 100px;
   }
 
-  .brand__name {
-    display: block;
-    font-weight: 800;
-    font-size: 1.05rem;
-    letter-spacing: -0.01em;
-  }
-
-  .brand__tag {
-    display: block;
-    font-size: 0.72rem;
-    color: var(--muted);
-    letter-spacing: 0.02em;
+  [data-theme='dark'] & .brand__logo {
+    padding: 2px 6px;
+    border-radius: 10px;
+    background: #fff;
   }
 
   @media (min-width: 720px) {
-    .brand__text {
-      display: block;
+    .brand__logo {
+      width: 110px;
     }
   }
 `
@@ -155,17 +147,13 @@ const Header = () => {
       <Inner className="container">
         <Brand to="/" aria-label={`${siteShortName} home`}>
           <StaticImage
-            src="../../images/c3-mark.png"
-            alt=""
-            width={40}
-            height={40}
+            className="brand__logo"
+            src="../../images/c3-logo.png"
+            alt="C3 Cultural Competency Consulting"
+            width={110}
             placeholder="none"
             loading="eager"
           />
-          <span className="brand__text">
-            <span className="brand__name">{siteShortName}</span>
-            <span className="brand__tag">Cultural Competency Consulting</span>
-          </span>
         </Brand>
 
         <Nav aria-label="Main">
