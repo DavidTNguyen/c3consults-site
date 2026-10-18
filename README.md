@@ -66,6 +66,23 @@ six lines at the current width get a "Read full testimonial" toggle.
 
 ## Configuration
 
+### Contact form
+
+The contact form in `src/components/contact/contact.js` submits Name, Email,
+and Message to the Formspree endpoint `https://formspree.io/f/xppqnaga`.
+Manage the receiving inbox, spam settings, and submission limits in the
+Formspree dashboard; verify the receiving inbox there before publishing.
+The endpoint is public and does not require a client-side secret.
+
+JavaScript submissions show inline sending, success, and failure feedback.
+Failed submissions preserve the entered message for retry. Without JavaScript,
+the form posts directly to Formspree. The form includes a `_gotcha` spam-trap
+field and retains the direct email link as a fallback.
+
+Before launch, send an approved test inquiry from the deployed site and confirm
+inbox delivery and reply-to behavior. Visitor messages are processed by
+Formspree, as disclosed alongside the form.
+
 Update the configuration file with your data. The configuration file is in ```data/siteConfig.js```
 
 :warning: NOTE: Please change googleAnalyticsId to your ID.  See https://analytics.google.com for details.
