@@ -77,7 +77,7 @@ The endpoint is public and does not require a client-side secret.
 JavaScript submissions show inline sending, success, and failure feedback.
 Failed submissions preserve the entered message for retry. Without JavaScript,
 the form posts directly to Formspree. The form includes a `_gotcha` spam-trap
-field and retains the direct email link as a fallback.
+field. The contact section also includes a LinkedIn link.
 
 Before launch, send an approved test inquiry from the deployed site and confirm
 inbox delivery and reply-to behavior. Visitor messages are processed by

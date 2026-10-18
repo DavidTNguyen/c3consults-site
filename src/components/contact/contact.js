@@ -181,12 +181,6 @@ const Contact = () => {
               training that fits your needs.
             </p>
             <div className="contact__actions">
-              {social.email && (
-                <a className="btn btn--light" href={`mailto:${social.email}`}>
-                  Email Khanh
-                  <FiArrowRight aria-hidden="true" />
-                </a>
-              )}
               {social.linkedin && (
                 <a
                   className="btn btn--ghost"
@@ -253,8 +247,8 @@ const Contact = () => {
               )}
               {status === 'error' && (
                 <p>
-                  Your message could not be sent. Please try again or use the
-                  Email Khanh link. Your message is still in the form.
+                  Your message could not be sent. Please try again.
+                  Your message is still in the form.
                 </p>
               )}
             </div>
