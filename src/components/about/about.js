@@ -67,14 +67,20 @@ const AboutSection = styled.section`
     max-width: 68ch;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 768px) {
     .about__grid {
-      grid-template-columns: 340px 1fr;
+      grid-template-columns: minmax(240px, 280px) 1fr;
     }
 
     .about__card {
       position: sticky;
       top: calc(var(--header-h) + 2rem);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .about__grid {
+      grid-template-columns: 340px 1fr;
     }
   }
 `

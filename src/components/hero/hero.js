@@ -21,6 +21,16 @@ const HeroSection = styled.section`
     align-items: center;
   }
 
+  .hero__logo {
+    display: block;
+    width: clamp(200px, 30vw, 300px);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__title-line {
+    display: block;
+  }
+
   .hero__lead {
     max-width: 56ch;
     margin-top: 1.25rem;
@@ -39,8 +49,7 @@ const HeroSection = styled.section`
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem 2rem;
-    max-width: 30rem;
-    margin-top: 2.75rem;
+    margin: 0;
     padding: 0;
     list-style: none;
   }
@@ -54,11 +63,22 @@ const HeroSection = styled.section`
   }
 
   .hero__stats span {
+    display: block;
+    margin-top: 0.25rem;
     font-size: 0.9rem;
+    line-height: 1.4;
     color: var(--muted);
   }
 
+  @media (min-width: 768px) {
+    .hero__stats {
+      grid-column: 1 / -1;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
   .hero__media {
+    order: 1;
     position: relative;
     max-width: 560px;
     width: 100%;
@@ -107,9 +127,15 @@ const HeroSection = styled.section`
     color: var(--muted);
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 768px) {
     .hero__grid {
       grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .hero__media {
+      order: 0;
+      align-self: start;
+      margin-top: 2rem;
     }
   }
 `
@@ -118,8 +144,23 @@ const Hero = () => (
   <HeroSection aria-labelledby="hero-title">
     <div className="container hero__grid">
       <div>
-        <p className="eyebrow">C3: Cultural Competency Consulting</p>
-        <h1 id="hero-title">{siteConfig.siteTitle}</h1>
+        <StaticImage
+          src="../../images/c3-logo.png"
+          alt="C3: Cultural Competency Consulting"
+          className="hero__logo"
+          loading="eager"
+          placeholder="none"
+          width={300}
+        />
+        <h1 id="hero-title">
+          {siteConfig.siteTitle
+            .split(/(?<=\.)\s+/)
+            .map(line => (
+              <span key={line} className="hero__title-line">
+                {line}{' '}
+              </span>
+            ))}
+        </h1>
         <p className="hero__lead">{siteConfig.heroLead}</p>
         <div className="hero__actions">
           <a
@@ -133,24 +174,7 @@ const Hero = () => (
             Explore trainings
           </a>
         </div>
-        <ul className="hero__stats">
-          <li>
-            <strong>25+ years</strong>
-            <span>multi-ethnic leadership</span>
-          </li>
-          <li>
-            <strong>20+ countries</strong>
-            <span>of global experience</span>
-          </li>
-          <li>
-            <strong>IDI®</strong>
-            <span>Intercultural Development Inventory Administrator</span>
-          </li>
-          <li>
-            <strong>CQ®</strong>
-            <span>Cultural Intelligence Facilitator</span>
-          </li>
-        </ul>
+
       </div>
 
       <div className="hero__media">
@@ -180,6 +204,25 @@ const Hero = () => (
           </div>
         </div>
       </div>
+
+      <ul className="hero__stats">
+        <li>
+          <strong>25+ years</strong>
+          <span>multi-ethnic leadership</span>
+        </li>
+        <li>
+          <strong>20+ countries</strong>
+          <span>of global experience</span>
+        </li>
+        <li>
+          <strong>IDI®</strong>
+          <span>Intercultural Development Inventory Administrator</span>
+        </li>
+        <li>
+          <strong>CQ®</strong>
+          <span>Cultural Intelligence Facilitator</span>
+        </li>
+      </ul>
     </div>
   </HeroSection>
 )

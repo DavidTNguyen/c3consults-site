@@ -40,12 +40,6 @@ const Brand = styled(Link)`
     width: 100px;
   }
 
-  [data-theme='dark'] & .brand__logo {
-    padding: 2px 6px;
-    border-radius: 10px;
-    background: #fff;
-  }
-
   @media (min-width: 720px) {
     .brand__logo {
       width: 110px;

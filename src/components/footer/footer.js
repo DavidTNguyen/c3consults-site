@@ -23,11 +23,6 @@ const FooterBar = styled.footer`
     width: 200px;
   }
 
-  [data-theme='dark'] & .footer__logo {
-    padding: 6px 12px;
-    border-radius: 14px;
-    background: #fff;
-  }
 
   .footer__about p {
     max-width: 38ch;

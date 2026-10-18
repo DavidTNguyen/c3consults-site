@@ -23,12 +23,12 @@ module.exports = {
   videos: [
     {
       key: 'promo',
-      title: 'Meet C3 Consults',
+      title: 'Meet C3: Cultural Competency Consulting',
       url: 'https://www.youtube.com/embed/9LAVC2kUOzo',
     },
     {
       key: 'aapi',
-      title: 'MPLS National Rally for AAPI Lives & Dignity (March 28, 2021)',
+      title: 'MPLS National Rally for AAPI Lives & Dignity',
       url: 'https://www.youtube.com/embed/nPy1n8vIfC0',
     },
   ],

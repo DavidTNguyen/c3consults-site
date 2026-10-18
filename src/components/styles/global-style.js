@@ -25,7 +25,7 @@ export default createGlobalStyle`
     --container: 1120px;
     --gutter: clamp(1.25rem, 4vw, 2rem);
     --section-space: clamp(4rem, 9vw, 7rem);
-    --header-h: 68px;
+    --header-h: 96px;
   }
 
   [data-theme='dark'] {

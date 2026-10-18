@@ -43,6 +43,10 @@ const ServicesSection = styled.section`
     max-width: none !important;
   }
 
+  .service__media .service__logo {
+    inset: 18%;
+  }
+
   .service__body {
     display: flex;
     align-items: center;
@@ -96,6 +100,18 @@ const services = [
     ),
   },
   {
+    title: 'Consulting',
+    image: (
+      <StaticImage
+        src="../../images/c3-mark.png"
+        alt="C3 logo"
+        width={200}
+        objectFit="contain"
+        className="service__logo"
+      />
+    ),
+  },
+  {
     title: 'Writing',
     image: (
       <StaticImage
@@ -129,7 +145,7 @@ const Services = () => (
     <div className="container">
       <div className="section-head">
         <p className="eyebrow">Services</p>
-        <h2 id="services-title">Speaking &amp; training services</h2>
+        <h2 id="services-title">Speaking, training &amp; consulting services</h2>
         <p>
           In person or virtual, for organizations, campuses, nonprofits,
           churches, and workplaces.
