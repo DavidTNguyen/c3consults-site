@@ -225,7 +225,7 @@ const Hero = () => (
         />
         <h1 id="hero-title">
           {siteConfig.siteTitle
-            .split(/(?<=\.)\s+/)
+            .split(/\s+/)
             .map(line => (
               <span key={line} className="hero__title-line">
                 {line}{' '}
@@ -272,7 +272,7 @@ const Hero = () => (
             placeholder="none"
           />
           <div>
-            <strong>Motivate · Educate · Activate</strong>
+            <strong>Motivate Educate Activate</strong>
             <span>Speaking · Training · Consulting</span>
           </div>
         </div>

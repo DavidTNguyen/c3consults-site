@@ -37,6 +37,10 @@ const ServicesSection = styled.section`
     background: var(--surface-2);
   }
 
+  [data-theme='dark'] .service__media--logo {
+    background: #f3ede7;
+  }
+
   .service__media .gatsby-image-wrapper {
     position: absolute;
     inset: 0;
@@ -101,10 +105,11 @@ const services = [
   },
   {
     title: 'Consulting',
+    mediaClassName: 'service__media--logo',
     image: (
       <StaticImage
-        src="../../images/c3-mark.png"
-        alt="C3 logo"
+        src="../../images/c3-logo.png"
+        alt="C3 Cultural Competency Consulting"
         width={200}
         objectFit="contain"
         className="service__logo"
@@ -112,7 +117,7 @@ const services = [
     ),
   },
   {
-    title: 'Writing',
+    title: 'Book Endorsement',
     image: (
       <StaticImage
         src="../../images/services/Pastor-Hip-Hop.png"
@@ -120,17 +125,6 @@ const services = [
         width={480}
         aspectRatio={4 / 3}
         transformOptions={{ cropFocus: 'north' }}
-      />
-    ),
-  },
-  {
-    title: 'Book Endorsement',
-    image: (
-      <StaticImage
-        src="../../images/services/Signed-Book.jpg"
-        alt="Signed copy of Pastor Stacey Jones's book, (i)Pastor Hip-Hop"
-        width={320}
-        objectFit="contain"
       />
     ),
   },
@@ -153,10 +147,14 @@ const Services = () => (
       </div>
 
       <div className="services__grid">
-        {services.map(({ title, href, image }) => {
+        {services.map(({ title, href, image, mediaClassName }) => {
           const content = (
             <>
-              <div className="service__media">{image}</div>
+              <div
+                className={`service__media${mediaClassName ? ` ${mediaClassName}` : ''}`}
+              >
+                {image}
+              </div>
               <div className="service__body">
                 <h3 className="service__title">{title}</h3>
                 {href && (

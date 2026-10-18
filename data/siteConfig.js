@@ -1,7 +1,7 @@
 module.exports = {
   siteName: 'C3 Consults – Cultural Competency Consulting',
   siteShortName: 'C3 Consults',
-  siteTitle: 'Motivate. Educate. Activate.',
+  siteTitle: 'Motivate Educate Activate',
   siteDescription: `Cultural competency, anti-racism, and intercultural training, speaking, and coaching with Khanh Nguyễn – Qualified IDI® Administrator and Certified CQ® Facilitator.`,
   heroLead: `Speaking, workshops, coaching, and consulting that help people and organizations grow in cultural and racial intelligence – and build equitable, multi-ethnic communities.`,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
