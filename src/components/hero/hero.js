@@ -7,7 +7,7 @@ import siteConfig from '../../../data/siteConfig'
 const HeroSection = styled.section`
   position: relative;
   overflow: hidden;
-  padding-block: clamp(3rem, 7vw, 6rem) clamp(4rem, 8vw, 7rem);
+  padding-block: 0 clamp(3rem, 8vw, 7rem);
   background: radial-gradient(
       60rem 40rem at 85% -10%,
       var(--accent-soft),
@@ -17,14 +17,29 @@ const HeroSection = styled.section`
 
   .hero__grid {
     display: grid;
-    gap: clamp(2.5rem, 6vw, 4.5rem);
-    align-items: center;
+    grid-template-areas:
+      'hero'
+      'copy'
+      'stats';
+    row-gap: 2rem;
+  }
+
+  .hero__brand {
+    grid-area: hero;
+    position: relative;
+    z-index: 2;
+    align-self: end;
+    padding-bottom: 0.5rem;
+  }
+
+  .hero__copy {
+    grid-area: copy;
   }
 
   .hero__logo {
     display: block;
-    width: clamp(200px, 30vw, 300px);
-    margin-bottom: 1.5rem;
+    width: clamp(170px, 30vw, 300px);
+    margin-bottom: 1rem;
   }
 
   .hero__title-line {
@@ -33,7 +48,6 @@ const HeroSection = styled.section`
 
   .hero__lead {
     max-width: 56ch;
-    margin-top: 1.25rem;
     font-size: clamp(1.1rem, 0.6vw + 1rem, 1.3rem);
     color: var(--muted);
   }
@@ -46,6 +60,7 @@ const HeroSection = styled.section`
   }
 
   .hero__stats {
+    grid-area: stats;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem 2rem;
@@ -70,72 +85,128 @@ const HeroSection = styled.section`
     color: var(--muted);
   }
 
-  @media (min-width: 768px) {
-    .hero__stats {
-      grid-column: 1 / -1;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-
+  /* Mobile: full-bleed photo with the logo and headline overlaid on a fade */
   .hero__media {
-    order: 1;
+    grid-area: hero;
     position: relative;
-    max-width: 560px;
-    width: 100%;
-    margin-inline: auto;
+    margin-inline: calc(var(--gutter) * -1);
   }
 
   .hero__media::before {
-    content: '';
-    position: absolute;
-    inset: 8% -6% -6% 10%;
-    border-radius: 32px;
-    background: var(--accent);
-    opacity: 0.9;
-    transform: rotate(3deg);
+    display: none;
   }
 
   .hero__image {
     position: relative;
-    border-radius: 28px;
     overflow: hidden;
-    box-shadow: var(--shadow);
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 4;
+  }
+
+  .hero__image .gatsby-image-wrapper {
+    width: 100%;
+  }
+
+  .hero__image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      var(--bg) 0%,
+      color-mix(in srgb, var(--bg) 88%, transparent) 30%,
+      color-mix(in srgb, var(--bg) 55%, transparent) 50%,
+      transparent 72%
+    );
   }
 
   .hero__badge {
-    position: absolute;
-    left: -4%;
-    bottom: 8%;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem 0.75rem 0.75rem;
-    border-radius: 16px;
-    background: var(--surface);
-    box-shadow: var(--shadow);
-    font-size: 0.9rem;
-    line-height: 1.3;
-  }
-
-  .hero__badge strong {
-    display: block;
-    color: var(--text);
-  }
-
-  .hero__badge span {
-    color: var(--muted);
+    display: none;
   }
 
   @media (min-width: 768px) {
+    padding-block: clamp(3rem, 7vw, 6rem) clamp(4rem, 8vw, 7rem);
+
     .hero__grid {
       grid-template-columns: 1.1fr 0.9fr;
+      grid-template-areas:
+        'brand media'
+        'copy media'
+        'stats stats';
+      column-gap: clamp(2.5rem, 6vw, 4.5rem);
+      row-gap: 0;
+    }
+
+    .hero__brand {
+      grid-area: brand;
+      align-self: start;
+      padding-bottom: 0;
+    }
+
+    .hero__logo {
+      margin-bottom: 1.5rem;
+    }
+
+    .hero__copy {
+      align-self: start;
+      margin-top: 1.25rem;
+    }
+
+    .hero__stats {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: clamp(2.5rem, 6vw, 4.5rem);
     }
 
     .hero__media {
-      order: 0;
+      grid-area: media;
       align-self: start;
-      margin-top: 2rem;
+      max-width: 560px;
+      width: 100%;
+      margin: 2rem auto 0;
+    }
+
+    .hero__media::before {
+      display: block;
+      content: '';
+      position: absolute;
+      inset: 8% -6% -6% 10%;
+      border-radius: 32px;
+      background: var(--accent);
+      opacity: 0.9;
+      transform: rotate(3deg);
+    }
+
+    .hero__image {
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      aspect-ratio: 1 / 1;
+    }
+
+    .hero__image::after {
+      display: none;
+    }
+
+    .hero__badge {
+      position: absolute;
+      left: -4%;
+      bottom: 8%;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem 0.75rem 0.75rem;
+      border-radius: 16px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+
+    .hero__badge strong {
+      display: block;
+      color: var(--text);
+    }
+
+    .hero__badge span {
+      color: var(--muted);
     }
   }
 `
@@ -143,7 +214,7 @@ const HeroSection = styled.section`
 const Hero = () => (
   <HeroSection aria-labelledby="hero-title">
     <div className="container hero__grid">
-      <div>
+      <div className="hero__brand">
         <StaticImage
           src="../../images/c3-logo.png"
           alt="C3: Cultural Competency Consulting"
@@ -161,6 +232,9 @@ const Hero = () => (
               </span>
             ))}
         </h1>
+      </div>
+
+      <div className="hero__copy">
         <p className="hero__lead">{siteConfig.heroLead}</p>
         <div className="hero__actions">
           <a
@@ -174,7 +248,6 @@ const Hero = () => (
             Explore trainings
           </a>
         </div>
-
       </div>
 
       <div className="hero__media">

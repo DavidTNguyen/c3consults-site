@@ -129,20 +129,6 @@ module.exports = {
       name: 'Intercultural Development Inventory - IDI® and Cultural Intelligence (CQ)®',
       category: 'assessment',
       description: `I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency.\n\nI am a Certified Facilitator of the Cultural Intelligence assessment which measures capabilities to help you grow in working across difference.`,
-            certifications: [
-              {
-                name: 'IDI® Qualified Administrator',
-                issuer: 'Intercultural Development Inventory',
-              },
-              {
-                name: 'CQ® Certified Facilitator',
-                issuer: 'Cultural Intelligence Center',
-              },
-              {
-                name: 'Developing CQ® Workshop Facilitator',
-                issuer: 'Cultural Intelligence Center',
-              },
-            ],
             images: [
         {
           src: '/images/idi-logo.png',

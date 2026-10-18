@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import { testimonials } from '../../../data/testimonials'
 
 const CLAMP_LINES = 6
@@ -111,14 +112,48 @@ const TestimonialsSection = styled.section`
     line-height: 1.4;
   }
 
+  .spotlight__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    min-width: 0;
+  }
+
+  .spotlight__arrow {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--accent);
+    font-size: 1.25rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+
+  .spotlight__arrow:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
   .spotlight__people {
+    position: relative;
+    flex: 1;
+    min-width: 0;
     display: flex;
     gap: 0.5rem;
     margin: 0;
-    padding: 0.75rem 0.25rem 0.5rem;
+    padding: 0.75rem 2.5rem 0.5rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
   }
 
   .spotlight__people::-webkit-scrollbar {
@@ -203,7 +238,14 @@ const TestimonialsSection = styled.section`
 
     .spotlight__people {
       justify-content: center;
+      padding-inline: 0.25rem;
       overflow: visible;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+
+    .spotlight__arrow {
+      display: none;
     }
   }
 
@@ -285,6 +327,9 @@ const Testimonials = () => {
     tabRefs.current[next]?.focus()
   }
 
+  const step = delta =>
+    setActive(prev => (prev + delta + testimonials.length) % testimonials.length)
+
   const onKeyDown = event => {
     const keys = {
       ArrowRight: active + 1,
@@ -322,6 +367,18 @@ const Testimonials = () => {
   const stageRef = useRef(null)
   const peopleRef = useRef(null)
   const [pointerX, setPointerX] = useState(null)
+
+  // Scroll the selected portrait into the centre of the mobile row.
+  useEffect(() => {
+    const row = peopleRef.current
+    const tab = tabRefs.current[active]
+    if (row && tab && row.scrollWidth > row.clientWidth) {
+      row.scrollTo({
+        left: tab.offsetLeft - (row.clientWidth - tab.offsetWidth) / 2,
+        behavior: 'smooth',
+      })
+    }
+  }, [active])
 
   // Keep the speech-bubble pointer aligned with the selected portrait.
   useEffect(() => {
@@ -416,6 +473,15 @@ const Testimonials = () => {
             })}
           </div>
 
+          <div className="spotlight__nav">
+          <button
+            type="button"
+            className="spotlight__arrow"
+            aria-label="Previous testimonial"
+            onClick={() => step(-1)}
+          >
+            <FiChevronLeft aria-hidden="true" />
+          </button>
           <div
             className="spotlight__people"
             ref={peopleRef}
@@ -449,6 +515,15 @@ const Testimonials = () => {
                 </button>
               )
             })}
+          </div>
+          <button
+            type="button"
+            className="spotlight__arrow"
+            aria-label="Next testimonial"
+            onClick={() => step(1)}
+          >
+            <FiChevronRight aria-hidden="true" />
+          </button>
           </div>
         </div>
       </div>

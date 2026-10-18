@@ -1,7 +1,7 @@
 import React from 'react'
 import { withPrefix } from 'gatsby'
 import styled from 'styled-components'
-import { FiArrowRight, FiAward, FiCheck } from 'react-icons/fi'
+import { FiArrowRight, FiCheck } from 'react-icons/fi'
 import siteConfig from '../../../data/siteConfig'
 
 const TrainingsSection = styled.section`
@@ -66,49 +66,6 @@ const TrainingsSection = styled.section`
   .coaching__assessment {
     padding-top: 1.5rem;
     border-top: 1px solid var(--border);
-  }
-
-  .certifications {
-    display: grid;
-    gap: 0.75rem;
-    margin: 1.25rem 0 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .certifications li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 0.85rem 1rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    background: var(--surface);
-    line-height: 1.35;
-  }
-
-  .certifications__icon {
-    flex-shrink: 0;
-    margin-top: 0.1rem;
-    font-size: 1.25rem;
-    color: var(--accent);
-  }
-
-  .certifications strong {
-    display: block;
-  }
-
-  .certifications__issuer {
-    display: block;
-    margin-top: 0.15rem;
-    color: var(--muted);
-    font-size: 0.875rem;
-  }
-
-  @media (min-width: 720px) {
-    .certifications {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
   }
 
   .training__credentials {
@@ -290,19 +247,6 @@ const Trainings = () => (
             {skill.description.split('\n\n').map(paragraph => (
               <p key={paragraph}>{paragraph}</p>
             ))}
-            {skill.certifications?.length > 0 && (
-              <ul className="certifications" aria-label="Certifications">
-                {skill.certifications.map(cert => (
-                  <li key={cert.name}>
-                    <FiAward className="certifications__icon" aria-hidden="true" />
-                    <span>
-                      <strong>{cert.name}</strong>
-                      <span className="certifications__issuer">{cert.issuer}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
             <div className="training__credentials">
               {skill.images.map(image => (
                 <img
