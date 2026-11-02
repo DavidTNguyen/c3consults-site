@@ -206,8 +206,8 @@ const Trainings = () => (
   >
     <div className="container">
       <div className="section-head">
-        <p className="eyebrow">Trainings</p>
-        <h2 id="trainings-title">Trainings offered</h2>
+        <p className="eyebrow">Professional Development and Training</p>
+        <h2 id="trainings-title">What I offer</h2>
         <p>
           Interactive sessions that use assessments, games, discussion, and
           simulations to make learning engaging – and change lasting.

@@ -3,23 +3,21 @@ module.exports = {
   siteShortName: 'C3 Consults',
   siteTitle: 'Motivate Educate Activate',
   siteDescription: `Cultural competency, anti-racism, and intercultural training, speaking, and coaching with Khanh Nguyễn – Qualified IDI® Administrator and Certified CQ® Facilitator.`,
-  heroLead: `Speaking, workshops, coaching, and consulting that help people and organizations grow in cultural and racial intelligence – and build equitable, multi-ethnic communities.`,
+  heroLead: `Professional development, keynotes, training, coaching, and consulting that help people and organizations grow in cultural and racial intelligence, and build equitable communities where everyone belongs.`,
   keyWords: ['c3consults', 'race', 'ethnicity', 'ethnicities'],
   authorName: 'Nguyễn Thị Châu Khanh',
   authorShortName: 'Khanh Nguyễn',
   authorRole: 'Cultural Competency Consultant · Qualified IDI® Administrator · Certified CQ® Facilitator',
   logo: '/images/C3_Logo_Helvetica_Text.png',
-  authorDescription: `My family came as refugees from Vietnam and we were sponsored   by a community that helped us settle in the Twin Cities.  
-    Growing up navigating multiple cultures, and my decades of leadership in global service, travels to over 20 countries, experience teaching and administration in Higher Education, work with African refugees and diverse organizations 
-  have led me to see the importance of growing in 
-  cultural and racial intelligence and competency.  <br/><br/>
-  I educate, speak on and provide training and consulting in cultural competency, racial justice, ethnic diversity, immigration, refugee, and Asian American Advocacy.
+  authorDescription: `My family came to Minnesota as refugees from Vietnam, sponsored by a community that helped us settle in the Twin Cities. Growing up between cultures shaped how I see the world. So did decades of leadership in global service, travel to over 20 countries, teaching and administration in higher education, and work with African refugees and diverse organizations. Together, they’ve taught me how important it is to grow in cultural and racial intelligence.
   <br/><br/>
-  I am a Qualified Administrator of the IDI (Intercultural Development Inventory) a premier tool that assesses intercultural competency. I am also a certified facilitator of the Cultural Intelligence (CQ) assessment that measures your capability to relate and work in culturally diverse situations.
+  I provide professional development, training, coaching, and consulting in cultural competency, racial justice, DEIB, immigration, refugee, and Asian American advocacy.
   <br/><br/>
-  To make learning fun and engaging, I employ a variety of teaching methods such as cultural assessment tools, games, workshops, discussion and interactive simulations. My passion is to see people and organizations embrace an equitable multi-ethnic lifestyle and practices that impact communities locally and globally.
+  I’m a Qualified Administrator of the Intercultural Development Inventory (IDI), a premier tool for assessing intercultural competency, and a certified facilitator of the Cultural Intelligence (CQ) assessment, which measures your ability to relate and work effectively across cultures.
   <br/><br/>
-  Whether you need a 30-minute talk, a full-day workshop, a multi-week virtual series, or ongoing consulting, I'd love to work with you and tailor it to fit your needs.`,
+  Learning about culture should be engaging, not exhausting. I use assessments, games, workshops, discussion, and interactive simulations to make it practical and memorable.
+  <br/><br/>
+  Whether you need a keynote speech, full-day workshops, multi-week virtual series, or ongoing consulting, I’d love to tailor it to your needs. Let’s talk about what would work for your team.`,
   videos: [
     {
       key: 'promo',
@@ -79,7 +77,7 @@ module.exports = {
   ],
   skills: [
     {
-      name: 'Cultural Competency & Diversity',
+      name: 'Cultural Competency / Diveristy, Equity, Inclusion',
       category: 'training',
       description: 'Build cultural awareness, recognize implicit bias, and develop practical skills for working across differences. Explore the four dimensions of cultural intelligence and learn from cultures and communities that have been marginalized.',
       level: 100,
@@ -89,13 +87,6 @@ module.exports = {
       category: 'training',
       description:
         'Explore the four layers of racism, how racial hierarchies were constructed, and why kindness alone is not enough. Learn practical ways to challenge stereotypes, mitigate bias and address interpersonal and institutional racism, and take steps toward a more just society.',
-      level: 100,
-    },
-    {
-      name: 'Multi-Ethnic Church Ministry',
-      category: 'training',
-      description:
-        'Discover the why, what, and how of multi-ethnic church ministry from a Biblical perspective. Explore the history of church segregation, learn from different ministry models, and build cultural awareness through interactive activities and assessments.',
       level: 100,
     },
     {
