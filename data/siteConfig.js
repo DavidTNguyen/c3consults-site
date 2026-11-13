@@ -77,9 +77,9 @@ module.exports = {
   ],
   skills: [
     {
-      name: 'Cultural Competency / Diveristy, Equity, Inclusion',
+      name: 'Growing in Cultural Competency',
       category: 'training',
-      description: 'Build cultural awareness, recognize implicit bias, and develop practical skills for working across differences. Explore the four dimensions of cultural intelligence and learn from cultures and communities that have been marginalized.',
+      description: 'Build cultural awareness, recognize implicit bias, and develop practical skills for working across different cultural values. Explore the four dimensions of cultural intelligence and learn from communities that have been marginalized. Evaluate and build your business and team\'s intercultural capabilities.',
       level: 100,
     },
     {
@@ -92,7 +92,7 @@ module.exports = {
     {
       name: 'Immigration and Refugee Advocacy',
       category: 'training',
-      description: 'Examine how history, U.S. laws, and common myths shape our understanding of immigrants and refugees. Reflect on what scripture teaches about justice, informed by my own journey as a refugee from Vietnam and my work with African refugees.',
+      description: 'Examine how history, U.S. laws, and common myths shape our understanding of immigrants and refugees. Advocate for justice from a practical and faith based lens, informed by my own journey as a refugee from Vietnam and my work with African refugees.',
       level: 100,
     },
     {
