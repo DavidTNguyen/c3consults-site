@@ -172,12 +172,12 @@ const Header = () => {
             </ThemeToggle>
           )}
           {social.email && (
-            <a
+            <Link
               className="btn btn--primary nav__cta"
-              href={`mailto:${social.email}`}
+              to="/#contact"
             >
               Book Khanh
-            </a>
+            </Link>
           )}
         </Nav>
       </Inner>

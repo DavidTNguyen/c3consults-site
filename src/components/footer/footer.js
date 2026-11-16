@@ -25,7 +25,7 @@ const FooterBar = styled.footer`
 
 
   .footer__about p {
-    max-width: 38ch;
+    max-width: none;
     margin-top: 0.5rem;
   }
 
@@ -104,8 +104,9 @@ const Footer = () => {
             placeholder="none"
           />
           <p>
-            Cultural competency, anti-racism, and intercultural training that
-            motivates, educates, and activates.
+            C3: Cultural Competency Consulting LLC
+            <br />
+            MN Woman, Minority, Immigrant Owned Small Business
           </p>
           <div className="footer__social">
             {social.email && (
