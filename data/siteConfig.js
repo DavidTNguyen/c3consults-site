@@ -11,7 +11,7 @@ module.exports = {
   logo: '/images/C3_Logo_Helvetica_Text.png',
   authorDescription: `My family came to Minnesota as refugees from Vietnam, sponsored by a community that helped us settle in the Twin Cities. Growing up between cultures shaped how I see the world. So did decades of leadership in global service, travel to over 20 countries, teaching and administration in higher education, and work with African refugees and diverse organizations. Together, they’ve taught me how important it is to grow in cultural and racial intelligence.
   <br/><br/>
-  I provide professional development, training, coaching, and consulting in cultural competency, racial justice, DEIB, immigration, refugee, and Asian American advocacy.
+  I provide professional development, training, coaching, and consulting in Cultural Competency, Racial Justice, Inclusion and Belonging, Immigration, Refugee, and Asian American advocacy.
   <br/><br/>
   I’m a Qualified Administrator of the Intercultural Development Inventory (IDI), a premier tool for assessing intercultural competency, and a certified facilitator of the Cultural Intelligence (CQ) assessment, which measures your ability to relate and work effectively across cultures.
   <br/><br/>
